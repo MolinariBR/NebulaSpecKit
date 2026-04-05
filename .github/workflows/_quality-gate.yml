@@ -1,0 +1,104 @@
+name: Quality Gate (Reusable)
+
+on:
+  workflow_call:
+
+permissions:
+  contents: read
+
+jobs:
+  quality-gate:
+    name: Validate Documentation Quality
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Lint Markdown
+        uses: DavidAnson/markdownlint-cli2-action@v23
+
+      - name: Validate required files, YAML and JSON
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install YAML parser
+        run: python -m pip install --upgrade pip pyyaml
+
+      - name: Run structural checks
+        shell: bash
+        run: |
+          set -euo pipefail
+          python <<'PY'
+          import json
+          from pathlib import Path
+          import yaml
+
+          required_files = [
+              "README.md",
+              "GUIDE.md",
+              "Docs/README.md",
+              "Docs/brief.md",
+              "Docs/project.md",
+              "Docs/stack.md",
+              "Docs/plan.md",
+              "Docs/tasks.md",
+              "Docs/control.md",
+              "Quality/gate.md",
+              "Templates/Full/01GUIDE.md",
+              "Templates/Quick/01GUIDE.md",
+              "agents/00README.md",
+              "Manual/00README.md",
+          ]
+
+          missing = [p for p in required_files if not Path(p).is_file()]
+          if missing:
+              raise SystemExit(
+                  "Missing required files:\n- " + "\n- ".join(missing)
+              )
+
+          json_files = [
+              Path("Docs/tokens.json"),
+              Path("Templates/Full/tokens.json"),
+              Path("Templates/Quick/tokens.json"),
+          ]
+          for jf in json_files:
+              with jf.open("r", encoding="utf-8") as fh:
+                  json.load(fh)
+
+          yaml_files = [
+              Path("Docs/contract.yaml"),
+              Path("Templates/Full/contract.yaml"),
+              Path("Templates/Quick/contract.yaml"),
+          ]
+          for yf in yaml_files:
+              with yf.open("r", encoding="utf-8") as fh:
+                  yaml.safe_load(fh)
+
+          print("Structural, JSON and YAML checks passed.")
+          PY
+
+      - name: Check internal links (offline)
+        id: local_links
+        uses: lycheeverse/lychee-action@v2
+        with:
+          args: >
+            --offline
+            --no-progress
+            --exclude-mail
+            --base .
+            "./**/*.md"
+          fail: false
+          format: markdown
+          output: lychee/internal-links.md
+
+      - name: Upload link check report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: internal-links-report-${{ github.run_id }}
+          path: lychee/internal-links.md
+          if-no-files-found: ignore
+          retention-days: 7
