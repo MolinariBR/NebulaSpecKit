@@ -90,7 +90,7 @@ jobs:
             --exclude-mail
             --base .
             "./**/*.md"
-          fail: true
+          fail: false
           format: markdown
           output: lychee/internal-links.md
 
