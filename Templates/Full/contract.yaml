@@ -1,0 +1,435 @@
+openapi: 3.1.0
+info:
+  title: "[Nome da API]"
+  version: "1.0.0"
+  summary: "Contrato oficial da API do projeto."
+  description: |
+    Este documento define o contrato oficial da API do projeto.
+    Ele descreve endpoints, autenticacao, payloads, respostas,
+    status codes, erros e schemas reutilizaveis.
+  contact:
+    name: "[Responsavel]"
+
+servers:
+  - url: "https://api.exemplo.com"
+    description: "Producao"
+  - url: "https://staging-api.exemplo.com"
+    description: "Staging"
+  - url: "http://localhost:3000"
+    description: "Local"
+
+tags:
+  - name: System
+    description: "Saude e disponibilidade"
+  - name: Auth
+    description: "Autenticacao e sessao"
+  - name: Resource
+    description: "Operacoes CRUD do recurso principal"
+
+security:
+  - bearerAuth: []
+
+paths:
+  /health:
+    get:
+      tags: [System]
+      summary: "Health check da aplicacao"
+      operationId: getHealth
+      security: []
+      responses:
+        "200":
+          description: "Aplicacao saudavel"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/HealthResponse"
+              examples:
+                default:
+                  value:
+                    status: "ok"
+                    timestamp: "2026-04-02T10:00:00Z"
+
+  /auth/login:
+    post:
+      tags: [Auth]
+      summary: "Autentica um usuario"
+      operationId: login
+      security: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/LoginRequest"
+            examples:
+              default:
+                value:
+                  email: "usuario@exemplo.com"
+                  password: "senha-forte"
+      responses:
+        "200":
+          description: "Autenticacao realizada com sucesso"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/LoginResponse"
+        "400":
+          $ref: "#/components/responses/BadRequest"
+        "401":
+          $ref: "#/components/responses/Unauthorized"
+
+  /resources:
+    get:
+      tags: [Resource]
+      summary: "Lista recursos"
+      operationId: listResources
+      parameters:
+        - $ref: "#/components/parameters/PageParam"
+        - $ref: "#/components/parameters/LimitParam"
+        - name: status
+          in: query
+          required: false
+          description: "Filtra recursos por status"
+          schema:
+            $ref: "#/components/schemas/ResourceStatus"
+      responses:
+        "200":
+          description: "Recursos listados com sucesso"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/PaginatedResourceResponse"
+        "401":
+          $ref: "#/components/responses/Unauthorized"
+
+    post:
+      tags: [Resource]
+      summary: "Cria um novo recurso"
+      operationId: createResource
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/CreateResourceRequest"
+      responses:
+        "201":
+          description: "Recurso criado com sucesso"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Resource"
+        "400":
+          $ref: "#/components/responses/BadRequest"
+        "401":
+          $ref: "#/components/responses/Unauthorized"
+        "422":
+          $ref: "#/components/responses/UnprocessableEntity"
+
+  /resources/{resourceId}:
+    get:
+      tags: [Resource]
+      summary: "Retorna detalhes de um recurso"
+      operationId: getResourceById
+      parameters:
+        - $ref: "#/components/parameters/ResourceIdParam"
+      responses:
+        "200":
+          description: "Recurso retornado com sucesso"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Resource"
+        "401":
+          $ref: "#/components/responses/Unauthorized"
+        "404":
+          $ref: "#/components/responses/NotFound"
+
+    patch:
+      tags: [Resource]
+      summary: "Atualiza parcialmente um recurso"
+      operationId: updateResource
+      parameters:
+        - $ref: "#/components/parameters/ResourceIdParam"
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/UpdateResourceRequest"
+      responses:
+        "200":
+          description: "Recurso atualizado com sucesso"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Resource"
+        "400":
+          $ref: "#/components/responses/BadRequest"
+        "401":
+          $ref: "#/components/responses/Unauthorized"
+        "404":
+          $ref: "#/components/responses/NotFound"
+        "422":
+          $ref: "#/components/responses/UnprocessableEntity"
+
+    delete:
+      tags: [Resource]
+      summary: "Remove um recurso"
+      operationId: deleteResource
+      parameters:
+        - $ref: "#/components/parameters/ResourceIdParam"
+      responses:
+        "204":
+          description: "Recurso removido com sucesso"
+        "401":
+          $ref: "#/components/responses/Unauthorized"
+        "404":
+          $ref: "#/components/responses/NotFound"
+
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
+
+  parameters:
+    PageParam:
+      name: page
+      in: query
+      required: false
+      description: "Pagina atual da listagem"
+      schema:
+        type: integer
+        minimum: 1
+        default: 1
+
+    LimitParam:
+      name: limit
+      in: query
+      required: false
+      description: "Quantidade de itens por pagina"
+      schema:
+        type: integer
+        minimum: 1
+        maximum: 100
+        default: 20
+
+    ResourceIdParam:
+      name: resourceId
+      in: path
+      required: true
+      description: "Identificador do recurso"
+      schema:
+        type: string
+
+  responses:
+    BadRequest:
+      description: "Requisicao invalida"
+      content:
+        application/json:
+          schema:
+            $ref: "#/components/schemas/ErrorResponse"
+          examples:
+            default:
+              value:
+                code: "BAD_REQUEST"
+                message: "Dados invalidos"
+                details: []
+
+    Unauthorized:
+      description: "Nao autenticado ou token invalido"
+      content:
+        application/json:
+          schema:
+            $ref: "#/components/schemas/ErrorResponse"
+          examples:
+            default:
+              value:
+                code: "UNAUTHORIZED"
+                message: "Autenticacao necessaria"
+                details: []
+
+    NotFound:
+      description: "Recurso nao encontrado"
+      content:
+        application/json:
+          schema:
+            $ref: "#/components/schemas/ErrorResponse"
+          examples:
+            default:
+              value:
+                code: "NOT_FOUND"
+                message: "Recurso nao encontrado"
+                details: []
+
+    UnprocessableEntity:
+      description: "Violacao de regra de negocio"
+      content:
+        application/json:
+          schema:
+            $ref: "#/components/schemas/ErrorResponse"
+          examples:
+            default:
+              value:
+                code: "BUSINESS_RULE_VIOLATION"
+                message: "A operacao nao pode ser concluida"
+                details: []
+
+  schemas:
+    HealthResponse:
+      type: object
+      additionalProperties: false
+      required: [status, timestamp]
+      properties:
+        status:
+          type: string
+          example: "ok"
+        timestamp:
+          type: string
+          format: date-time
+
+    ErrorResponse:
+      type: object
+      additionalProperties: false
+      required: [code, message, details]
+      properties:
+        code:
+          type: string
+          description: "Codigo estavel do erro"
+        message:
+          type: string
+          description: "Mensagem principal do erro"
+        details:
+          type: array
+          description: "Detalhes adicionais do erro"
+          items:
+            type: object
+            additionalProperties: true
+
+    LoginRequest:
+      type: object
+      additionalProperties: false
+      required: [email, password]
+      properties:
+        email:
+          type: string
+          format: email
+        password:
+          type: string
+          minLength: 8
+
+    LoginResponse:
+      type: object
+      additionalProperties: false
+      required: [accessToken, refreshToken, user]
+      properties:
+        accessToken:
+          type: string
+        refreshToken:
+          type: string
+        user:
+          $ref: "#/components/schemas/AuthenticatedUser"
+
+    AuthenticatedUser:
+      type: object
+      additionalProperties: false
+      required: [id, name, email, role]
+      properties:
+        id:
+          type: string
+        name:
+          type: string
+        email:
+          type: string
+          format: email
+        role:
+          type: string
+          description: "Perfil funcional do usuario autenticado"
+
+    ResourceStatus:
+      type: string
+      enum:
+        - active
+        - inactive
+        - archived
+
+    Resource:
+      type: object
+      additionalProperties: false
+      required:
+        - id
+        - name
+        - status
+        - createdAt
+        - updatedAt
+      properties:
+        id:
+          type: string
+        name:
+          type: string
+        status:
+          $ref: "#/components/schemas/ResourceStatus"
+        description:
+          type: string
+          nullable: true
+        createdAt:
+          type: string
+          format: date-time
+        updatedAt:
+          type: string
+          format: date-time
+
+    CreateResourceRequest:
+      type: object
+      additionalProperties: false
+      required: [name]
+      properties:
+        name:
+          type: string
+          minLength: 1
+          maxLength: 120
+        description:
+          type: string
+          maxLength: 500
+
+    UpdateResourceRequest:
+      type: object
+      additionalProperties: false
+      properties:
+        name:
+          type: string
+          minLength: 1
+          maxLength: 120
+        description:
+          type: string
+          maxLength: 500
+        status:
+          $ref: "#/components/schemas/ResourceStatus"
+
+    PaginationMeta:
+      type: object
+      additionalProperties: false
+      required: [page, limit, total, totalPages]
+      properties:
+        page:
+          type: integer
+        limit:
+          type: integer
+        total:
+          type: integer
+        totalPages:
+          type: integer
+
+    PaginatedResourceResponse:
+      type: object
+      additionalProperties: false
+      required: [data, meta]
+      properties:
+        data:
+          type: array
+          items:
+            $ref: "#/components/schemas/Resource"
+        meta:
+          $ref: "#/components/schemas/PaginationMeta"

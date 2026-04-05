@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+VENV_BIN="/home/mau/.venvs/ascii-gen/bin/pyfiglet"
+
+if [[ ! -x "$VENV_BIN" ]]; then
+  echo "Gerador nao encontrado em $VENV_BIN"
+  echo "Reinstale com: python3 -m venv /home/mau/.venvs/ascii-gen && /home/mau/.venvs/ascii-gen/bin/pip install pyfiglet"
+  exit 1
+fi
+
+if [[ $# -eq 0 ]]; then
+  echo "Uso: tools/ascii-gen \"Seu Texto\""
+  exit 1
+fi
+
+"$VENV_BIN" "$*"
