@@ -9,8 +9,8 @@
 
 - Autor: Maurício Molinari
 - Licença: MIT
-- Repositório: https://github.com/molinariBR/nebula-spec-kit
-- Site: https://molinari.dev/nebula-spec-kit (Em atualização)
+- Repositório: https://github.com/MolinariBR/NebulaSpecKit
+- Site: https://nebulaweb.vercel.app/
 - Versão: 1.0.0
 - Última atualização: 2026-04-05
 
