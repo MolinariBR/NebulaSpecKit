@@ -1,0 +1,36 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "**/*.md"
+      - "**/*.yaml"
+      - "**/*.json"
+      - ".github/workflows/**"
+      - ".markdownlint-cli2.jsonc"
+      - ".lycheeignore"
+  pull_request:
+    branches:
+      - main
+    paths:
+      - "**/*.md"
+      - "**/*.yaml"
+      - "**/*.json"
+      - ".github/workflows/**"
+      - ".markdownlint-cli2.jsonc"
+      - ".lycheeignore"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  quality:
+    name: Quality Gate
+    uses: ./.github/workflows/_quality-gate.yml

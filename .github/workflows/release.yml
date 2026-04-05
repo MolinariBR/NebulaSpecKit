@@ -1,0 +1,93 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - "v*"
+  workflow_dispatch:
+    inputs:
+      version:
+        description: "Version tag (example: v1.0.1)"
+        required: true
+        type: string
+
+permissions:
+  contents: write
+
+concurrency:
+  group: release-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  quality:
+    name: Quality Gate Before Release
+    uses: ./.github/workflows/_quality-gate.yml
+    permissions:
+      contents: read
+
+  package-and-release:
+    name: Build Artifact and Create GitHub Release
+    needs:
+      - quality
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Resolve version
+        id: meta
+        shell: bash
+        run: |
+          set -euo pipefail
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            VERSION="${{ github.event.inputs.version }}"
+          else
+            VERSION="${GITHUB_REF_NAME}"
+          fi
+          if [[ ! "$VERSION" =~ ^v[0-9]+\.[0-9]+\.[0-9]+([-.][0-9A-Za-z.]+)?$ ]]; then
+            echo "Invalid version tag format: $VERSION"
+            echo "Expected pattern: vMAJOR.MINOR.PATCH (optional suffix)"
+            exit 1
+          fi
+          echo "version=$VERSION" >> "$GITHUB_OUTPUT"
+
+      - name: Build release archives
+        shell: bash
+        run: |
+          set -euo pipefail
+          VERSION="${{ steps.meta.outputs.version }}"
+          git archive --format=tar.gz --output="nebula-spec-kit-${VERSION}.tar.gz" HEAD
+          git archive --format=zip --output="nebula-spec-kit-${VERSION}.zip" HEAD
+
+      - name: Upload release artifacts (workflow)
+        uses: actions/upload-artifact@v4
+        with:
+          name: release-artifacts-${{ steps.meta.outputs.version }}
+          path: |
+            nebula-spec-kit-${{ steps.meta.outputs.version }}.tar.gz
+            nebula-spec-kit-${{ steps.meta.outputs.version }}.zip
+          retention-days: 14
+
+      - name: Publish GitHub Release
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          VERSION="${{ steps.meta.outputs.version }}"
+          TAR_FILE="nebula-spec-kit-${VERSION}.tar.gz"
+          ZIP_FILE="nebula-spec-kit-${VERSION}.zip"
+          TITLE="NebulaSpecKit ${VERSION}"
+
+          if gh release view "$VERSION" > /dev/null 2>&1; then
+            echo "Release $VERSION already exists. Uploading/overwriting assets."
+            gh release upload "$VERSION" "$TAR_FILE" "$ZIP_FILE" --clobber
+          else
+            gh release create "$VERSION" "$TAR_FILE" "$ZIP_FILE" \
+              --title "$TITLE" \
+              --generate-notes
+          fi

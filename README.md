@@ -205,11 +205,3 @@ O manual é organizado em camadas **baseline + delta**: cada baseline define o c
 - **Previsibilidade** — prazo, qualidade e manutenção deixam de ser variáveis aleatórias
 
 ---
-
-## Nébula Spec Kit
-
-* Author: Maurício Molinari
-* License: MIT
-* Repository: https://github.com/molinariBR/nebula-spec-kit
-* Version: 1.0.0
-* Last update: 2026-04-05
