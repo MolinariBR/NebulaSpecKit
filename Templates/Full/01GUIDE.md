@@ -59,7 +59,7 @@ Se houver ambiguidade durante o uso de Quick, migrar para Full na mesma task.
 7. Iniciar execução com task obrigatória de bootstrap estrutural para criar toda a arvore de diretórios e arquivos prevista.
 8. Após o bootstrap, executar tarefas apenas em modo de edição de arquivos existentes.
 9. Registrar 1 commit por task concluída, com hash e lista de arquivos tocados em Docs/tasks.md.
-10. Encerrar toda task com Quality Gate aprovado conforme Quality/gate.md.
+10. Encerrar toda task com Quality Gate aprovado conforme Quality/validation-rules.md.
 11. Aplicar política anti-mock/stub/placeholder e testes realistas definidos na pasta Quality/.
 
 ## Critério de pronto do uso de template

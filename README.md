@@ -38,7 +38,7 @@ Ele padroniza como um projeto é **descoberto, definido, planejado, executado e 
 | Documentação | [Docs/README.md](Docs/README.md) | Artefatos oficiais do projeto |
 | Skills | [Skills/00README.md](Skills/00README.md) | Capacidades técnicas mapeadas |
 | Workflows | [Workflows/00README.md](Workflows/00README.md) | Fluxos de execução padronizados |
-| Quality | [Quality/00README.md](Quality/00README.md) | Gates e políticas de qualidade |
+| Quality | [Quality/README.md](Quality/README.md) | Gates e políticas de qualidade |
 | Templates | [Templates/Full/01GUIDE.md](Templates/Full/01GUIDE.md) | Modelos de preenchimento |
 | Agentes | [agents/00README.md](agents/00README.md) | Contrato e catálogo de agentes de IA |
 | Manual | [Manual/00README.md](Manual/00README.md) | Guia operacional completo |
@@ -78,7 +78,7 @@ Brief → Projeto e Stack → UX e Design → Protótipos → Técnico → Execu
 4. **Protótipos**: construa interfaces HTML em `Prototype/`.
 5. **Técnico**: documente entidades, arquitetura, contrato, estrutura e deploy em `Docs/`.
 6. **Execução**: opere com `Docs/plan.md`, `Docs/tasks.md` e `Docs/control.md`.
-7. **Validação**: feche cada task com [Quality/gate.md](Quality/gate.md).
+7. **Validação**: feche cada task com [Quality/validation-rules.md](Quality/validation-rules.md).
 
 ### Mapa Templates -> Docs
 
@@ -118,7 +118,7 @@ Referências:
 
 - [Workflows/bootstrap-structure.md](Workflows/bootstrap-structure.md)
 - [Docs/tasks.md](Docs/tasks.md)
-- [Quality/gate.md](Quality/gate.md)
+- [Quality/validation-rules.md](Quality/validation-rules.md)
 
 ---
 
@@ -128,12 +128,16 @@ O framework adota **qualidade orientada à produção realista**: sem mocks e se
 
 | Arquivo | Conteúdo |
 | --- | --- |
-| [Quality/01GUIDE.md](Quality/01GUIDE.md) | Guia geral de qualidade |
-| [Quality/gate.md](Quality/gate.md) | Gate obrigatório por task |
+| [Quality/README.md](Quality/README.md) | Guia geral de qualidade |
+| [Quality/validation-rules.md](Quality/validation-rules.md) | Gate obrigatório por task |
 | [Quality/realistic-tests.md](Quality/realistic-tests.md) | Testes realistas |
 | [Quality/anti-mock.md](Quality/anti-mock.md) | Política anti-mock |
-| [Quality/code-style.md](Quality/code-style.md) | Padrão de código |
+| [Quality/clean-rules.md](Quality/clean-rules.md) | Regras de código limpo |
+| [Quality/structure-rules.md](Quality/structure-rules.md) | Regras de estrutura de arquivos e módulos |
+| [Quality/metrics.md](Quality/metrics.md) | Métricas, limites e bandas de risco |
+| [Quality/review-checklist.md](Quality/review-checklist.md) | Checklist de revisão técnica |
 | [Quality/dependencies.md](Quality/dependencies.md) | Dependências e compatibilidade |
+| [Quality/execution-policy.md](Quality/execution-policy.md) | Política de execução e escopo |
 
 ---
 

@@ -133,7 +133,7 @@ Ordem de consistência entre artefatos:
 - `Docs/tasks.md` depende de `Docs/plan.md`
 - `Docs/tokens.json` depende de `Docs/design-system.md`
 - `Docs/design-system.md` depende de referência validada em `Prototype/`, quando houver interface
-- Nenhuma task pode ser concluída sem passar no Quality Gate de [Quality/gate.md](Quality/gate.md)
+- Nenhuma task pode ser concluída sem passar no Quality Gate de [Quality/validation-rules.md](Quality/validation-rules.md)
 
 ---
 
@@ -154,13 +154,16 @@ Em caso de conflito entre fontes, a ordem de autoridade é:
 
 | Arquivo | Conteúdo |
 |---|---|
-| [Quality/00README.md](Quality/00README.md) | Visão geral do pilar |
-| [Quality/01GUIDE.md](Quality/01GUIDE.md) | Guia de qualidade |
-| [Quality/gate.md](Quality/gate.md) | Gate obrigatório por task |
+| [Quality/README.md](Quality/README.md) | Visão geral do pilar |
+| [Quality/validation-rules.md](Quality/validation-rules.md) | Gate obrigatório por task |
 | [Quality/realistic-tests.md](Quality/realistic-tests.md) | Testes realistas |
 | [Quality/anti-mock.md](Quality/anti-mock.md) | Política anti-mock |
-| [Quality/code-style.md](Quality/code-style.md) | Padrão de código |
+| [Quality/clean-rules.md](Quality/clean-rules.md) | Regras de código limpo |
+| [Quality/structure-rules.md](Quality/structure-rules.md) | Regras estruturais de arquivo e módulo |
+| [Quality/metrics.md](Quality/metrics.md) | Métricas e bandas de risco |
+| [Quality/review-checklist.md](Quality/review-checklist.md) | Checklist de revisão |
 | [Quality/dependencies.md](Quality/dependencies.md) | Dependências e compatibilidade |
+| [Quality/execution-policy.md](Quality/execution-policy.md) | Execução por task e controle de escopo |
 
 ### Manual Operacional
 

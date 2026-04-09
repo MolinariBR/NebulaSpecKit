@@ -4,7 +4,7 @@ objetivo: "Automatizar tarefas operacionais com baixo risco."
 fontes:
   - "Docs/structure.md"
   - "Docs/deploy.md"
-  - "Quality/gate.md"
+  - "Quality/validation-rules.md"
 ---
 
 # Skill: Scripts

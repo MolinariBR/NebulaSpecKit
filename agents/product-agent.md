@@ -19,21 +19,21 @@ templates:
   - Templates/Full/design-system.md
   - Templates/Full/tokens.json
 quality:
-  - Quality/gate.md
-  - Quality/realistic-tests.md
-  - Quality/anti-mock.md
+  - Quality/validation-rules.md
+  - Quality/validation-rules.md
+  - Quality/validation-rules.md
 methodology:
   - GUIDE.md
 guides:
   - Skills/01GUIDE.md
   - Workflows/01GUIDE.md
-  - Quality/01GUIDE.md
+  - Quality/README.md
   - Templates/Full/01GUIDE.md
 context_base:
   - GUIDE.md
   - Skills/01GUIDE.md
   - Workflows/01GUIDE.md
-  - Quality/01GUIDE.md
+  - Quality/README.md
   - Templates/Full/01GUIDE.md
 context_specialty:
   - Skills/ui-ux.md

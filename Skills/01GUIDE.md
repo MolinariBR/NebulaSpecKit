@@ -46,7 +46,7 @@ fontes:
 | Estrutura técnica | Docs/structure.md | Docs/architecture.md, Docs/stack.md |
 | Operação | Docs/deploy.md | Docs/architecture.md, Docs/control.md |
 | Execução | Docs/plan.md, Docs/tasks.md | Docs/control.md |
-| Qualidade | Quality/gate.md | Quality/realistic-tests.md, Quality/dependencies.md |
+| Qualidade | Quality/validation-rules.md | Quality/realistic-tests.md, Quality/anti-mock.md, Quality/dependencies.md, Quality/metrics.md |
 
 ## Critério de pronto de uma skill
 

@@ -3,7 +3,7 @@ nome: "Curl"
 objetivo: "Validar endpoints com chamadas reproduzíveis."
 fontes:
   - "Docs/contract.yaml"
-  - "Quality/gate.md"
+  - "Quality/validation-rules.md"
 ---
 
 # Skill: Curl

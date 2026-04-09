@@ -18,21 +18,21 @@ templates:
   - Templates/Full/contract.yaml
   - Templates/Full/structure.md
 quality:
-  - Quality/dependencies.md
-  - Quality/code-style.md
-  - Quality/gate.md
+  - Quality/validation-rules.md
+  - Quality/clean-rules.md
+  - Quality/validation-rules.md
 methodology:
   - GUIDE.md
 guides:
   - Skills/01GUIDE.md
   - Workflows/01GUIDE.md
-  - Quality/01GUIDE.md
+  - Quality/README.md
   - Templates/Full/01GUIDE.md
 context_base:
   - GUIDE.md
   - Skills/01GUIDE.md
   - Workflows/01GUIDE.md
-  - Quality/01GUIDE.md
+  - Quality/README.md
   - Templates/Full/01GUIDE.md
 context_specialty:
   - Skills/contracts.md

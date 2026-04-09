@@ -34,4 +34,4 @@ Tela nova definida em Docs/pages.md.
 - Docs/tokens.json
 - Prototype/
 - Docs/contract.yaml
-- Quality/gate.md
+- Quality/validation-rules.md

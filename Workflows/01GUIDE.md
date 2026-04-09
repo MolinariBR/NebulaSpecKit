@@ -14,7 +14,7 @@ Guia oficial de uso dos workflows por tipo de demanda.
 2. A sequência do workflow deve ser executada sem pular etapa obrigatória.
 3. Todo workflow deve iniciar com leitura dos artefatos em `Docs/` relevantes para a demanda.
 4. Todo workflow deve mapear impacto e dependências antes da execução.
-5. Todo workflow deve encerrar com Quality Gate aprovado, seguindo [../Quality/gate.md](../Quality/gate.md).
+5. Todo workflow deve encerrar com Quality Gate aprovado, seguindo [../Quality/validation-rules.md](../Quality/validation-rules.md).
 6. Em task com política `bootstrap_estrutural`, a criação de arquivos é permitida.
 7. Em task com política `edição`, apenas arquivos existentes podem ser alterados.
 

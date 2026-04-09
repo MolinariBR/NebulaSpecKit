@@ -33,7 +33,7 @@ Arquivo: `.rules`
 ```md
 # Nébula Guardrails
 
-- Sempre carregar GUIDE.md, Skills/01GUIDE.md, Workflows/01GUIDE.md, Quality/01GUIDE.md e Templates/Full/01GUIDE.md
+- Sempre carregar GUIDE.md, Skills/01GUIDE.md, Workflows/01GUIDE.md, Quality/README.md e Templates/Full/01GUIDE.md
 - Bootstrap estrutural apenas na primeira task
 - Depois do bootstrap, apenas editar arquivos existentes
 - 1 commit por task

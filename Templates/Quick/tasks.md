@@ -14,8 +14,8 @@
 - Cada task concluída deve gerar exatamente 1 commit.
 - Registrar hash do commit e arquivos tocados em cada task.
 - Toda task deve registrar status do Quality Gate e evidências de validação.
-- Testes devem seguir Quality/realistic-tests.md.
-- Mock, stub e placeholder são proibidos por padrão, conforme Quality/anti-mock.md.
+- Testes devem seguir Quality/validation-rules.md.
+- Mock, stub e placeholder são proibidos por padrão, conforme Quality/validation-rules.md.
 
 ---
 

@@ -15,21 +15,21 @@ templates:
   - Templates/Full/stack.md
   - Templates/Full/user-stories.md
 quality:
-  - Quality/01GUIDE.md
-  - Quality/gate.md
-  - Quality/dependencies.md
+  - Quality/README.md
+  - Quality/validation-rules.md
+  - Quality/validation-rules.md
 methodology:
   - GUIDE.md
 guides:
   - Skills/01GUIDE.md
   - Workflows/01GUIDE.md
-  - Quality/01GUIDE.md
+  - Quality/README.md
   - Templates/Full/01GUIDE.md
 context_base:
   - GUIDE.md
   - Skills/01GUIDE.md
   - Workflows/01GUIDE.md
-  - Quality/01GUIDE.md
+  - Quality/README.md
   - Templates/Full/01GUIDE.md
 context_specialty:
   - Skills/user-stories.md

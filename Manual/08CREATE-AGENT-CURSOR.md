@@ -39,8 +39,8 @@ alwaysApply: false
 
 Load:
 - GUIDE.md
-- Quality/01GUIDE.md
-- Quality/gate.md
+- Quality/README.md
+- Quality/validation-rules.md
 - Docs/tasks.md
 ```
 

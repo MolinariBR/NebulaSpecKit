@@ -36,5 +36,5 @@ Orientar execução especializada por domínio técnico e funcional.
 ## Fechamento mínimo
 
 1. Skill aplicada sem substituir workflow.
-2. Task encerrada com Quality Gate aprovado em [../Quality/gate.md](../Quality/gate.md).
+2. Task encerrada com Quality Gate aprovado em [../Quality/validation-rules.md](../Quality/validation-rules.md).
 3. Evidências registradas em [../Docs/tasks.md](../Docs/tasks.md).

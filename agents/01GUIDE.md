@@ -27,7 +27,7 @@ Detalhes nativos por ferramenta estão no Manual.
    - `GUIDE.md`
    - `Skills/01GUIDE.md`
    - `Workflows/01GUIDE.md`
-   - `Quality/01GUIDE.md`
+   - `Quality/README.md`
    - `Templates/Full/01GUIDE.md`
 4. Carregar contexto de especialidade do agente.
 5. Carregar contexto de execução em `Docs/` quando houver task:

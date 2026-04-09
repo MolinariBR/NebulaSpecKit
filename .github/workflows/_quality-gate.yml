@@ -46,7 +46,7 @@ jobs:
               "Docs/plan.md",
               "Docs/tasks.md",
               "Docs/control.md",
-              "Quality/gate.md",
+              "Quality/validation-rules.md",
               "Templates/Full/01GUIDE.md",
               "Templates/Quick/01GUIDE.md",
               "agents/00README.md",
