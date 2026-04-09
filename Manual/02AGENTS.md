@@ -7,7 +7,7 @@ O fluxo comum de execução está em [17EXECUTION-BASELINE.md](17EXECUTION-BASEL
 
 1. [17EXECUTION-BASELINE.md](17EXECUTION-BASELINE.md)
 2. [../agents/README.md](../agents/README.md)
-3. [../agents/02CATALOG.md](../agents/02CATALOG.md)
+3. [15CREATE-AGENT-BASELINE.md](15CREATE-AGENT-BASELINE.md)
 
 ## Delta do Modo com Agentes
 
@@ -18,13 +18,34 @@ O fluxo comum de execução está em [17EXECUTION-BASELINE.md](17EXECUTION-BASEL
 
 ## Escolha Rápida de Agente
 
-1. ScopeAgent: descoberta e escopo.
-2. ProductAgent: produto, fluxo e protótipo.
-3. SystemAgent: arquitetura, contrato e estrutura.
-4. ExecutionAgent: plan, tasks, control e implementação.
-5. QualityAgent: gate de qualidade e validação.
-6. ReleaseAgent: entrega e estabilização.
-7. RecoveryAgent: incidente e hotfix.
+1. Scope: descoberta e escopo.
+2. Product: produto, fluxo e protótipo.
+3. System: arquitetura, contrato e estrutura.
+4. Execution: plan, tasks, control e implementação.
+5. Quality: gate de qualidade e validação.
+6. Release: entrega e estabilização.
+7. Recovery: incidente e hotfix.
+
+## Matriz de Papéis
+
+| Agente | Chamar quando | Entrega esperada | Handoff comum |
+| --- | --- | --- | --- |
+| Scope | Pedido vago, descoberta inicial, definição de limite | escopo aprovado, objetivos mensuráveis, backlog inicial | Product, System, Execution |
+| Product | Nova tela, mudança de UX/UI, necessidade de protótipo | user stories, páginas e fluxo claros para execução | System, Execution, Quality |
+| System | Mudança de contrato, integração externa, decisão arquitetural | arquitetura/estrutura atualizadas, contrato consistente, riscos técnicos | Execution, Quality |
+| Execution | Implementação, bug fix, refatoração, evolução de módulo | tasks com evidências, progresso em control, entrega rastreável | Quality, Release |
+| Quality | Fechamento de task, dúvida de cobertura ou fidelidade | decisão de gate, evidências, bloqueios objetivos | Execution, Release |
+| Release | Escopo aprovado no gate e pronto para deploy/release | release com checklist, monitoramento e rollback validado | Recovery, Execution |
+| Recovery | Incidente em produção, hotfix emergencial | correção validada, estabilização, causa raiz e prevenção | Quality, Release |
+
+## Regra de Handoff Entre Agentes
+
+Todo handoff deve registrar:
+
+1. O que foi concluído.
+2. O que ficou pendente.
+3. Qual agente deve assumir.
+4. Quais arquivos devem ser carregados no próximo ciclo.
 
 ## Prompt Mínimo
 

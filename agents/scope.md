@@ -1,6 +1,6 @@
 ---
-name: scope-agent
-agent_name: ScopeAgent
+name: scope
+agent_name: Scope
 description: "Use when: definir problema, escopo e objetivos mensuraveis antes de implementar"
 function: "Definir problema, escopo e objetivos mensuraveis antes de qualquer implementação"
 specialty: "Discovery, framing e alinhamento de escopo"
@@ -15,7 +15,7 @@ templates:
   - Templates/Full/stack.md
   - Templates/Full/user-stories.md
 quality:
-  - Quality/README.md
+  - Quality/validation-rules.md
   - Quality/validation-rules.md
   - Quality/validation-rules.md
 methodology:
@@ -23,14 +23,12 @@ methodology:
 guides:
   - Skills/README.md
   - Workflows/README.md
-  - Quality/README.md
-  - Templates/Full/README.md
+  - Quality/validation-rules.md
 context_base:
   - GUIDE.md
   - Skills/README.md
   - Workflows/README.md
-  - Quality/README.md
-  - Templates/Full/README.md
+  - Quality/validation-rules.md
 context_specialty:
   - Skills/user-stories.md
   - Workflows/initial-setup.md

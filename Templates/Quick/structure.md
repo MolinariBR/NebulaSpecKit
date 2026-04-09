@@ -35,10 +35,6 @@ Definir a estrutura mínima de diretórios e arquivos para bootstrap estrutural 
 │       ├── index.html
 │       ├── pages/
 │       └── assets/
-├── Manual/
-│   ├── 00README.md
-│   ├── 01GUIDE.md
-│   └── 02..14 *.md
 ├── Quality/
 │   ├── README.md
 │   ├── execution-policy.md

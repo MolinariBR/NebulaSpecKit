@@ -9,7 +9,7 @@ O padrão comum de governança, contexto e validação esta em [15CREATE-AGENT-B
 
 1. [15CREATE-AGENT-BASELINE.md](15CREATE-AGENT-BASELINE.md)
 2. [../agents/README.md](../agents/README.md)
-3. [../agents/02CATALOG.md](../agents/02CATALOG.md)
+3. [02AGENTS.md](02AGENTS.md)
 
 ## Implementação Nativa No Copilot
 
@@ -31,12 +31,12 @@ Arquivo: `.github/agents/quality.agent.md`
 
 ```md
 ---
-name: QualityAgent
+name: Quality
 description: "Use when validating Quality Gate before closing tasks"
 tools: ["search", "editFiles", "runCommands", "runTasks"]
 ---
 
-# QualityAgent
+# Quality
 
 Load:
 - ../../GUIDE.md

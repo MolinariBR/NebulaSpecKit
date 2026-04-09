@@ -65,7 +65,7 @@ Sempre carregar o baseline primeiro e, depois, apenas o delta do modo ou da ferr
 
 - Método base: [../GUIDE.md](../GUIDE.md)
 - Agentes: [../agents/README.md](../agents/README.md)
-- Catálogo de agentes: [../agents/02CATALOG.md](../agents/02CATALOG.md)
+- Catálogo de agentes: [02AGENTS.md](02AGENTS.md)
 - Skills: [../Skills/README.md](../Skills/README.md)
 - Workflows: [../Workflows/README.md](../Workflows/README.md)
 - Quality: [../Quality/README.md](../Quality/README.md)

@@ -1,6 +1,6 @@
 ---
-name: release-agent
-agent_name: ReleaseAgent
+name: release
+agent_name: Release
 description: "Use when: conduzir release, deploy, monitoramento e estabilização com evidências"
 function: "Conduzir deploy e release com evidências de qualidade, observabilidade e plano de rollback"
 specialty: "Entrega, rollout, monitoramento e estabilização"
@@ -24,14 +24,12 @@ methodology:
 guides:
   - Skills/README.md
   - Workflows/README.md
-  - Quality/README.md
-  - Templates/Full/README.md
+  - Quality/validation-rules.md
 context_base:
   - GUIDE.md
   - Skills/README.md
   - Workflows/README.md
-  - Quality/README.md
-  - Templates/Full/README.md
+  - Quality/validation-rules.md
 context_specialty:
   - Skills/deploy.md
   - Workflows/release.md

@@ -37,7 +37,7 @@ Definir e aplicar regras de implementacao, estrutura, revisao, validacao e fecha
 2. Evidencias devem ser registradas em `Docs/tasks.md`.
 3. Sem evidencia, task permanece aberta.
 
-## Relacao com o Manual
+## Relacao com o Framework
 
-1. Baseline: `Manual/18COMPONENTS-BASELINE.md`.
-2. Delta de qualidade: `Manual/21COMPONENTS-QUALITY.md`.
+1. Governança de execução: `Docs/plan.md`, `Docs/tasks.md`, `Docs/control.md`.
+2. Encerramento obrigatório: `validation-rules.md`.

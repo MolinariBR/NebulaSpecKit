@@ -10,13 +10,14 @@ Orientar execução especializada por domínio técnico e funcional.
 
 1. Este guia define regras específicas para uso de skills.
 2. Regras globais do framework ficam em [../GUIDE.md](../GUIDE.md).
-3. Baseline operacional de execução fica em [../Manual/17EXECUTION-BASELINE.md](../Manual/17EXECUTION-BASELINE.md).
+3. A execução operacional deve usar artefatos oficiais em `Docs/`.
 
 ## Leitura recomendada
 
-1. [../Manual/17EXECUTION-BASELINE.md](../Manual/17EXECUTION-BASELINE.md)
-2. [../Manual/19COMPONENTS-SKILLS.md](../Manual/19COMPONENTS-SKILLS.md)
-3. Skill específica da demanda
+1. [../GUIDE.md](../GUIDE.md)
+2. [../Docs/plan.md](../Docs/plan.md)
+3. [../Docs/tasks.md](../Docs/tasks.md)
+4. Skill específica da demanda
 
 ## Estrutura da pasta
 

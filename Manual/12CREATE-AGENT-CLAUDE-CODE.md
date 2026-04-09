@@ -9,7 +9,7 @@ O padrão comum de governança, contexto e validação está em [15CREATE-AGENT-
 
 1. [15CREATE-AGENT-BASELINE.md](15CREATE-AGENT-BASELINE.md)
 2. [../agents/README.md](../agents/README.md)
-3. [../agents/02CATALOG.md](../agents/02CATALOG.md)
+3. [02AGENTS.md](02AGENTS.md)
 
 ## Implementação Nativa No Claude Code
 
@@ -27,11 +27,11 @@ O padrão comum de governança, contexto e validação está em [15CREATE-AGENT-
 
 ## Exemplo Mínimo
 
-Arquivo: `.claude/agents/quality-agent.md`
+Arquivo: `.claude/agents/quality.md`
 
 ```md
 ---
-name: quality-agent
+name: quality
 description: Validate Quality Gate before task closure.
 ---
 
@@ -45,7 +45,7 @@ Load:
 ## Validação Específica Do Claude Code
 
 1. Agente visível em `/agents` e em `claude agents`.
-2. Contexto aplicado ao invocar `@"quality-agent (agent)"`.
+2. Contexto aplicado ao invocar `@"quality (agent)"`.
 3. CLAUDE.md ativo quando AGENTS.md for usado por import.
 
 ## Referências Externas

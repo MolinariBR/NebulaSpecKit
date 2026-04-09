@@ -152,7 +152,7 @@ Cada agente opera sob contrato único e carregamento obrigatório de contexto:
 Referências:
 
 - [agents/README.md](agents/README.md)
-- [agents/02CATALOG.md](agents/02CATALOG.md)
+- [Manual/02AGENTS.md](Manual/02AGENTS.md)
 
 ---
 

@@ -15,8 +15,9 @@ Garantir consistência entre projetos, separação clara de responsabilidades e 
 ## Leitura recomendada
 
 1. `README.md` deste diretório
-2. `Manual/18COMPONENTS-BASELINE.md`
-3. `Manual/22COMPONENTS-TEMPLATES.md`
+2. `GUIDE.md`
+3. `Docs/README.md`
+4. `Quality/validation-rules.md`
 
 ## Full vs Quick
 
@@ -57,8 +58,9 @@ Se houver ambiguidade durante o uso de Quick, migrar para Full na mesma task.
 
 ## Referência de componentes
 
-1. Baseline comum: `Manual/18COMPONENTS-BASELINE.md`.
-2. Delta de templates: `Manual/22COMPONENTS-TEMPLATES.md`.
+1. Skills: `Skills/README.md`.
+2. Workflows: `Workflows/README.md`.
+3. Quality: `Quality/README.md`.
 
 ## Regras de preenchimento
 

@@ -29,8 +29,8 @@ Executar documentação com baixa burocracia mantendo governança mínima.
 
 1. `README.md` deste diretório
 2. `Templates/Full/README.md`
-3. `Manual/18COMPONENTS-BASELINE.md`
-4. `Manual/22COMPONENTS-TEMPLATES.md`
+3. `GUIDE.md`
+4. `Docs/README.md`
 
 ## Relação com o modo Full
 
@@ -39,5 +39,6 @@ Executar documentação com baixa burocracia mantendo governança mínima.
 ## Referências
 
 1. Guia Full: `Templates/Full/README.md`.
-2. Baseline de componentes: `Manual/18COMPONENTS-BASELINE.md`.
-3. Delta de templates: `Manual/22COMPONENTS-TEMPLATES.md`.
+2. Skills: `Skills/README.md`.
+3. Workflows: `Workflows/README.md`.
+4. Quality: `Quality/README.md`.

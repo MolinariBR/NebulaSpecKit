@@ -1,6 +1,6 @@
 ---
-name: system-agent
-agent_name: SystemAgent
+name: system
+agent_name: System
 description: "Use when: modelar arquitetura, entidades, contrato e integrações da solucao"
 function: "Modelar solucao técnica, contrato e estrutura com foco em consistência arquitetural"
 specialty: "Arquitetura, entidades, contrato e integrações"
@@ -26,14 +26,12 @@ methodology:
 guides:
   - Skills/README.md
   - Workflows/README.md
-  - Quality/README.md
-  - Templates/Full/README.md
+  - Quality/validation-rules.md
 context_base:
   - GUIDE.md
   - Skills/README.md
   - Workflows/README.md
-  - Quality/README.md
-  - Templates/Full/README.md
+  - Quality/validation-rules.md
 context_specialty:
   - Skills/contracts.md
   - Skills/integration.md

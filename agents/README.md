@@ -16,33 +16,43 @@ Este diretório é a fonte canônica dos papéis de agente do framework Nébula.
 3. Como executar com governança.
 4. Como fazer handoff entre agentes.
 
-Detalhes nativos por ferramenta estão no Manual.
+Detalhes nativos por ferramenta devem ficar fora do contexto operacional carregado pelos agentes.
 
 ## Estrutura da pasta
 
 1. Contrato e guia operacional dos agentes: `agents/README.md`
-2. Catálogo de papéis e handoff: `agents/02CATALOG.md`
-3. Comportamento operacional: `agents/behavior/00README.md`
-4. Guia de comportamento: `agents/behavior/01GUIDE.md`
-5. Arquivos individuais dos papéis: `agents/*-agent.md`
+2. Arquivos individuais dos papéis: `agents/*.md`
+3. Roteamento de papéis e handoff: neste próprio arquivo
 
 ## Limites para manter o minimalismo
 
 1. Regras de contrato e papéis ficam em `agents/`.
-2. Runtime por ferramenta fica no `Manual/`.
+2. Runtime por ferramenta fica fora do contexto operacional de `agents/`.
 3. Não duplicar no `agents/` detalhes de setup por editor.
 
 ## Referências obrigatórias
 
 1. Contrato canônico: `agents/README.md`
-2. Catálogo de papéis: `agents/02CATALOG.md`
-3. Comportamento operacional: `agents/behavior/01GUIDE.md`
-4. Baseline de criação de agentes: `Manual/15CREATE-AGENT-BASELINE.md`
-5. Delta por ferramenta: `Manual/07CREATE-AGENT-GITHUB-COPILOT.md` até `Manual/14CREATE-AGENT-ZED.md`
+2. Arquivos de papel: `agents/*.md`
+3. Método base: `GUIDE.md`
+4. Skills: `Skills/README.md`
+5. Workflows: `Workflows/README.md`
+6. Quality (gate mínimo): `Quality/validation-rules.md`
+7. Templates (sob demanda): `Templates/Full/README.md`
+
+## Escolha rápida de agente
+
+1. Scope: descoberta e escopo.
+2. Product: produto, fluxo e protótipo.
+3. System: arquitetura, contrato e estrutura.
+4. Execution: plan, tasks, control e implementação.
+5. Quality: gate de qualidade e validação.
+6. Release: entrega e estabilização.
+7. Recovery: incidente e hotfix.
 
 ## Contrato obrigatório por agente
 
-Todo `agents/<role>-agent.md` deve conter frontmatter YAML válido com:
+Todo `agents/<role>.md` deve conter frontmatter YAML válido com:
 
 1. Identificação: `name`, `agent_name`, `description`
 2. Responsabilidade: `function`, `specialty`
@@ -52,20 +62,21 @@ Todo `agents/<role>-agent.md` deve conter frontmatter YAML válido com:
 
 ## Procedimento padrão de chamada
 
-1. Escolher o agente no catálogo.
+1. Escolher o agente pela seção `Escolha rápida de agente`.
 2. Confirmar responsabilidade e handoff esperado.
 3. Carregar contexto base obrigatório:
    - `GUIDE.md`
    - `Skills/README.md`
    - `Workflows/README.md`
-   - `Quality/README.md`
-   - `Templates/Full/README.md`
-4. Carregar contexto de especialidade do agente.
-5. Carregar contexto de execução em `Docs/` quando houver task:
+   - `Quality/validation-rules.md`
+4. Carregar contexto condicional:
+   - `Templates/Full/README.md` (quando a task exigir definição documental ou estrutura)
+5. Carregar contexto de especialidade do agente.
+6. Carregar contexto de execução em `Docs/` quando houver task:
    - `Docs/plan.md`
    - `Docs/tasks.md`
    - `Docs/control.md`
-6. Exigir saída com:
+7. Exigir saída com:
    - plano
    - execução
    - evidências
@@ -102,13 +113,6 @@ Todo handoff deve registrar:
 4. Contexto em `Docs/` foi considerado.
 5. Regras de governança foram aplicadas.
 6. Handoff foi registrado quando necessário.
-
-## Onde está o runtime detalhado
-
-Para manter minimalismo e evitar duplicidade, o passo a passo operacional por ferramenta fica no Manual:
-
-1. Baseline comum: `Manual/15CREATE-AGENT-BASELINE.md`
-2. Delta por ferramenta: `Manual/07CREATE-AGENT-GITHUB-COPILOT.md` até `Manual/14CREATE-AGENT-ZED.md`
 
 ## Relação com Docs
 

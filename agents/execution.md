@@ -1,6 +1,6 @@
 ---
-name: execution-agent
-agent_name: ExecutionAgent
+name: execution
+agent_name: Execution
 description: "Use when: planejar e executar tarefas com rastreabilidade, governança e entrega continua"
 function: "Planejar e executar entrega por task com rastreabilidade, controle e governança"
 specialty: "Plan, tasks, controle, implementação e refatoração"
@@ -26,14 +26,12 @@ methodology:
 guides:
   - Skills/README.md
   - Workflows/README.md
-  - Quality/README.md
-  - Templates/Full/README.md
+  - Quality/validation-rules.md
 context_base:
   - GUIDE.md
   - Skills/README.md
   - Workflows/README.md
-  - Quality/README.md
-  - Templates/Full/README.md
+  - Quality/validation-rules.md
 context_specialty:
   - Skills/implementation.md
   - Workflows/new-feature.md
