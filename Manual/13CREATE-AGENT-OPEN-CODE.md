@@ -9,7 +9,7 @@ O padrão comum de governança, contexto e validação está em [15CREATE-AGENT-
 
 1. [15CREATE-AGENT-BASELINE.md](15CREATE-AGENT-BASELINE.md)
 2. [../agents/README.md](../agents/README.md)
-3. [../agents/02CATALOG.md](../agents/02CATALOG.md)
+3. [02AGENTS.md](02AGENTS.md)
 
 ## Implementação Nativa No OpenCode
 
@@ -28,7 +28,7 @@ O padrão comum de governança, contexto e validação está em [15CREATE-AGENT-
 
 ## Exemplo Mínimo
 
-Arquivo: `.opencode/agents/quality-agent.md`
+Arquivo: `.opencode/agents/quality.md`
 
 ```md
 ---
@@ -46,7 +46,7 @@ Load:
 ## Validação Específica Do OpenCode
 
 1. Agente aparece em `opencode agent list`.
-2. Invocacao por `@quality-agent` funciona.
+2. Invocacao por `@quality` funciona.
 3. Regras de AGENTS.md entram em contexto do projeto.
 
 ## Referências Externas

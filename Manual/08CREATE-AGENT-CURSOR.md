@@ -9,7 +9,7 @@ O padrão comum de governança, contexto e validação está em [15CREATE-AGENT-
 
 1. [15CREATE-AGENT-BASELINE.md](15CREATE-AGENT-BASELINE.md)
 2. [../agents/README.md](../agents/README.md)
-3. [../agents/02CATALOG.md](../agents/02CATALOG.md)
+3. [02AGENTS.md](02AGENTS.md)
 
 ## Implementação Nativa No Cursor
 
@@ -21,13 +21,13 @@ O padrão comum de governança, contexto e validação está em [15CREATE-AGENT-
 ## Setup Rápido
 
 1. Criar `.cursor/rules`.
-2. Criar uma regra por papel (ex.: quality-agent.mdc).
+2. Criar uma regra por papel (ex.: quality.mdc).
 3. Definir frontmatter com `description`, `alwaysApply` e globs quando necessário.
 4. Referenciar os arquivos canônicos do Nébula.
 
 ## Exemplo Mínimo
 
-Arquivo: `.cursor/rules/quality-agent.mdc`
+Arquivo: `.cursor/rules/quality.mdc`
 
 ```md
 ---

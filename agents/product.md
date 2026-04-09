@@ -1,6 +1,6 @@
 ---
-name: product-agent
-agent_name: ProductAgent
+name: product
+agent_name: Product
 description: "Use when: transformar necessidade de negócio em fluxo, telas e especificacao de produto"
 function: "Transformar necessidades de negócio em experiencia de produto, fluxo e interface validavel"
 specialty: "UX, fluxo funcional e especificacao de telas"
@@ -27,14 +27,12 @@ methodology:
 guides:
   - Skills/README.md
   - Workflows/README.md
-  - Quality/README.md
-  - Templates/Full/README.md
+  - Quality/validation-rules.md
 context_base:
   - GUIDE.md
   - Skills/README.md
   - Workflows/README.md
-  - Quality/README.md
-  - Templates/Full/README.md
+  - Quality/validation-rules.md
 context_specialty:
   - Skills/ui-ux.md
   - Skills/flow.md

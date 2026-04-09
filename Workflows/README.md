@@ -10,13 +10,14 @@ Orquestrar a sequência de execução por tipo de mudança, com rastreabilidade 
 
 1. Este guia define regras específicas de sequenciamento por workflow.
 2. Regras globais do framework ficam em [../GUIDE.md](../GUIDE.md).
-3. Baseline operacional de execução fica em [../Manual/17EXECUTION-BASELINE.md](../Manual/17EXECUTION-BASELINE.md).
+3. A execução operacional deve usar artefatos oficiais em `Docs/`.
 
 ## Leitura recomendada
 
-1. [../Manual/17EXECUTION-BASELINE.md](../Manual/17EXECUTION-BASELINE.md)
-2. [../Manual/20COMPONENTS-WORKFLOWS.md](../Manual/20COMPONENTS-WORKFLOWS.md)
-3. Workflow específico da demanda
+1. [../GUIDE.md](../GUIDE.md)
+2. [../Docs/plan.md](../Docs/plan.md)
+3. [../Docs/tasks.md](../Docs/tasks.md)
+4. Workflow específico da demanda
 
 ## Estrutura da pasta
 

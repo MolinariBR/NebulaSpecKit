@@ -9,7 +9,7 @@ O padrão comum de governança, contexto e validação esta em [15CREATE-AGENT-B
 
 1. [15CREATE-AGENT-BASELINE.md](15CREATE-AGENT-BASELINE.md)
 2. [../agents/README.md](../agents/README.md)
-3. [../agents/02CATALOG.md](../agents/02CATALOG.md)
+3. [02AGENTS.md](02AGENTS.md)
 
 ## Implementação Nativa No TRAE
 
@@ -30,7 +30,7 @@ O padrão comum de governança, contexto e validação esta em [15CREATE-AGENT-B
 Prompt do agente no TRAE:
 
 ```text
-You are QualityAgent for Nébula Framework.
+You are Quality for Nébula Framework.
 Always load GUIDE.md, Quality/README.md, Quality/validation-rules.md and Docs/tasks.md.
 Enforce bootstrap/edit-only/1-commit-per-task/quality-gate.
 Return plan, execution, evidence and pending risks.

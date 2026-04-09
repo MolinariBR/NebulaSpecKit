@@ -12,7 +12,7 @@ Padronizar a execução para evitar divergências entre ferramentas e manter o f
 
 1. Agentes canônicos: [../agents](../agents)
 2. Contrato dos agentes: [../agents/README.md](../agents/README.md)
-3. Catálogo de papéis: [../agents/02CATALOG.md](../agents/02CATALOG.md)
+3. Catálogo de papéis: [02AGENTS.md](02AGENTS.md)
 4. Guia de uso: [../agents/README.md](../agents/README.md)
 
 ## Regra de Ouro
@@ -30,7 +30,7 @@ Padronizar a execução para evitar divergências entre ferramentas e manter o f
    - Quality/README.md
    - Templates/Full/README.md
 2. Especialidade:
-   - conforme o arquivo do agente em `agents/<role>-agent.md`
+   - conforme o arquivo do agente em `agents/<role>.md`
 3. Execução (quando aplicável):
    - Docs/plan.md
    - Docs/tasks.md
@@ -57,7 +57,7 @@ Carregue contexto base:
 - Quality/README.md
 - Templates/Full/README.md
 
-Carregue contexto especializado conforme agents/<role>-agent.md.
+Carregue contexto especializado conforme agents/<role>.md.
 Carregue contexto de execução em Docs/plan.md, Docs/tasks.md e Docs/control.md quando aplicável.
 
 Aplique governança:
@@ -81,6 +81,15 @@ Entregue:
 4. O contexto de execução em Docs foi considerado.
 5. As quatro regras de governança foram aplicadas.
 6. O output inclui plano, execução, evidências e pendências.
+
+## Checklist de Definição de Novo Agente
+
+Antes de criar um novo agente:
+
+1. O novo agente tem responsabilidade que não cabe nos 7 atuais.
+2. O novo agente usa conjunto de contexto realmente diferente.
+3. O novo agente reduz risco de sobreposição operacional.
+4. O novo agente tem workflow e entrega claramente distintos.
 
 ## Checklist de sincronização
 

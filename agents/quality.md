@@ -1,16 +1,18 @@
 ---
-name: recovery-agent
-agent_name: RecoveryAgent
-description: "Use when: responder incidentes, hotfix e estabilizar sistema com rastreabilidade"
-function: "Responder incidentes e corrigir falhas criticas com segurança e rastreabilidade"
-specialty: "Hotfix, bug critico, análise de causa e estabilização"
+name: quality
+agent_name: Quality
+description: "Use when: validar qualidade, testes realistas e aprovar fechamento de tasks"
+function: "Garantir fidelidade de produção e aprovar ou reprovar o fechamento das tasks"
+specialty: "Testes realistas, anti-mock, e2e, style e dependências"
 skills:
-  - Skills/logs.md
-  - Skills/refactoring.md
   - Skills/tests.md
+  - Skills/scripts.md
+  - Skills/curl.md
+  - Skills/logs.md
 workflows:
-  - Workflows/hotfix.md
   - Workflows/bug-fix.md
+  - Workflows/release.md
+  - Workflows/hotfix.md
 templates:
   - Templates/Full/tasks.md
   - Templates/Full/control.md
@@ -19,24 +21,26 @@ quality:
   - Quality/validation-rules.md
   - Quality/validation-rules.md
   - Quality/validation-rules.md
+  - Quality/validation-rules.md
+  - Quality/clean-rules.md
+  - Quality/validation-rules.md
 methodology:
   - GUIDE.md
 guides:
   - Skills/README.md
   - Workflows/README.md
-  - Quality/README.md
-  - Templates/Full/README.md
+  - Quality/validation-rules.md
 context_base:
   - GUIDE.md
   - Skills/README.md
   - Workflows/README.md
-  - Quality/README.md
-  - Templates/Full/README.md
+  - Quality/validation-rules.md
 context_specialty:
-  - Skills/logs.md
   - Skills/tests.md
-  - Workflows/hotfix.md
-  - Workflows/bug-fix.md
+  - Skills/scripts.md
+  - Skills/curl.md
+  - Quality/validation-rules.md
+  - Quality/validation-rules.md
 context_execution:
   - Docs/tasks.md
   - Docs/control.md

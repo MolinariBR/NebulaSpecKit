@@ -95,15 +95,6 @@ Definir a organização oficial de diretórios e arquivos do projeto para garant
 │       ├── index.html
 │       ├── pages/
 │       └── assets/
-├── Manual/
-│   ├── 00README.md
-│   ├── 01GUIDE.md
-│   ├── 02AGENTS.md
-│   ├── 03NO-AGENTS.md
-│   ├── 04COMPONENTS.md
-│   ├── 05SCENARIOS-AGENTS.md
-│   ├── 06SCENARIOS-NO-AGENTS.md
-│   └── 07..14 CREATE-AGENT-*.md
 ├── Quality/
 │   ├── README.md
 │   ├── execution-policy.md
@@ -141,7 +132,6 @@ Definir a organização oficial de diretórios e arquivos do projeto para garant
 
 - Docs/Prototype/: protótipos HTML de validação de interface e fluxo.
 - Docs/: fonte de verdade de governança, execução e qualidade do projeto.
-- Manual/: guias operacionais de uso do framework com e sem agentes.
 - Quality/: políticas obrigatórias de qualidade e gate.
 - Skills/: conhecimento reutilizável por domínio técnico.
 - Workflows/: fluxo operacional por tipo de mudança.
