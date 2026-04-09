@@ -344,7 +344,7 @@ Cada página ou tela deve conter:
 ### 9.1 Para o Docs/flow.md
 [quais relações de navegação e jornadas precisam ser descritas]
 
-### 9.2 Para o Prototype/
+### 9.2 Para o Docs/Prototype/
 [quais páginas devem ser prototipadas primeiro]
 
 ### 9.3 Para o Docs/design-system.md

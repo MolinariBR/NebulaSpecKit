@@ -12,7 +12,7 @@ Padronizar a execução de cenários com o menor nível de repetição, mantendo
 
 1. Templates em `Templates/` são modelo.
 2. Artefatos oficiais do projeto são editados em `Docs/`.
-3. Protótipos HTML ficam em `Prototype/`.
+3. Protótipos HTML ficam em `Docs/Prototype/`.
 
 ## Estrutura comum de cenário
 
@@ -98,5 +98,5 @@ Workflows/<workflow>.md
 
 1. [../GUIDE.md](../GUIDE.md)
 2. [../Docs/README.md](../Docs/README.md)
-3. [../Workflows/01GUIDE.md](../Workflows/01GUIDE.md)
+3. [../Workflows/README.md](../Workflows/README.md)
 4. [../Quality/validation-rules.md](../Quality/validation-rules.md)

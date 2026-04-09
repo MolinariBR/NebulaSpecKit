@@ -10,7 +10,7 @@ No Nébula, a implementação só começa depois que a base documental está edi
 
 1. `Docs/` é a fonte de verdade do projeto.
 2. `Templates/` é modelo de preenchimento, não destino final.
-3. `Prototype/` guarda apenas protótipos HTML de interface.
+3. `Docs/Prototype/` guarda apenas protótipos HTML de interface.
 4. Cada task fecha com evidência e Quality Gate.
 
 ## Ordem recomendada de preenchimento

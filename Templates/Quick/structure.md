@@ -29,17 +29,16 @@ Definir a estrutura mínima de diretórios e arquivos para bootstrap estrutural 
 │   ├── deploy.md
 │   ├── plan.md
 │   ├── tasks.md
-│   └── control.md
+│   ├── control.md
+│   └── Prototype/
+│       ├── README.md
+│       ├── index.html
+│       ├── pages/
+│       └── assets/
 ├── Manual/
 │   ├── 00README.md
 │   ├── 01GUIDE.md
 │   └── 02..14 *.md
-├── Prototype/
-│   ├── 00README.md
-│   ├── 01GUIDE.md
-│   ├── index.html
-│   ├── pages/
-│   └── assets/
 ├── Quality/
 │   ├── README.md
 │   ├── execution-policy.md
@@ -52,8 +51,7 @@ Definir a estrutura mínima de diretórios e arquivos para bootstrap estrutural 
 │   ├── dependencies.md
 │   └── validation-rules.md
 ├── Skills/
-│   ├── 00README.md
-│   ├── 01GUIDE.md
+│   ├── README.md
 │   └── *.md
 ├── Workflows/
 │   ├── 00README.md
@@ -84,7 +82,7 @@ Definir a estrutura mínima de diretórios e arquivos para bootstrap estrutural 
 
 ## Checklist rápido
 - ( ) Estrutura raiz criada integralmente
-- ( ) Prototype pronto para validação de UI/fluxo
+- ( ) Docs/Prototype pronto para validação de UI/fluxo
 - ( ) Pastas de governança criadas e completas
 - ( ) Estrutura de código definida (src/, tests/, scripts/)
 - ( ) Regra bootstrap + edição respeitada

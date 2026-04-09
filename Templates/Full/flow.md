@@ -385,7 +385,7 @@ Cada fluxo deve conter:
 
 ## 10. Diretrizes para os Próximos Documentos
 
-### 10.1 Para o Prototype/
+### 10.1 Para o Docs/Prototype/
 [quais fluxos e telas precisam ser prototipados primeiro]
 
 ### 10.2 Para o Docs/design-system.md

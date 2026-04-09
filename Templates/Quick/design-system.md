@@ -111,14 +111,14 @@
 - escalas
 - aliases
 
-## Relação com Prototype/
-**Prototype define:**
+## Relação com Docs/Prototype/
+**Docs/Prototype define:**
 - fluxos de navegação
 - comportamento visual de telas
 - validação rápida de UX antes da implementação final
 
 **Este documento deve:**
-- refletir os padrões validados no Prototype
+- refletir os padrões validados no Docs/Prototype
 - registrar ajustes de componente após validações de uso
 
 ## Direção para implementação
@@ -132,5 +132,5 @@
 
 ## Síntese para Dev e AI
 - Aplicar componentes e estados conforme regras deste documento.
-- Sincronizar alterações com Docs/tokens.json e com telas validadas em Prototype/.
+- Sincronizar alterações com Docs/tokens.json e com telas validadas em Docs/Prototype/.
 - Em caso de conflito entre rapidez e consistência, priorizar acessibilidade, legibilidade e previsibilidade.

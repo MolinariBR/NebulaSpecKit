@@ -20,7 +20,7 @@ Nova demanda funcional em Docs/tasks.md.
 2. Contratos.
 3. UI/UX.
 4. Fluxo.
-5. Prototype (quando houver interface nova ou alterada).
+5. Docs/Prototype (quando houver interface nova ou alterada).
 6. Implementação.
 7. Testes.
 8. Curl (quando houver API).

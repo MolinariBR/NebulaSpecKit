@@ -4,8 +4,8 @@ Este documento descreve apenas o que muda no uso de Workflows.
 
 ## Onde consultar
 
-1. [../Workflows/00README.md](../Workflows/00README.md)
-2. [../Workflows/01GUIDE.md](../Workflows/01GUIDE.md)
+1. [../Workflows/README.md](../Workflows/README.md)
+2. Workflow específico da demanda em `../Workflows/*.md`.
 
 ## Quando usar
 

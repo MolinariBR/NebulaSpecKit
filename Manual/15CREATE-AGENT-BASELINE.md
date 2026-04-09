@@ -11,9 +11,9 @@ Padronizar a execução para evitar divergências entre ferramentas e manter o f
 ## Fonte Canônica
 
 1. Agentes canônicos: [../agents](../agents)
-2. Contrato dos agentes: [../agents/00README.md](../agents/00README.md)
+2. Contrato dos agentes: [../agents/README.md](../agents/README.md)
 3. Catálogo de papéis: [../agents/02CATALOG.md](../agents/02CATALOG.md)
-4. Guia de uso: [../agents/01GUIDE.md](../agents/01GUIDE.md)
+4. Guia de uso: [../agents/README.md](../agents/README.md)
 
 ## Regra de Ouro
 
@@ -25,10 +25,10 @@ Padronizar a execução para evitar divergências entre ferramentas e manter o f
 
 1. Base:
    - GUIDE.md
-   - Skills/01GUIDE.md
-   - Workflows/01GUIDE.md
+   - Skills/README.md
+   - Workflows/README.md
    - Quality/README.md
-   - Templates/Full/01GUIDE.md
+   - Templates/Full/README.md
 2. Especialidade:
    - conforme o arquivo do agente em `agents/<role>-agent.md`
 3. Execução (quando aplicável):
@@ -52,10 +52,10 @@ Workflow: Workflows/<workflow>.md
 
 Carregue contexto base:
 - GUIDE.md
-- Skills/01GUIDE.md
-- Workflows/01GUIDE.md
+- Skills/README.md
+- Workflows/README.md
 - Quality/README.md
-- Templates/Full/01GUIDE.md
+- Templates/Full/README.md
 
 Carregue contexto especializado conforme agents/<role>-agent.md.
 Carregue contexto de execução em Docs/plan.md, Docs/tasks.md e Docs/control.md quando aplicável.

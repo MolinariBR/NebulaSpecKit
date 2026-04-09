@@ -21,7 +21,7 @@ Início de projeto após Docs/brief.md aprovado.
 3. Contratos.
 4. UI/UX.
 5. Fluxo.
-6. Prototype (quando aplicável).
+6. Docs/Prototype (quando aplicável).
 7. Integração (quando aplicável).
 8. Scripts.
 9. Testes.

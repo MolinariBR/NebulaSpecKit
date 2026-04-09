@@ -8,7 +8,7 @@ O padrão comum de governança, contexto e validação esta em [15CREATE-AGENT-B
 ## Leitura Obrigatória
 
 1. [15CREATE-AGENT-BASELINE.md](15CREATE-AGENT-BASELINE.md)
-2. [../agents/00README.md](../agents/00README.md)
+2. [../agents/README.md](../agents/README.md)
 3. [../agents/02CATALOG.md](../agents/02CATALOG.md)
 
 ## Implementação Nativa No Antigravity

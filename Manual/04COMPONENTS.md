@@ -14,4 +14,4 @@ Este arquivo e um índice rápido dos componentes do framework.
 
 1. Templates são modelo.
 2. Artefatos oficiais são editados em Docs.
-3. Prototype é exclusivo para protótipos HTML.
+3. Docs/Prototype é exclusivo para protótipos HTML.

@@ -1,12 +1,41 @@
-# Guia de Workflows
+# Workflows
 
-Guia oficial de uso dos workflows por tipo de demanda.
+Índice e guia oficial de uso dos workflows do framework.
+
+## Papel deste pilar
+
+Orquestrar a sequência de execução por tipo de mudança, com rastreabilidade e encerramento governado por Quality Gate.
 
 ## Escopo deste guia
 
 1. Este guia define regras específicas de sequenciamento por workflow.
 2. Regras globais do framework ficam em [../GUIDE.md](../GUIDE.md).
 3. Baseline operacional de execução fica em [../Manual/17EXECUTION-BASELINE.md](../Manual/17EXECUTION-BASELINE.md).
+
+## Leitura recomendada
+
+1. [../Manual/17EXECUTION-BASELINE.md](../Manual/17EXECUTION-BASELINE.md)
+2. [../Manual/20COMPONENTS-WORKFLOWS.md](../Manual/20COMPONENTS-WORKFLOWS.md)
+3. Workflow específico da demanda
+
+## Estrutura da pasta
+
+1. `README.md`: regras de uso e catálogo de workflows.
+2. `*.md`: um arquivo por workflow.
+
+## Catálogo de workflows
+
+1. [bootstrap-structure.md](bootstrap-structure.md)
+2. [initial-setup.md](initial-setup.md)
+3. [new-feature.md](new-feature.md)
+4. [bug-fix.md](bug-fix.md)
+5. [new-screen.md](new-screen.md)
+6. [new-integration.md](new-integration.md)
+7. [contract-change.md](contract-change.md)
+8. [ui-change.md](ui-change.md)
+9. [module-refactoring.md](module-refactoring.md)
+10. [hotfix.md](hotfix.md)
+11. [release.md](release.md)
 
 ## Regras específicas
 
@@ -30,3 +59,9 @@ Guia oficial de uso dos workflows por tipo de demanda.
 1. Atualizar [../Docs/control.md](../Docs/control.md).
 2. Atualizar [../Docs/plan.md](../Docs/plan.md) quando houver mudança de milestone, ordem ou dependência macro.
 3. Atualizar [../Docs/tasks.md](../Docs/tasks.md) com hash do commit, arquivos tocados, status do Quality Gate e evidências.
+
+## Fechamento mínimo
+
+1. Quality Gate aprovado em [../Quality/validation-rules.md](../Quality/validation-rules.md).
+2. Atualização de [../Docs/control.md](../Docs/control.md).
+3. Registro de evidências e commit em [../Docs/tasks.md](../Docs/tasks.md).

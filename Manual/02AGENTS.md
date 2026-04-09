@@ -6,7 +6,7 @@ O fluxo comum de execução está em [17EXECUTION-BASELINE.md](17EXECUTION-BASEL
 ## Leitura obrigatória
 
 1. [17EXECUTION-BASELINE.md](17EXECUTION-BASELINE.md)
-2. [../agents/00README.md](../agents/00README.md)
+2. [../agents/README.md](../agents/README.md)
 3. [../agents/02CATALOG.md](../agents/02CATALOG.md)
 
 ## Delta do Modo com Agentes

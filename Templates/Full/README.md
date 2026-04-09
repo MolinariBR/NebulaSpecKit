@@ -1,10 +1,22 @@
-# Guide - Uso de Templates
+# Templates Full
 
-Guia oficial para escolher e preencher templates do framework.
+Template set completo para planejamento, execução e governança de projeto.
 
 ## Objetivo
 
-Garantir consistência entre projetos, separacao clara de responsabilidades e rastreabilidade na execução.
+Garantir consistência entre projetos, separação clara de responsabilidades e rastreabilidade na execução, com baixa ambiguidade.
+
+## Regra de uso
+
+1. Arquivos em `Templates/Full/` são modelos.
+2. Artefatos oficiais do projeto devem ser salvos em `Docs/`.
+3. Protótipos HTML devem ser salvos em `Docs/Prototype/`.
+
+## Leitura recomendada
+
+1. `README.md` deste diretório
+2. `Manual/18COMPONENTS-BASELINE.md`
+3. `Manual/22COMPONENTS-TEMPLATES.md`
 
 ## Full vs Quick
 
@@ -19,7 +31,7 @@ Use Quick quando:
 
 - o escopo for pequeno e claro
 - a velocidade for prioridade
-- o risco de decisao errada for baixo
+- o risco de decisão errada for baixo
 
 Se houver ambiguidade durante o uso de Quick, migrar para Full na mesma task.
 
@@ -31,7 +43,7 @@ Se houver ambiguidade durante o uso de Quick, migrar para Full na mesma task.
 4. Usar `Templates/Full/user-stories.md` e salvar em `Docs/user-stories.md`
 5. Usar `Templates/Full/pages.md` e salvar em `Docs/pages.md`
 6. Usar `Templates/Full/flow.md` e salvar em `Docs/flow.md`
-7. Protótipos HTML em `Prototype/`
+7. Protótipos HTML em `Docs/Prototype/`
 8. Usar `Templates/Full/design-system.md` e salvar em `Docs/design-system.md`
 9. Usar `Templates/Full/tokens.json` e salvar em `Docs/tokens.json`
 10. Usar `Templates/Full/entities.md` e salvar em `Docs/entities.md`
@@ -52,15 +64,15 @@ Se houver ambiguidade durante o uso de Quick, migrar para Full na mesma task.
 
 1. Não preencher sem base documental.
 2. Não duplicar conteúdo entre arquivos sem necessidade.
-3. Não improvisar detalhes técnicos sem sustentacao.
-4. Marcar indefinicoes explicitamente.
+3. Não improvisar detalhes técnicos sem sustentação.
+4. Marcar indefinições explicitamente.
 5. Atualizar documentos quando a fonte de verdade mudar.
-6. Manter os protótipos HTML em `Prototype/` coerentes com `Docs/pages.md` e `Docs/flow.md`.
-7. Iniciar execução com task obrigatória de bootstrap estrutural para criar toda a arvore de diretórios e arquivos prevista.
+6. Manter os protótipos HTML em `Docs/Prototype/` coerentes com `Docs/pages.md` e `Docs/flow.md`.
+7. Iniciar execução com task obrigatória de bootstrap estrutural para criar toda a árvore de diretórios e arquivos prevista.
 8. Após o bootstrap, executar tarefas apenas em modo de edição de arquivos existentes.
-9. Registrar 1 commit por task concluída, com hash e lista de arquivos tocados em Docs/tasks.md.
-10. Encerrar toda task com Quality Gate aprovado conforme Quality/validation-rules.md.
-11. Aplicar política anti-mock/stub/placeholder e testes realistas definidos na pasta Quality/.
+9. Registrar 1 commit por task concluída, com hash e lista de arquivos tocados em `Docs/tasks.md`.
+10. Encerrar toda task com Quality Gate aprovado conforme `Quality/validation-rules.md`.
+11. Aplicar política anti-mock/stub/placeholder e testes realistas definidos na pasta `Quality/`.
 
 ## Critério de pronto do uso de template
 
@@ -72,11 +84,10 @@ Se houver ambiguidade durante o uso de Quick, migrar para Full na mesma task.
 
 1. Contrato vigente
 2. Documento-fonte do domínio
-3. Docs/plan.md e Docs/tasks.md
+3. `Docs/plan.md` e `Docs/tasks.md`
 4. Implementação atual
 
 ## Mapa de referência
 
-1. Lista de arquivos Full: `Templates/Full/00README.md`.
-2. Lista de arquivos Quick: `Templates/Quick/00README.md`.
-
+1. Guia Full: `Templates/Full/README.md`.
+2. Guia Quick: `Templates/Quick/README.md`.

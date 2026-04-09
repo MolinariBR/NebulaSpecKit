@@ -4,8 +4,8 @@ Este documento descreve apenas o que muda no uso de Skills.
 
 ## Onde consultar
 
-1. [../Skills/00README.md](../Skills/00README.md)
-2. [../Skills/01GUIDE.md](../Skills/01GUIDE.md)
+1. [../Skills/README.md](../Skills/README.md)
+2. [../Skills/README.md](../Skills/README.md)
 
 ## Quando usar
 

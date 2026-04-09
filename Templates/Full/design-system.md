@@ -12,7 +12,7 @@
 [rascunho / revisando / aprovado]
 
 **Documentos base:**  
-[referência ao Docs/pages.md, Docs/flow.md, Prototype/ e Docs/project.md]
+[referência ao Docs/pages.md, Docs/flow.md, Docs/Prototype/ e Docs/project.md]
 
 **Data de criação:**  
 [dd/mm/aaaa]
@@ -485,7 +485,7 @@ Todos os valores visuais estruturados devem nascer ou ser refletidos em `Docs/to
 ### Docs/flow.md
 [como deve orientar estados e interação]
 
-### Prototype/
+### Docs/Prototype/
 [como deve orientar a prototipagem]
 
 ### Docs/tokens.json

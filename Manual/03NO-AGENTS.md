@@ -6,8 +6,8 @@ O fluxo comum de execução está em [17EXECUTION-BASELINE.md](17EXECUTION-BASEL
 ## Leitura obrigatória
 
 1. [17EXECUTION-BASELINE.md](17EXECUTION-BASELINE.md)
-2. [../Templates/Full/01GUIDE.md](../Templates/Full/01GUIDE.md)
-3. [../Workflows/01GUIDE.md](../Workflows/01GUIDE.md)
+2. [../Templates/Full/README.md](../Templates/Full/README.md)
+3. [../Workflows/README.md](../Workflows/README.md)
 
 ## Delta do Modo sem Agentes
 
