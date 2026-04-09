@@ -47,10 +47,10 @@ jobs:
               "Docs/tasks.md",
               "Docs/control.md",
               "Quality/validation-rules.md",
-              "Templates/Full/01GUIDE.md",
-              "Templates/Quick/01GUIDE.md",
-              "agents/00README.md",
-              "Manual/00README.md",
+              "Templates/Full/README.md",
+              "Templates/Quick/README.md",
+              "agents/README.md",
+              "Manual/README.md",
           ]
 
           missing = [p for p in required_files if not Path(p).is_file()]
