@@ -1,6 +1,6 @@
 # GUIDE
 
-> Guia metodológico oficial do Nébula Framework.
+> Guia metodológico oficial do Nébula Spec Kit.
 
 ---
 
@@ -15,6 +15,41 @@ Organizar a construção de um projeto em fases sequenciais para reduzir ambigui
 ```
 Analisar → Revisar → Mapear → Planejar → Comparar → Implementar → Testar → Validar
 ```
+
+---
+
+## Fluxo de Uso do Nébula (Mermaid)
+
+```mermaid
+flowchart TD
+  A[Início do projeto] --> B[Carregar contexto base]
+  B --> C[GUIDE + instructions + Workflows + Skills + Quality gate]
+  C --> D{Modo de operação}
+  D -->|Com agentes| E[Carregar agents/README.md e agents/papel.md]
+  D -->|Sem agentes| F[Executar fluxo humano padrão]
+  E --> G[Fases documentais 0 a 5 em Docs/]
+  F --> G
+  G --> H{Docs/plan.md aprovado?}
+  H -->|Não| I[Revisar documentação e alinhar escopo]
+  I --> G
+  H -->|Sim| J[Task 1: bootstrap estrutural]
+  J --> K[Selecionar workflow principal da task]
+  K --> L[Aplicar skills de suporte]
+  L --> M[Implementar em passos pequenos]
+  M --> N[Executar Quality Gate]
+  N --> O{Gate aprovado?}
+  O -->|Não| P[Corrigir, registrar evidências e retestar]
+  P --> M
+  O -->|Sim| Q[Registrar em Docs/tasks.md e Docs/control.md]
+  Q --> R{Há próxima task?}
+  R -->|Sim| K
+  R -->|Não| S[Workflows/release.md]
+  S --> T[Fechamento da milestone]
+```
+
+Notas:
+- `Manual/` é guia para dev humano e não integra o contexto mínimo de IA.
+- `Templates/` é referência de estrutura; saída oficial sempre em `Docs/`.
 
 ---
 
@@ -141,10 +176,13 @@ Ordem de consistência entre artefatos:
 
 Em caso de conflito entre fontes, a ordem de autoridade é:
 
-1. Contrato vigente
-2. Documento-fonte do domínio em `Docs/`
-3. `Docs/plan.md` e `Docs/tasks.md`
-4. Implementação atual
+1. `instructions.md` (raiz operacional)
+2. Contrato vigente
+3. Documento-fonte do domínio em `Docs/`
+4. `Docs/plan.md` e `Docs/tasks.md`
+5. Workflow principal em `Workflows/*.md`
+6. `Quality/validation-rules.md` e regras de qualidade
+7. Implementação atual
 
 ---
 

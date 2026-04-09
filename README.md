@@ -11,8 +11,8 @@
 - Licença: MIT
 - Repositório: https://github.com/MolinariBR/NebulaSpecKit
 - Site: https://nebulaweb.vercel.app/
-- Versão: 1.0.0
-- Última atualização: 2026-04-05
+- Versão: 1.0.3
+- Última atualização: 2026-04-09
 
 # Nébula Spec Kit
 
@@ -30,18 +30,35 @@ Ele padroniza como um projeto é **descoberto, definido, planejado, executado e 
 
 ---
 
+## Estado Atual do Fluxo
+
+Mudanças estruturais recentes já refletidas neste repositório:
+
+- Agentes renomeados para padrão curto: `agents/<role>.md` (sem sufixo `-agent`).
+- Arquivo legado removido: `agents/02CATALOG.md`.
+- `Manual/` permanece como guia para dev humano e não compõe o contexto mínimo de IA.
+- Contexto mínimo de execução com IA centralizado em:
+  - `instructions.md`
+  - `GUIDE.md`
+  - `Workflows/README.md`
+  - `Skills/README.md`
+  - `Quality/validation-rules.md`
+
+---
+
 ## Pilares
 
 | Pilar | Arquivo | Responsabilidade |
 | --- | --- | --- |
+| Instruções | [instructions.md](instructions.md) | Raiz operacional e precedência de execução |
 | Metodologia | [GUIDE.md](GUIDE.md) | Referência central do método |
 | Documentação | [Docs/README.md](Docs/README.md) | Artefatos oficiais do projeto |
 | Skills | [Skills/README.md](Skills/README.md) | Capacidades técnicas mapeadas |
 | Workflows | [Workflows/README.md](Workflows/README.md) | Fluxos de execução padronizados |
 | Quality | [Quality/README.md](Quality/README.md) | Gates e políticas de qualidade |
 | Templates | [Templates/Full/README.md](Templates/Full/README.md) | Modelos de preenchimento |
-| Agentes | [agents/README.md](agents/README.md) | Contrato e catálogo de agentes de IA |
-| Manual | [Manual/README.md](Manual/README.md) | Guia operacional completo |
+| Agentes | [agents/README.md](agents/README.md) | Contrato e papéis de agentes de IA |
+| Manual | [Manual/README.md](Manual/README.md) | Guia de uso para dev humano (fora do contexto mínimo de IA) |
 | Protótipos | [Docs/Prototype/README.md](Docs/Prototype/README.md) | Interfaces HTML de referência |
 
 ---
@@ -52,6 +69,7 @@ Ele padroniza como um projeto é **descoberto, definido, planejado, executado e 
 .
 ├── README.md
 ├── GUIDE.md                  # Metodologia central
+├── instructions.md           # Raiz operacional
 ├── Docs/                     # Artefatos oficiais (saída de produção)
 │   └── Prototype/            # Protótipos de interface
 ├── Templates/
@@ -143,16 +161,36 @@ O framework adota **qualidade orientada à produção realista**: sem mocks e se
 
 ## Agentes Especializados
 
-Cada agente opera sob contrato único e carregamento obrigatório de contexto:
+Cada agente opera sob contrato único e carregamento obrigatório de contexto
+definido em `instructions.md` e `agents/README.md`:
 
-1. Carregar a metodologia e os guias dos pilares.
-2. Carregar os artefatos oficiais de execução em `Docs/`.
-3. Usar `Templates/` apenas como referência de estrutura, nunca como saída final.
+1. Carregar contexto base:
+- `GUIDE.md`
+- `Skills/README.md`
+- `Workflows/README.md`
+- `Quality/validation-rules.md`
+2. Carregar contexto condicional quando aplicável:
+- `Templates/Full/README.md`
+- políticas complementares em `Quality/*.md`
+3. Carregar artefatos oficiais de execução em `Docs/`.
+4. Usar `Templates/` apenas como referência de estrutura, nunca como saída final.
+
+Papéis atuais de agente:
+
+| Papel | Arquivo |
+| --- | --- |
+| Scope | [agents/scope.md](agents/scope.md) |
+| Product | [agents/product.md](agents/product.md) |
+| System | [agents/system.md](agents/system.md) |
+| Execution | [agents/execution.md](agents/execution.md) |
+| Quality | [agents/quality.md](agents/quality.md) |
+| Release | [agents/release.md](agents/release.md) |
+| Recovery | [agents/recovery.md](agents/recovery.md) |
 
 Referências:
 
 - [agents/README.md](agents/README.md)
-- [Manual/02AGENTS.md](Manual/02AGENTS.md)
+- [instructions.md](instructions.md)
 
 ---
 
