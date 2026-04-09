@@ -41,13 +41,16 @@ Definir a estrutura mínima de diretórios e arquivos para bootstrap estrutural 
 │   ├── pages/
 │   └── assets/
 ├── Quality/
-│   ├── 00README.md
-│   ├── 01GUIDE.md
-│   ├── gate.md
+│   ├── README.md
+│   ├── execution-policy.md
+│   ├── structure-rules.md
+│   ├── clean-rules.md
+│   ├── metrics.md
+│   ├── review-checklist.md
 │   ├── realistic-tests.md
 │   ├── anti-mock.md
-│   ├── code-style.md
-│   └── dependencies.md
+│   ├── dependencies.md
+│   └── validation-rules.md
 ├── Skills/
 │   ├── 00README.md
 │   ├── 01GUIDE.md

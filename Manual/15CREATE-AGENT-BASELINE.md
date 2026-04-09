@@ -27,7 +27,7 @@ Padronizar a execução para evitar divergências entre ferramentas e manter o f
    - GUIDE.md
    - Skills/01GUIDE.md
    - Workflows/01GUIDE.md
-   - Quality/01GUIDE.md
+   - Quality/README.md
    - Templates/Full/01GUIDE.md
 2. Especialidade:
    - conforme o arquivo do agente em `agents/<role>-agent.md`
@@ -54,7 +54,7 @@ Carregue contexto base:
 - GUIDE.md
 - Skills/01GUIDE.md
 - Workflows/01GUIDE.md
-- Quality/01GUIDE.md
+- Quality/README.md
 - Templates/Full/01GUIDE.md
 
 Carregue contexto especializado conforme agents/<role>-agent.md.

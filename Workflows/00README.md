@@ -34,6 +34,6 @@ Orquestrar a sequência de execução por tipo de mudança, com rastreabilidade 
 
 ## Fechamento mínimo
 
-1. Quality Gate aprovado em [../Quality/gate.md](../Quality/gate.md).
+1. Quality Gate aprovado em [../Quality/validation-rules.md](../Quality/validation-rules.md).
 2. Atualização de [../Docs/control.md](../Docs/control.md).
 3. Registro de evidências e commit em [../Docs/tasks.md](../Docs/tasks.md).

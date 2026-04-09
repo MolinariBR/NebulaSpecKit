@@ -55,4 +55,4 @@ Use este documento como base obrigatória antes de:
 1. [../GUIDE.md](../GUIDE.md)
 2. [../Docs/README.md](../Docs/README.md)
 3. [../Workflows/01GUIDE.md](../Workflows/01GUIDE.md)
-4. [../Quality/gate.md](../Quality/gate.md)
+4. [../Quality/validation-rules.md](../Quality/validation-rules.md)

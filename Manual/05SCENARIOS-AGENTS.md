@@ -45,7 +45,7 @@ Carregue contexto base:
 - GUIDE.md
 - Skills/01GUIDE.md
 - Workflows/01GUIDE.md
-- Quality/01GUIDE.md
+- Quality/README.md
 - Templates/Full/01GUIDE.md
 
 Carregue contexto especializado conforme agents/<role>-agent.md.

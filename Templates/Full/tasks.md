@@ -57,8 +57,8 @@ Este documento organiza a execução do projeto em fases, módulos, tarefas, sub
 - Cada task concluída deve gerar exatamente 1 commit.
 - Toda task deve registrar hash do commit e lista de arquivos tocados.
 - Toda task deve registrar status do Quality Gate e evidências de validação.
-- Testes devem seguir a política de fidelidade realista definida em Quality/realistic-tests.md.
-- Mock, stub e placeholder são proibidos por padrão, conforme Quality/anti-mock.md.
+- Testes devem seguir a política de fidelidade realista definida em Quality/validation-rules.md.
+- Mock, stub e placeholder são proibidos por padrão, conforme Quality/validation-rules.md.
 
 ---
 

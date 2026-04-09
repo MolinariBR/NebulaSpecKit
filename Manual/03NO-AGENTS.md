@@ -21,7 +21,7 @@ O fluxo comum de execução está em [17EXECUTION-BASELINE.md](17EXECUTION-BASEL
 1. Escolher 1 workflow principal em `Workflows/`.
 2. Selecionar templates Full ou Quick conforme profundidade.
 3. Editar os artefatos oficiais em `Docs/`.
-4. Validar com [../Quality/gate.md](../Quality/gate.md).
+4. Validar com [../Quality/validation-rules.md](../Quality/validation-rules.md).
 5. Registrar evidências e commit da task em `Docs/tasks.md` e `Docs/control.md`.
 
 ## Checklist Específico do Modo sem Agentes

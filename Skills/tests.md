@@ -5,8 +5,8 @@ fontes:
   - "Docs/tasks.md"
   - "Docs/user-stories.md"
   - "Docs/contract.yaml"
-  - "Quality/realistic-tests.md"
-  - "Quality/gate.md"
+  - "Quality/validation-rules.md"
+  - "Quality/validation-rules.md"
 ---
 
 # Skill: Testes

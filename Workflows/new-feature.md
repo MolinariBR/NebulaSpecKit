@@ -36,4 +36,4 @@ Nova demanda funcional em Docs/tasks.md.
 - Docs/contract.yaml
 - Docs/design-system.md
 - Docs/tokens.json
-- Quality/gate.md
+- Quality/validation-rules.md

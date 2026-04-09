@@ -23,7 +23,7 @@ Objetivos:
 - Catálogo de agentes: [../agents/02CATALOG.md](../agents/02CATALOG.md)
 - Skills: [../Skills/00README.md](../Skills/00README.md)
 - Workflows: [../Workflows/00README.md](../Workflows/00README.md)
-- Quality: [../Quality/00README.md](../Quality/00README.md)
+- Quality: [../Quality/README.md](../Quality/README.md)
 - Templates Full: [../Templates/Full/01GUIDE.md](../Templates/Full/01GUIDE.md)
 - Templates Quick: [../Templates/Quick/01GUIDE.md](../Templates/Quick/01GUIDE.md)
 

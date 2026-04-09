@@ -4,8 +4,8 @@ Este documento descreve apenas o que muda no uso de Quality.
 
 ## Onde consultar
 
-1. [../Quality/00README.md](../Quality/00README.md)
-2. [../Quality/01GUIDE.md](../Quality/01GUIDE.md)
+1. [../Quality/README.md](../Quality/README.md)
+2. [../Quality/validation-rules.md](../Quality/validation-rules.md)
 
 ## Quando usar
 
@@ -21,8 +21,12 @@ Este documento descreve apenas o que muda no uso de Quality.
 
 ## Arquivos principais
 
-1. [../Quality/gate.md](../Quality/gate.md)
+1. [../Quality/validation-rules.md](../Quality/validation-rules.md)
 2. [../Quality/realistic-tests.md](../Quality/realistic-tests.md)
 3. [../Quality/anti-mock.md](../Quality/anti-mock.md)
-4. [../Quality/code-style.md](../Quality/code-style.md)
-5. [../Quality/dependencies.md](../Quality/dependencies.md)
+4. [../Quality/clean-rules.md](../Quality/clean-rules.md)
+5. [../Quality/structure-rules.md](../Quality/structure-rules.md)
+6. [../Quality/metrics.md](../Quality/metrics.md)
+7. [../Quality/review-checklist.md](../Quality/review-checklist.md)
+8. [../Quality/dependencies.md](../Quality/dependencies.md)
+9. [../Quality/execution-policy.md](../Quality/execution-policy.md)
