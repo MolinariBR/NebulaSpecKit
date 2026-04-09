@@ -2,13 +2,13 @@ name: Release
 
 on:
   push:
-    tags:
-      - "v*"
+    branches:
+      - main
   workflow_dispatch:
     inputs:
       version:
-        description: "Version tag (example: v1.0.1)"
-        required: true
+        description: "Version tag opcional (example: v1.0.1). Se vazio, faz bump automatico."
+        required: false
         type: string
 
 permissions:
@@ -25,12 +25,13 @@ jobs:
     permissions:
       contents: read
 
-  package-and-release:
-    name: Build Artifact and Create GitHub Release
+  resolve-version:
+    name: Resolve Version
     needs:
       - quality
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    outputs:
+      version: ${{ steps.meta.outputs.version }}
 
     steps:
       - name: Checkout repository
@@ -43,33 +44,91 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
-            VERSION="${{ github.event.inputs.version }}"
+          git fetch --tags --force
+
+          INPUT_VERSION="${{ github.event.inputs.version || '' }}"
+          if [ -n "$INPUT_VERSION" ]; then
+            VERSION="$INPUT_VERSION"
           else
-            VERSION="${GITHUB_REF_NAME}"
+            LAST_TAG="$(git tag -l 'v[0-9]*.[0-9]*.[0-9]*' --sort=-version:refname | head -n 1)"
+            if [ -z "$LAST_TAG" ]; then
+              VERSION="v1.0.0"
+            else
+              RAW="${LAST_TAG#v}"
+              IFS='.' read -r MAJOR MINOR PATCH <<< "$RAW"
+              PATCH=$((PATCH + 1))
+              VERSION="v${MAJOR}.${MINOR}.${PATCH}"
+            fi
           fi
+
           if [[ ! "$VERSION" =~ ^v[0-9]+\.[0-9]+\.[0-9]+([-.][0-9A-Za-z.]+)?$ ]]; then
             echo "Invalid version tag format: $VERSION"
             echo "Expected pattern: vMAJOR.MINOR.PATCH (optional suffix)"
             exit 1
           fi
+
+          echo "Resolved version: $VERSION"
           echo "version=$VERSION" >> "$GITHUB_OUTPUT"
+
+  ensure-tag:
+    name: Ensure Tag Exists
+    needs:
+      - resolve-version
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Create and push tag when missing
+        shell: bash
+        run: |
+          set -euo pipefail
+          VERSION="${{ needs.resolve-version.outputs.version }}"
+          git fetch --tags --force
+
+          if git ls-remote --tags origin "refs/tags/${VERSION}" | grep -q "refs/tags/${VERSION}$"; then
+            echo "Tag ${VERSION} already exists."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git tag -a "${VERSION}" -m "Release ${VERSION}"
+          git push origin "${VERSION}"
+
+  package-and-release:
+    name: Build Artifact and Create GitHub Release
+    needs:
+      - resolve-version
+      - ensure-tag
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          ref: ${{ needs.resolve-version.outputs.version }}
 
       - name: Build release archives
         shell: bash
         run: |
           set -euo pipefail
-          VERSION="${{ steps.meta.outputs.version }}"
+          VERSION="${{ needs.resolve-version.outputs.version }}"
           git archive --format=tar.gz --output="nebula-spec-kit-${VERSION}.tar.gz" HEAD
           git archive --format=zip --output="nebula-spec-kit-${VERSION}.zip" HEAD
 
       - name: Upload release artifacts (workflow)
         uses: actions/upload-artifact@v4
         with:
-          name: release-artifacts-${{ steps.meta.outputs.version }}
+          name: release-artifacts-${{ needs.resolve-version.outputs.version }}
           path: |
-            nebula-spec-kit-${{ steps.meta.outputs.version }}.tar.gz
-            nebula-spec-kit-${{ steps.meta.outputs.version }}.zip
+            nebula-spec-kit-${{ needs.resolve-version.outputs.version }}.tar.gz
+            nebula-spec-kit-${{ needs.resolve-version.outputs.version }}.zip
           retention-days: 14
 
       - name: Publish GitHub Release
@@ -78,7 +137,7 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          VERSION="${{ steps.meta.outputs.version }}"
+          VERSION="${{ needs.resolve-version.outputs.version }}"
           TAR_FILE="nebula-spec-kit-${VERSION}.tar.gz"
           ZIP_FILE="nebula-spec-kit-${VERSION}.zip"
           TITLE="NebulaSpecKit ${VERSION}"
