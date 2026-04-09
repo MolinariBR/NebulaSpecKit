@@ -36,13 +36,13 @@ Ele padroniza como um projeto é **descoberto, definido, planejado, executado e 
 | --- | --- | --- |
 | Metodologia | [GUIDE.md](GUIDE.md) | Referência central do método |
 | Documentação | [Docs/README.md](Docs/README.md) | Artefatos oficiais do projeto |
-| Skills | [Skills/00README.md](Skills/00README.md) | Capacidades técnicas mapeadas |
-| Workflows | [Workflows/00README.md](Workflows/00README.md) | Fluxos de execução padronizados |
+| Skills | [Skills/README.md](Skills/README.md) | Capacidades técnicas mapeadas |
+| Workflows | [Workflows/README.md](Workflows/README.md) | Fluxos de execução padronizados |
 | Quality | [Quality/README.md](Quality/README.md) | Gates e políticas de qualidade |
-| Templates | [Templates/Full/01GUIDE.md](Templates/Full/01GUIDE.md) | Modelos de preenchimento |
-| Agentes | [agents/00README.md](agents/00README.md) | Contrato e catálogo de agentes de IA |
-| Manual | [Manual/00README.md](Manual/00README.md) | Guia operacional completo |
-| Protótipos | [Prototype/00README.md](Prototype/00README.md) | Interfaces HTML de referência |
+| Templates | [Templates/Full/README.md](Templates/Full/README.md) | Modelos de preenchimento |
+| Agentes | [agents/README.md](agents/README.md) | Contrato e catálogo de agentes de IA |
+| Manual | [Manual/README.md](Manual/README.md) | Guia operacional completo |
+| Protótipos | [Docs/Prototype/README.md](Docs/Prototype/README.md) | Interfaces HTML de referência |
 
 ---
 
@@ -53,6 +53,7 @@ Ele padroniza como um projeto é **descoberto, definido, planejado, executado e 
 ├── README.md
 ├── GUIDE.md                  # Metodologia central
 ├── Docs/                     # Artefatos oficiais (saída de produção)
+│   └── Prototype/            # Protótipos de interface
 ├── Templates/
 │   ├── Full/                 # Templates completos por artefato
 │   └── Quick/                # Templates de uso rápido
@@ -60,7 +61,6 @@ Ele padroniza como um projeto é **descoberto, definido, planejado, executado e 
 ├── Workflows/                # Fluxos executáveis
 ├── Quality/                  # Gates, testes e políticas
 ├── agents/                   # Agentes especializados
-├── Prototype/                # Protótipos de interface
 └── Manual/                   # Documentação operacional
 ```
 
@@ -75,7 +75,7 @@ Brief → Projeto e Stack → UX e Design → Protótipos → Técnico → Execu
 1. **Brief**: preencha `Templates/Full/brief.md` e salve em `Docs/brief.md`.
 2. **Projeto e Stack**: use os templates de projeto e stack e salve em `Docs/`.
 3. **UX e Design**: documente user stories, páginas, fluxo e design system em `Docs/`.
-4. **Protótipos**: construa interfaces HTML em `Prototype/`.
+4. **Protótipos**: construa interfaces HTML em `Docs/Prototype/`.
 5. **Técnico**: documente entidades, arquitetura, contrato, estrutura e deploy em `Docs/`.
 6. **Execução**: opere com `Docs/plan.md`, `Docs/tasks.md` e `Docs/control.md`.
 7. **Validação**: feche cada task com [Quality/validation-rules.md](Quality/validation-rules.md).
@@ -151,8 +151,7 @@ Cada agente opera sob contrato único e carregamento obrigatório de contexto:
 
 Referências:
 
-- [agents/00README.md](agents/00README.md)
-- [agents/01GUIDE.md](agents/01GUIDE.md)
+- [agents/README.md](agents/README.md)
 - [agents/02CATALOG.md](agents/02CATALOG.md)
 
 ---
@@ -165,8 +164,7 @@ O manual é organizado em camadas de **baseline + delta**: cada baseline define 
 
 | Arquivo | Conteúdo |
 | --- | --- |
-| [Manual/00README.md](Manual/00README.md) | Entrada do manual |
-| [Manual/01GUIDE.md](Manual/01GUIDE.md) | Guia de navegação |
+| [Manual/README.md](Manual/README.md) | Entrada do manual |
 
 ### Execução
 

@@ -8,7 +8,7 @@ O padrão comum de governança, contexto e validação esta em [15CREATE-AGENT-B
 ## Leitura Obrigatória
 
 1. [15CREATE-AGENT-BASELINE.md](15CREATE-AGENT-BASELINE.md)
-2. [../agents/00README.md](../agents/00README.md)
+2. [../agents/README.md](../agents/README.md)
 3. [../agents/02CATALOG.md](../agents/02CATALOG.md)
 
 ## Implementação Nativa No Zed
@@ -33,7 +33,7 @@ Arquivo: `.rules`
 ```md
 # Nébula Guardrails
 
-- Sempre carregar GUIDE.md, Skills/01GUIDE.md, Workflows/01GUIDE.md, Quality/README.md e Templates/Full/01GUIDE.md
+- Sempre carregar GUIDE.md, Skills/README.md, Workflows/README.md, Quality/README.md e Templates/Full/README.md
 - Bootstrap estrutural apenas na primeira task
 - Depois do bootstrap, apenas editar arquivos existentes
 - 1 commit por task

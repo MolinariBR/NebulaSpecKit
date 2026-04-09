@@ -42,8 +42,8 @@ Toda execução deve carregar e respeitar os documentos abaixo:
 1. `instructions.md` (este arquivo)
 2. `NebulaSpecKit/GUIDE.md`
 3. `NebulaSpecKit/Manual/17EXECUTION-BASELINE.md`
-4. `NebulaSpecKit/Workflows/01GUIDE.md`
-5. `NebulaSpecKit/Skills/01GUIDE.md`
+4. `NebulaSpecKit/Workflows/README.md`
+5. `NebulaSpecKit/Skills/README.md`
 6. `NebulaSpecKit/Quality/README.md`
 7. `NebulaSpecKit/Quality/execution-policy.md`
 8. `NebulaSpecKit/Quality/structure-rules.md`
@@ -160,10 +160,10 @@ Workflow: Workflows/<workflow>.md
 
 Carregue contexto base:
 - GUIDE.md
-- Skills/01GUIDE.md
-- Workflows/01GUIDE.md
+- Skills/README.md
+- Workflows/README.md
 - Quality/README.md
-- Templates/Full/01GUIDE.md
+- Templates/Full/README.md
 
 Carregue contexto especializado conforme agents/<role>-agent.md.
 Carregue contexto de execução em Docs/plan.md, Docs/tasks.md e Docs/control.md, quando aplicável.

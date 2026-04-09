@@ -60,7 +60,7 @@ Definir a organização oficial de diretórios e arquivos do projeto para garant
 **Modelo operacional:**
 - Documentação de governança na raiz e em pastas dedicadas (Skills, Workflows, Quality).
 - Documentação oficial do projeto em Docs/.
-- Protótipos navegáveis em Prototype/.
+- Protótipos navegáveis em Docs/Prototype/.
 - Templates em Templates/.
 - Código de execução em apps/, services/, packages/ ou src/, conforme stack do projeto.
 
@@ -89,7 +89,12 @@ Definir a organização oficial de diretórios e arquivos do projeto para garant
 │   ├── deploy.md
 │   ├── plan.md
 │   ├── tasks.md
-│   └── control.md
+│   ├── control.md
+│   └── Prototype/
+│       ├── README.md
+│       ├── index.html
+│       ├── pages/
+│       └── assets/
 ├── Manual/
 │   ├── 00README.md
 │   ├── 01GUIDE.md
@@ -99,12 +104,6 @@ Definir a organização oficial de diretórios e arquivos do projeto para garant
 │   ├── 05SCENARIOS-AGENTS.md
 │   ├── 06SCENARIOS-NO-AGENTS.md
 │   └── 07..14 CREATE-AGENT-*.md
-├── Prototype/
-│   ├── 00README.md
-│   ├── 01GUIDE.md
-│   ├── index.html
-│   ├── pages/
-│   └── assets/
 ├── Quality/
 │   ├── README.md
 │   ├── execution-policy.md
@@ -117,8 +116,7 @@ Definir a organização oficial de diretórios e arquivos do projeto para garant
 │   ├── dependencies.md
 │   └── validation-rules.md
 ├── Skills/
-│   ├── 00README.md
-│   ├── 01GUIDE.md
+│   ├── README.md
 │   └── *.md
 ├── Workflows/
 │   ├── 00README.md
@@ -141,7 +139,7 @@ Definir a organização oficial de diretórios e arquivos do projeto para garant
 
 ## 6. Responsabilidade por Pasta
 
-- Prototype/: protótipos HTML de validação de interface e fluxo.
+- Docs/Prototype/: protótipos HTML de validação de interface e fluxo.
 - Docs/: fonte de verdade de governança, execução e qualidade do projeto.
 - Manual/: guias operacionais de uso do framework com e sem agentes.
 - Quality/: políticas obrigatórias de qualidade e gate.
@@ -160,9 +158,9 @@ Definir a organização oficial de diretórios e arquivos do projeto para garant
 ### 7.1 Arquivos
 
 - Raiz: README.md e GUIDE.md.
-- Pastas de governança: 00README.md e 01GUIDE.md.
+- Pastas de governança: README.md (preferencial) ou 00README.md + 01GUIDE.md (legado).
 - Artefatos oficiais do projeto em Docs/: nomes curtos em minúsculo (ex.: project.md, plan.md, tasks.md).
-- Skills: nome.md.
+- Skills: README.md e nome.md.
 - Workflows: nome.md.
 - Templates Full: nome-curto-em-ingles.md|yaml|json.
 - Templates Quick: mesmo nome do Full, em Templates/Quick/.
@@ -222,7 +220,7 @@ Definir a organização oficial de diretórios e arquivos do projeto para garant
 
 - ( ) A arvore raiz esta coerente com o framework.
 - ( ) Pastas de governança (Quality, Skills, Workflows) existem e estão completas.
-- ( ) Prototype/ existe para validação visual de fluxos.
+- ( ) Docs/Prototype/ existe para validação visual de fluxos.
 - ( ) Estrutura de código executável esta definida (apps/, services/, packages/ ou src/).
 - ( ) tests/ e scripts/ estão definidos quando aplicável.
 - ( ) Regra de bootstrap e regra de edição foram respeitadas.

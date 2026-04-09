@@ -85,7 +85,7 @@
 **Docs/flow.md:**  
 [orientação]
 
-**Prototype/:**  
+**Docs/Prototype/:**  
 [orientação]
 
 **Docs/design-system.md:**  

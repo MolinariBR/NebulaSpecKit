@@ -22,16 +22,16 @@ quality:
 methodology:
   - GUIDE.md
 guides:
-  - Skills/01GUIDE.md
-  - Workflows/01GUIDE.md
+  - Skills/README.md
+  - Workflows/README.md
   - Quality/README.md
-  - Templates/Full/01GUIDE.md
+  - Templates/Full/README.md
 context_base:
   - GUIDE.md
-  - Skills/01GUIDE.md
-  - Workflows/01GUIDE.md
+  - Skills/README.md
+  - Workflows/README.md
   - Quality/README.md
-  - Templates/Full/01GUIDE.md
+  - Templates/Full/README.md
 context_specialty:
   - Skills/deploy.md
   - Workflows/release.md

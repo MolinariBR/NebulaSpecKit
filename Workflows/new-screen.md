@@ -20,7 +20,7 @@ Tela nova definida em Docs/pages.md.
 2. Contratos visuais.
 3. UI/UX.
 4. Fluxo.
-5. Prototype (HTML).
+5. Docs/Prototype (HTML).
 6. Integração.
 7. Testes.
 8. Quality Gate.
@@ -32,6 +32,6 @@ Tela nova definida em Docs/pages.md.
 - Docs/flow.md
 - Docs/design-system.md
 - Docs/tokens.json
-- Prototype/
+- Docs/Prototype/
 - Docs/contract.yaml
 - Quality/validation-rules.md

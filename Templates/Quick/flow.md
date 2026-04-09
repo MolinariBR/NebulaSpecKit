@@ -92,7 +92,7 @@
 - sessão expirada
 
 ## Direção para os próximos documentos
-**Prototype/:**  
+**Docs/Prototype/:**  
 [orientação]
 
 **Docs/design-system.md:**  

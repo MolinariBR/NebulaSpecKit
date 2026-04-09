@@ -43,10 +43,10 @@ Workflow: Workflows/<workflow>.md
 
 Carregue contexto base:
 - GUIDE.md
-- Skills/01GUIDE.md
-- Workflows/01GUIDE.md
+- Skills/README.md
+- Workflows/README.md
 - Quality/README.md
-- Templates/Full/01GUIDE.md
+- Templates/Full/README.md
 
 Carregue contexto especializado conforme agents/<role>-agent.md.
 Carregue contexto de execução em Docs/plan.md, Docs/tasks.md e Docs/control.md.

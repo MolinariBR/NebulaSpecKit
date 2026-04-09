@@ -6,10 +6,16 @@ Pasta raiz para protótipos em HTML.
 
 Centralizar protótipos navegáveis usados para validar fluxo, estrutura de tela e comportamento antes da implementação final.
 
-## Convencao de nomes
+## Guia operacional
+
+1. Mantenha protótipos HTML versionados e rastreáveis por página e fluxo.
+2. Relacione cada protótipo com `Docs/pages.md` e `Docs/flow.md`.
+3. Trate o protótipo como base de validação antes da implementação final.
+
+## Convenção de nomes
 
 - Use nomes de arquivos em kebab-case.
-- Prefixe com código de pagina quando existir em Docs/pages.md.
+- Prefixe com código de página quando existir em `Docs/pages.md`.
 
 Exemplos:
 
@@ -19,9 +25,9 @@ Exemplos:
 
 ## Regras de uso
 
-1. O protótipo deve refletir Docs/pages.md e Docs/flow.md vigentes.
+1. O protótipo deve refletir `Docs/pages.md` e `Docs/flow.md` vigentes.
 2. Mudanças de fluxo devem atualizar o protótipo correspondente.
-3. Docs/design-system.md e Docs/tokens.json devem ser coerentes com o que foi aprovado no protótipo.
+3. `Docs/design-system.md` e `Docs/tokens.json` devem ser coerentes com o que foi aprovado no protótipo.
 4. Não usar esta pasta para código de produção.
 
 ## Estrutura sugerida

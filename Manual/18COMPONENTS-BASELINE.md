@@ -12,7 +12,7 @@ Este documento define o uso comum de Skills, Workflows, Quality e Templates no F
 
 1. Templates são modelo de preenchimento.
 2. Artefatos oficiais do projeto são editados em Docs.
-3. Prototype é exclusivo para protótipos HTML.
+3. Docs/Prototype é exclusivo para protótipos HTML.
 
 ## Fluxo comum entre componentes
 

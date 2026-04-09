@@ -4,8 +4,8 @@ Este documento descreve apenas o que muda no uso de Templates.
 
 ## Onde consultar
 
-1. [../Templates/Full/01GUIDE.md](../Templates/Full/01GUIDE.md)
-2. [../Templates/Quick/01GUIDE.md](../Templates/Quick/01GUIDE.md)
+1. [../Templates/Full/README.md](../Templates/Full/README.md)
+2. [../Templates/Quick/README.md](../Templates/Quick/README.md)
 
 ## Quando usar
 

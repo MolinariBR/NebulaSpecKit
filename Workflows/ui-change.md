@@ -19,7 +19,7 @@ Ajuste visual, responsivo, acessibilidade ou padrão de componente.
 1. UI/UX.
 2. Contratos visuais.
 3. Fluxo.
-4. Prototype (HTML).
+4. Docs/Prototype (HTML).
 5. Implementação.
 6. Testes.
 7. Quality Gate.
@@ -31,4 +31,4 @@ Ajuste visual, responsivo, acessibilidade ou padrão de componente.
 - Docs/flow.md
 - Docs/design-system.md
 - Docs/tokens.json
-- Prototype/
+- Docs/Prototype/

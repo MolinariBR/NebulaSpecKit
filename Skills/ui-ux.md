@@ -25,6 +25,6 @@ Implementar ou corrigir interface com consistência visual e funcional.
 
 1. Revisar tela ou componente e estados.
 2. Comparar com fluxo e padrões visuais.
-3. Atualizar ou criar protótipo HTML em Prototype/ quando houver impacto de interface.
+3. Atualizar ou criar protótipo HTML em Docs/Prototype/ quando houver impacto de interface.
 4. Implementar ajuste.
 5. Testar responsividade, estados e acessibilidade.

@@ -12,7 +12,7 @@ Na interface web de documentação, o ponto de entrada é `get-started.md`.
 
 1. Templates em `Templates/` são modelos de preenchimento.
 2. Artefatos oficiais do projeto são salvos em `Docs/`.
-3. Protótipos HTML são salvos em `Prototype/`.
+3. Protótipos HTML são salvos em `Docs/Prototype/`.
 
 ## Arquivos oficiais em Docs
 

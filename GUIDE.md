@@ -24,7 +24,7 @@ Analisar → Revisar → Mapear → Planejar → Comparar → Implementar → Te
 
 - Arquivos em `Templates/` são modelos de preenchimento — nunca saída oficial
 - Artefatos oficiais do projeto devem ser salvos em `Docs/`
-- Protótipos HTML devem ser salvos em `Prototype/`
+- Protótipos HTML devem ser salvos em `Docs/Prototype/`
 
 ### Início da Documentação
 
@@ -40,55 +40,55 @@ Analisar → Revisar → Mapear → Planejar → Comparar → Implementar → Te
 
 Captura o contexto, motivação e escopo do projeto antes de qualquer decisão técnica.
 
-| Papel | Arquivo |
-|---|---|
-| Modelo | [Templates/Full/brief.md](Templates/Full/brief.md) |
-| Saída oficial | [Docs/brief.md](Docs/brief.md) |
+| Papel         | Arquivo                                            |
+|---------------|----------------------------------------------------|
+| Modelo        | [Templates/Full/brief.md](Templates/Full/brief.md) |
+| Saída oficial | [Docs/brief.md](Docs/brief.md)                     |
 
 ### Fase 1 — Definição do Projeto
 
 Define o produto, objetivos, restrições e escolhas de stack.
 
-| Papel | Arquivo |
-|---|---|
-| Modelos | [Templates/Full/project.md](Templates/Full/project.md) · [Templates/Full/stack.md](Templates/Full/stack.md) |
+| Papel         | Arquivo                                            |
+|---------------|----------------------------------------------------|
+| Modelos        | [Templates/Full/project.md](Templates/Full/project.md) · [Templates/Full/stack.md](Templates/Full/stack.md) |
 | Saídas oficiais | [Docs/project.md](Docs/project.md) · [Docs/stack.md](Docs/stack.md) |
 
 ### Fase 2 — Requisitos Funcionais
 
 Mapeia comportamentos esperados do sistema na perspectiva do usuário.
 
-| Papel | Arquivo |
-|---|---|
-| Modelo | [Templates/Full/user-stories.md](Templates/Full/user-stories.md) |
+| Papel         | Arquivo                                            |
+|---------------|----------------------------------------------------|
+| Modelo        | [Templates/Full/user-stories.md](Templates/Full/user-stories.md) |
 | Saída oficial | [Docs/user-stories.md](Docs/user-stories.md) |
 
 ### Fase 3 — Design de Produto
 
 Define a experiência visual, navegação e sistema de design da interface.
 
-| Papel | Arquivo |
-|---|---|
-| Modelos | [Templates/Full/pages.md](Templates/Full/pages.md) · [Templates/Full/flow.md](Templates/Full/flow.md) · [Templates/Full/design-system.md](Templates/Full/design-system.md) · [Templates/Full/tokens.json](Templates/Full/tokens.json) |
+| Papel         | Arquivo                                            |
+|---------------|----------------------------------------------------|
+| Modelos        | [Templates/Full/pages.md](Templates/Full/pages.md) · [Templates/Full/flow.md](Templates/Full/flow.md) · [Templates/Full/design-system.md](Templates/Full/design-system.md) · [Templates/Full/tokens.json](Templates/Full/tokens.json) |
 | Saídas oficiais | [Docs/pages.md](Docs/pages.md) · [Docs/flow.md](Docs/flow.md) · [Docs/design-system.md](Docs/design-system.md) · [Docs/tokens.json](Docs/tokens.json) |
-| Protótipos | [Prototype/00README.md](Prototype/00README.md) |
+| Protótipos | [Docs/Prototype/README.md](Docs/Prototype/README.md) |
 
 ### Fase 4 — Design de Sistema
 
 Define entidades, arquitetura, contratos de API, estrutura de código e estratégia de deploy.
 
-| Papel | Arquivo |
-|---|---|
-| Modelos | [Templates/Full/entities.md](Templates/Full/entities.md) · [Templates/Full/architecture.md](Templates/Full/architecture.md) · [Templates/Full/contract.yaml](Templates/Full/contract.yaml) · [Templates/Full/structure.md](Templates/Full/structure.md) · [Templates/Full/deploy.md](Templates/Full/deploy.md) |
+| Papel         | Arquivo                                            |
+|---------------|----------------------------------------------------|
+| Modelos        | [Templates/Full/entities.md](Templates/Full/entities.md) · [Templates/Full/architecture.md](Templates/Full/architecture.md) · [Templates/Full/contract.yaml](Templates/Full/contract.yaml) · [Templates/Full/structure.md](Templates/Full/structure.md) · [Templates/Full/deploy.md](Templates/Full/deploy.md) |
 | Saídas oficiais | [Docs/entities.md](Docs/entities.md) · [Docs/architecture.md](Docs/architecture.md) · [Docs/contract.yaml](Docs/contract.yaml) · [Docs/structure.md](Docs/structure.md) · [Docs/deploy.md](Docs/deploy.md) |
 
 ### Fase 5 — Planejamento de Implementação
 
 Estrutura o plano de execução, tasks e controle de progresso.
 
-| Papel | Arquivo |
-|---|---|
-| Modelos | [Templates/Full/plan.md](Templates/Full/plan.md) · [Templates/Full/tasks.md](Templates/Full/tasks.md) · [Templates/Full/control.md](Templates/Full/control.md) |
+| Papel         | Arquivo                                            |
+|---------------|----------------------------------------------------|
+| Modelos        | [Templates/Full/plan.md](Templates/Full/plan.md) · [Templates/Full/tasks.md](Templates/Full/tasks.md) · [Templates/Full/control.md](Templates/Full/control.md) |
 | Saídas oficiais | [Docs/plan.md](Docs/plan.md) · [Docs/tasks.md](Docs/tasks.md) · [Docs/control.md](Docs/control.md) |
 
 ---
@@ -132,7 +132,7 @@ Ordem de consistência entre artefatos:
 - `Docs/contract.yaml` depende de `Docs/entities.md` e `Docs/architecture.md`
 - `Docs/tasks.md` depende de `Docs/plan.md`
 - `Docs/tokens.json` depende de `Docs/design-system.md`
-- `Docs/design-system.md` depende de referência validada em `Prototype/`, quando houver interface
+- `Docs/design-system.md` depende de referência validada em `Docs/Prototype/`, quando houver interface
 - Nenhuma task pode ser concluída sem passar no Quality Gate de [Quality/validation-rules.md](Quality/validation-rules.md)
 
 ---
@@ -169,7 +169,7 @@ Em caso de conflito entre fontes, a ordem de autoridade é:
 
 | Categoria | Arquivos |
 |---|---|
-| Navegação | [Manual/00README.md](Manual/00README.md) · [Manual/01GUIDE.md](Manual/01GUIDE.md) |
+| Navegação | [Manual/README.md](Manual/README.md) |
 | Execução | [Manual/17EXECUTION-BASELINE.md](Manual/17EXECUTION-BASELINE.md) · [Manual/02AGENTS.md](Manual/02AGENTS.md) · [Manual/03NO-AGENTS.md](Manual/03NO-AGENTS.md) |
 | Cenários | [Manual/16SCENARIOS-BASELINE.md](Manual/16SCENARIOS-BASELINE.md) · [Manual/05SCENARIOS-AGENTS.md](Manual/05SCENARIOS-AGENTS.md) · [Manual/06SCENARIOS-NO-AGENTS.md](Manual/06SCENARIOS-NO-AGENTS.md) |
 | Componentes | [Manual/18COMPONENTS-BASELINE.md](Manual/18COMPONENTS-BASELINE.md) · [Manual/19COMPONENTS-SKILLS.md](Manual/19COMPONENTS-SKILLS.md) · [Manual/20COMPONENTS-WORKFLOWS.md](Manual/20COMPONENTS-WORKFLOWS.md) · [Manual/21COMPONENTS-QUALITY.md](Manual/21COMPONENTS-QUALITY.md) · [Manual/22COMPONENTS-TEMPLATES.md](Manual/22COMPONENTS-TEMPLATES.md) |
