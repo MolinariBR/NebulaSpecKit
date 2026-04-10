@@ -17,6 +17,7 @@ Definir e aplicar regras de implementacao, estrutura, revisao, validacao e fecha
 7. `anti-mock.md`: regra anti-mock com excecao controlada.
 8. `dependencies.md`: compatibilidade e lockfile.
 9. `validation-rules.md`: gate obrigatorio para fechamento de task.
+10. `gate-evidence.md`: formato padrao de evidencias, criterios de aplicabilidade e template de quality gate.
 
 ## Ordem recomendada de leitura
 
@@ -30,6 +31,7 @@ Definir e aplicar regras de implementacao, estrutura, revisao, validacao e fecha
 8. `anti-mock.md`
 9. `dependencies.md`
 10. `validation-rules.md`
+11. `gate-evidence.md`
 
 ## Regra operacional
 

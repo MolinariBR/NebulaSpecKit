@@ -64,10 +64,13 @@ Este documento organiza a execução do projeto em fases, módulos, tarefas, sub
 
 ## 4. Bloco obrigatório de qualidade por task
 
-Cada task deve conter os campos abaixo:
+Cada task deve conter os campos abaixo, preenchidos conforme [Quality/gate-evidence.md](../Quality/gate-evidence.md):
 
 - `Quality Gate`: aprovado ou reprovado.
-- `Evidências de qualidade`: lint, typecheck, build, testes, curl/scripts, e2e e mobile quando aplicável.
+- `Evidências de qualidade`: formato canônico por tipo — lint, typecheck, build, testes, contrato de API, e2e, mobile, lockfile e rastreabilidade.
+  - Campos não aplicáveis devem ser marcados como `N/A` com justificativa objetiva.
+  - Critério de aplicabilidade por ferramenta está definido em `Quality/gate-evidence.md`.
+  - Campos aplicáveis sem evidência registrada são bloqueadores de fechamento.
 
 ---
 
@@ -87,7 +90,7 @@ Cada task deve conter os campos abaixo:
 **Commit da task:** [preencher após concluir]  
 **Arquivos tocados:** [listar caminhos alterados]
 **Quality Gate:** [aprovado / reprovado]
-**Evidências de qualidade:** [lint, typecheck, build, testes, curl/scripts, e2e, mobile quando aplicável]
+**Evidências de qualidade:** [preencher conforme Quality/gate-evidence.md]
 
 **Meta(s):**
 - ( ) Repositório com estrutura inicial coerente com Docs/structure.md
@@ -119,7 +122,7 @@ Cada task deve conter os campos abaixo:
 **Commit da task:** [preencher após concluir]  
 **Arquivos tocados:** [listar caminhos alterados]
 **Quality Gate:** [aprovado / reprovado]
-**Evidências de qualidade:** [lint, typecheck, build, testes, curl/scripts, e2e, mobile quando aplicável]
+**Evidências de qualidade:** [preencher conforme Quality/gate-evidence.md]
 
 **Meta(s):**
 - ( ) Fluxo local mínimo de qualidade definido
@@ -155,7 +158,7 @@ Cada task deve conter os campos abaixo:
 **Commit da task:** [preencher após concluir]  
 **Arquivos tocados:** [listar caminhos alterados]
 **Quality Gate:** [aprovado / reprovado]
-**Evidências de qualidade:** [lint, typecheck, build, testes, curl/scripts, e2e, mobile quando aplicável]
+**Evidências de qualidade:** [preencher conforme Quality/gate-evidence.md]
 
 **Meta(s):**
 - ( ) Pull requests validados automaticamente
@@ -189,7 +192,7 @@ Cada task deve conter os campos abaixo:
 **Commit da task:** [preencher após concluir]  
 **Arquivos tocados:** [listar caminhos alterados]
 **Quality Gate:** [aprovado / reprovado]
-**Evidências de qualidade:** [lint, typecheck, build, testes, curl/scripts, e2e, mobile quando aplicável]
+**Evidências de qualidade:** [preencher conforme Quality/gate-evidence.md]
 
 **Meta(s):**
 - ( ) Fluxo de branches formalizado e aplicável ao projeto
@@ -225,7 +228,7 @@ Cada task deve conter os campos abaixo:
 **Commit da task:** [preencher após concluir]  
 **Arquivos tocados:** [listar caminhos alterados]
 **Quality Gate:** [aprovado / reprovado]
-**Evidências de qualidade:** [lint, typecheck, build, testes, curl/scripts, e2e, mobile quando aplicável]
+**Evidências de qualidade:** [preencher conforme Quality/gate-evidence.md]
 
 **Meta(s):**
 - ( ) Fluxo principal do produto esta operacional
@@ -265,7 +268,7 @@ Cada task deve conter os campos abaixo:
 **Commit da task:** [preencher após concluir]  
 **Arquivos tocados:** [listar caminhos alterados]
 **Quality Gate:** [aprovado / reprovado]
-**Evidências de qualidade:** [lint, typecheck, build, testes, curl/scripts, e2e, mobile quando aplicável]
+**Evidências de qualidade:** [preencher conforme Quality/gate-evidence.md]
 
 **Meta(s):**
 - ( ) Cobertura mínima do módulo definida
@@ -300,7 +303,7 @@ Cada task deve conter os campos abaixo:
 **Commit da task:** [preencher após concluir]  
 **Arquivos tocados:** [listar caminhos alterados]
 **Quality Gate:** [aprovado / reprovado]
-**Evidências de qualidade:** [lint, typecheck, build, testes, curl/scripts, e2e, mobile quando aplicável]
+**Evidências de qualidade:** [preencher conforme Quality/gate-evidence.md]
 
 **Meta(s):**
 - ( ) Build e deploy realizados via pipeline
@@ -336,7 +339,7 @@ Cada task deve conter os campos abaixo:
 **Commit da task:** [preencher após concluir]  
 **Arquivos tocados:** [listar caminhos alterados]
 **Quality Gate:** [aprovado / reprovado]
-**Evidências de qualidade:** [lint, typecheck, build, testes, curl/scripts, e2e, mobile quando aplicável]
+**Evidências de qualidade:** [preencher conforme Quality/gate-evidence.md]
 
 **Meta(s):**
 - ( ) Release mobile padronizada via GitHub
@@ -373,7 +376,7 @@ Cada task deve conter os campos abaixo:
 **Commit da task:** [preencher após concluir]  
 **Arquivos tocados:** [listar caminhos alterados]
 **Quality Gate:** [aprovado / reprovado]
-**Evidências de qualidade:** [lint, typecheck, build, testes, curl/scripts, e2e, mobile quando aplicável]
+**Evidências de qualidade:** [preencher conforme Quality/gate-evidence.md]
 
 **Meta(s):**
 - ( ) Garantir fidelidade de execução próxima ao ambiente de produção

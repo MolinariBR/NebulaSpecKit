@@ -19,11 +19,11 @@ templates:
   - Templates/Full/deploy.md
 quality:
   - Quality/validation-rules.md
-  - Quality/validation-rules.md
-  - Quality/validation-rules.md
-  - Quality/validation-rules.md
+  - Quality/gate-evidence.md
+  - Quality/realistic-tests.md
+  - Quality/anti-mock.md
+  - Quality/metrics.md
   - Quality/clean-rules.md
-  - Quality/validation-rules.md
 methodology:
   - GUIDE.md
 guides:

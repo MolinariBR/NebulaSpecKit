@@ -33,7 +33,7 @@
 **Commit da task:** [preencher após concluir]  
 **Arquivos tocados:** [listar caminhos alterados]
 **Quality Gate:** [aprovado / reprovado]
-**Evidências de qualidade:** [lint, typecheck, build, testes, curl/scripts, e2e, mobile quando aplicável]
+**Evidências de qualidade:** [preencher conforme Quality/gate-evidence.md]
 
 **Meta(s):**
 - ( ) [meta 1]
@@ -60,7 +60,7 @@
 **Commit da task:** [preencher após concluir]  
 **Arquivos tocados:** [listar caminhos alterados]
 **Quality Gate:** [aprovado / reprovado]
-**Evidências de qualidade:** [lint, typecheck, build, testes, curl/scripts, e2e, mobile quando aplicável]
+**Evidências de qualidade:** [preencher conforme Quality/gate-evidence.md]
 
 **Meta(s):**
 - ( ) [meta 1]
@@ -89,7 +89,7 @@
 **Commit da task:** [preencher após concluir]  
 **Arquivos tocados:** [listar caminhos alterados]
 **Quality Gate:** [aprovado / reprovado]
-**Evidências de qualidade:** [lint, typecheck, build, testes, curl/scripts, e2e, mobile quando aplicável]
+**Evidências de qualidade:** [preencher conforme Quality/gate-evidence.md]
 
 **Meta(s):**
 - ( ) [meta 1]
@@ -119,7 +119,7 @@
 **Commit da task:** [preencher após concluir]  
 **Arquivos tocados:** [listar caminhos alterados]
 **Quality Gate:** [aprovado / reprovado]
-**Evidências de qualidade:** [lint, typecheck, build, testes, curl/scripts, e2e, mobile quando aplicável]
+**Evidências de qualidade:** [preencher conforme Quality/gate-evidence.md]
 
 **Meta(s):**
 - ( ) [meta 1]
@@ -148,7 +148,7 @@
 **Commit da task:** [preencher após concluir]  
 **Arquivos tocados:** [listar caminhos alterados]
 **Quality Gate:** [aprovado / reprovado]
-**Evidências de qualidade:** [lint, typecheck, build, testes, curl/scripts, e2e, mobile quando aplicável]
+**Evidências de qualidade:** [preencher conforme Quality/gate-evidence.md]
 
 **Meta(s):**
 - ( ) [meta 1]
