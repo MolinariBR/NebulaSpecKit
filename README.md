@@ -43,6 +43,8 @@ Mudanças estruturais recentes já refletidas neste repositório:
   - `Workflows/README.md`
   - `Skills/README.md`
   - `Quality/validation-rules.md`
+- Autoridade em conflito (ordem canônica):
+  - `instructions.md` -> `Docs/contract.yaml` -> documento-fonte em `Docs/` -> `Docs/plan.md` e `Docs/tasks.md` -> `Workflows/*.md` -> `Quality/validation-rules.md` + regras aplicáveis -> implementação atual.
 
 ---
 

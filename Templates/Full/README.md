@@ -61,6 +61,7 @@ Se houver ambiguidade durante o uso de Quick, migrar para Full na mesma task.
 1. Skills: `Skills/README.md`.
 2. Workflows: `Workflows/README.md`.
 3. Quality: `Quality/README.md`.
+4. Automação opcional para projetos usuários: `Templates/Full/automation/`.
 
 ## Regras de preenchimento
 

@@ -177,12 +177,14 @@ Ordem de consistência entre artefatos:
 Em caso de conflito entre fontes, a ordem de autoridade é:
 
 1. `instructions.md` (raiz operacional)
-2. Contrato vigente
+2. `Docs/contract.yaml` (contrato vigente)
 3. Documento-fonte do domínio em `Docs/`
 4. `Docs/plan.md` e `Docs/tasks.md`
 5. Workflow principal em `Workflows/*.md`
-6. `Quality/validation-rules.md` e regras de qualidade
+6. `Quality/validation-rules.md` + regras de qualidade aplicáveis
 7. Implementação atual
+
+Esta seção espelha a precedência canônica definida em `instructions.md`.
 
 ---
 

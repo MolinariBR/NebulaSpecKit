@@ -42,3 +42,4 @@ Executar documentação com baixa burocracia mantendo governança mínima.
 2. Skills: `Skills/README.md`.
 3. Workflows: `Workflows/README.md`.
 4. Quality: `Quality/README.md`.
+5. Automação opcional para projetos usuários: `Templates/Quick/automation/`.

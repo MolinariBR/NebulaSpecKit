@@ -40,14 +40,15 @@ Neste repositório: `PROJECT_ROOT = NebulaSpecKit/`.
 
 ## 4. Precedência
 Em conflito, use esta ordem:
-1. `Docs/contract.yaml`
-2. Documento-fonte do domínio em `Docs/`
-3. `Docs/plan.md` e `Docs/tasks.md`
-4. Workflow principal em `Workflows/*.md`
-5. `Quality/validation-rules.md` + regras de qualidade
-6. `instructions.md`
-7. Políticas complementares de qualidade (sob demanda)
-8. Implementação atual
+1. `instructions.md` (raiz operacional)
+2. `Docs/contract.yaml` (contrato vigente)
+3. Documento-fonte do domínio em `Docs/`
+4. `Docs/plan.md` e `Docs/tasks.md`
+5. Workflow principal em `Workflows/*.md`
+6. `Quality/validation-rules.md` + regras de qualidade aplicáveis
+7. Implementação atual
+
+`GUIDE.md` detalha o método e deve permanecer aderente a esta ordem de precedência.
 
 ## 5. Fluxo oficial
 

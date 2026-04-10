@@ -8,10 +8,11 @@ No Nébula, a implementação só começa depois que a base documental está edi
 
 ## Princípios do fluxo
 
-1. `Docs/` é a fonte de verdade do projeto.
-2. `Templates/` é modelo de preenchimento, não destino final.
-3. `Docs/Prototype/` guarda apenas protótipos HTML de interface.
-4. Cada task fecha com evidência e Quality Gate.
+1. `instructions.md` define governança e precedência operacional.
+2. `Docs/` é a fonte de verdade dos artefatos oficiais do projeto.
+3. `Templates/` é modelo de preenchimento, não destino final.
+4. `Docs/Prototype/` guarda apenas protótipos HTML de interface.
+5. Cada task fecha com evidência e Quality Gate.
 
 ## Ordem recomendada de preenchimento
 
