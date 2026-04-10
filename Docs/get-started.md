@@ -34,10 +34,11 @@ No Nébula, a implementação só começa depois que a base documental está edi
 
 ## Como operar na prática
 
-1. Escolha o template correspondente em `Templates/Full` ou `Templates/Quick`.
-2. Use o template para estruturar o conteúdo.
-3. Salve e mantenha a versão oficial no arquivo equivalente em `Docs/`.
-4. Registre avanço em `control.md` e execute o Quality Gate antes de concluir a task.
+1. Opcional: use `commands.md` para rotear o workflow da etapa.
+2. Escolha o template correspondente em `Templates/Full` ou `Templates/Quick`.
+3. Use o template para estruturar o conteúdo.
+4. Salve e mantenha a versão oficial no arquivo equivalente em `Docs/`.
+5. Registre avanço em `control.md` e execute o Quality Gate antes de concluir a task.
 
 ## Critério de pronto da fase documental
 

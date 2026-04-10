@@ -17,6 +17,7 @@ Na interface web de documentação, o ponto de entrada é `get-started.md`.
 ## Arquivos oficiais em Docs
 
 - `get-started.md`
+- `commands.md`
 - `brief.md`
 - `project.md`
 - `stack.md`

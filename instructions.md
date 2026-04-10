@@ -37,6 +37,7 @@ Neste repositório: `PROJECT_ROOT = NebulaSpecKit/`.
 2. Implementação/revisão/correção: `QUALITY_STACK`
 3. Modo com agentes: `agents/README.md`, `agents/<role>.md`
 4. UI/protótipo: `Docs/Prototype/README.md`
+5. Interface operacional curta: `Docs/commands.md`
 
 ## 4. Precedência
 Em conflito, use esta ordem:
@@ -54,10 +55,11 @@ Em conflito, use esta ordem:
 
 ### 5.1 Início de projeto
 1. Ler `Docs/get-started.md`
-2. Criar base documental oficial em `Docs/` (template = referência, nunca saída final)
-3. Selecionar `Workflows/initial-setup.md`
-4. Aprovar `Docs/plan.md`
-5. Abrir Task 1 com `bootstrap_estrutural` via `Workflows/bootstrap-structure.md`
+2. Ler `Docs/commands.md` (camada curta de roteamento, opcional)
+3. Criar base documental oficial em `Docs/` (template = referência, nunca saída final)
+4. Selecionar `Workflows/initial-setup.md`
+5. Aprovar `Docs/plan.md`
+6. Abrir Task 1 com `bootstrap_estrutural` via `Workflows/bootstrap-structure.md`
 
 ### 5.2 Ciclo por task
 1. Definir objetivo, escopo e limites
