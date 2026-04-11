@@ -23,6 +23,7 @@ Neste repositório: `PROJECT_ROOT = NebulaSpecKit/`.
 5. `Quality/validation-rules.md`
 
 ### 3.2 Stack de qualidade aprofundada (`QUALITY_STACK`)
+- `Quality/gate-evidence.md`
 - `Quality/execution-policy.md`
 - `Quality/structure-rules.md`
 - `Quality/clean-rules.md`
@@ -181,6 +182,7 @@ Aplicar `Quality/execution-policy.md` como contrato:
 - conclusão apenas com critérios atendidos
 
 Aplicar qualidade estrutural com:
+- `Quality/gate-evidence.md`
 - `Quality/clean-rules.md`
 - `Quality/structure-rules.md`
 - `Quality/metrics.md`

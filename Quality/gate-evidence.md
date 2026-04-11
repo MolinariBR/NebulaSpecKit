@@ -237,9 +237,9 @@ Copiar e preencher em cada task concluida:
 - Typecheck: [aprovado / reprovado / N/A] | `<comando>` | <resultado> | aplicável: <sim/não — motivo>
 - Build: [aprovado / reprovado / N/A] | `<comando>` | <resultado>
 - Testes: [X passed, Y failed] | suite: <nome> | ambiente: <descrição> | `<comando>`
-- Contrato de API: [aprovado / N/A] | endpoint: <METHOD /caminho> | resultado: <HTTP status> | script: <caminho>
-- E2e: [aprovado / N/A] | ferramenta: <nome> | fluxo: <descrição> | resultado: <X passed>
-- Mobile: [aprovado / N/A] | ferramenta: <nome> | dispositivo: <modelo> | fluxo: <descrição>
+- Contrato de API: [aprovado / reprovado / N/A] | endpoint: <METHOD /caminho> | resultado: <HTTP status> | script: <caminho>
+- E2e: [aprovado / reprovado / N/A] | ferramenta: <nome> | fluxo: <descrição> | resultado: <X passed>
+- Mobile: [aprovado / reprovado / N/A] | ferramenta: <nome> | dispositivo: <modelo> | fluxo: <descrição>
 - Lockfile: [consistente / atualizado]
 - Rastreabilidade: TASK-ID: <id> | commit: <hash> | arquivos: <lista>
 ```

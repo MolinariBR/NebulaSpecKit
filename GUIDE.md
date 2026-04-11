@@ -194,6 +194,7 @@ Em caso de conflito entre fontes, a ordem de autoridade é:
 |---|---|
 | [Quality/README.md](Quality/README.md) | Visão geral do pilar |
 | [Quality/validation-rules.md](Quality/validation-rules.md) | Gate obrigatório por task |
+| [Quality/gate-evidence.md](Quality/gate-evidence.md) | Formato de evidência e critérios de aplicabilidade |
 | [Quality/realistic-tests.md](Quality/realistic-tests.md) | Testes realistas |
 | [Quality/anti-mock.md](Quality/anti-mock.md) | Política anti-mock |
 | [Quality/clean-rules.md](Quality/clean-rules.md) | Regras de código limpo |

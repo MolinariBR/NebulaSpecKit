@@ -40,7 +40,7 @@ context_specialty:
   - Skills/scripts.md
   - Skills/curl.md
   - Quality/validation-rules.md
-  - Quality/validation-rules.md
+  - Quality/gate-evidence.md
 context_execution:
   - Docs/tasks.md
   - Docs/control.md
