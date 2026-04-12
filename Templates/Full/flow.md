@@ -1,446 +1,155 @@
 # Fluxo
-
 ## 1. Identificação
-
-**Nome do projeto:**  
-[preencher]
-
-**Versão do documento:**  
-[v1, v2, etc.]
-
-**Status:**  
-[rascunho / revisando / aprovado]
-
-**Documento base:**  
-[referência ao Docs/pages.md e Docs/user-stories.md]
-
-**Data de criação:**  
-[dd/mm/aaaa]
-
-**Última atualização:**  
-[dd/mm/aaaa]
-
+- **Nome do projeto:** [preencher]
+- **Versão:** [v1]
+- **Status:** [rascunho | revisando | aprovado]
+- **Documentos base:** project.md · user-stories.md · pages.md · entities.md
+- **Criado em:** [dd/mm/aaaa] · **Atualizado em:** [dd/mm/aaaa]
 ---
-
-## 2. Objetivo do Documento
-
-**Finalidade deste documento:**  
-[explique que este documento descreve os fluxos de navegação e interação do sistema, as jornadas dos usuários, as transições entre páginas e os estados condicionais relevantes]
-
-**O que este documento cobre:**  
-- jornadas por perfil
-- pontos de entrada
-- transições entre páginas
-- decisões e condicionais
-- desvios e exceções
-- estados de bloqueio, erro ou permissão
-
-**O que este documento não cobre:**  
-- layout visual detalhado
-- implementação técnica da navegação
-- arquitetura interna
-- contrato detalhado de API
-- definição completa de componentes visuais
-
+## 2. Escopo do Documento
+- **Cobre:**
+  jornadas · pontos de entrada · transições de página · condicionais ·
+  desvios · estados de bloqueio · restrições por permissão
+- **Não cobre:**
+  layout visual · implementação técnica da navegação · arquitetura interna ·
+  contrato de API · definição de componentes
 ---
-
-## 3. Regras Gerais dos Fluxos
-
-Cada fluxo deve conter:
-- nome claro
-- perfil principal
-- objetivo da jornada
-- ponto de entrada
-- pré-condições
-- sequência principal
-- desvios
-- estados excepcionais
-- resultado esperado
-
-**Tipos de fluxo possíveis:**  
-- fluxo principal
-- fluxo alternativo
-- fluxo de erro
-- fluxo administrativo
-- fluxo de autenticação
-- fluxo de recuperação
-- fluxo de confirmação
-- fluxo de saída
-- fluxo restrito por permissão
-
+## 3. Regras Gerais de Fluxo
+- **Cada fluxo deve conter:**
+  nome · perfil · objetivo · ponto de entrada · pré-condições · sequência
+  principal · desvios · estados excepcionais · resultado esperado
+- **Tipos de fluxo:**
+  principal · alternativo · erro · administrativo · autenticação ·
+  recuperação · confirmação · saída · restrito por permissão
 ---
-
 ## 4. Visão Geral das Jornadas
-
-### Jornada JN-001 — [nome da jornada]
-
-**Perfil principal:**  
-[perfil]
-
-**Objetivo da jornada:**  
-[o que o usuário quer alcançar]
-
-**Histórias relacionadas:**  
-- US-001
-- US-002
-
-**Páginas relacionadas:**  
-- PG-001
-- PG-002
-- PG-003
-
-**Ponto de entrada:**  
-[onde o fluxo começa]
-
-**Resultado esperado:**  
-[qual resultado deve existir ao fim da jornada]
-
-**Observações gerais:**  
-[preencher]
-
+### JN-001 — [nome da jornada]
+- **Perfil:** [perfil]
+- **Objetivo:** [o que o usuário quer alcançar]
+- **Histórias relacionadas:** US-001 · US-002
+- **Páginas relacionadas:** PG-001 · PG-002 · PG-003
+- **Ponto de entrada:** [onde a jornada começa]
+- **Resultado esperado:** [resultado ao fim da jornada]
+- **Observações:** [observações / nenhum]
+### JN-002 — [nome da jornada]
+- **Perfil:** [perfil]
+- **Objetivo:** [descreva]
+- **Histórias relacionadas:** US-003
+- **Páginas relacionadas:** PG-004 · PG-005
+- **Ponto de entrada:** [descreva]
+- **Resultado esperado:** [descreva]
+- **Observações:** [observações / nenhum]
+<!-- duplicar bloco JN conforme necessário -->
 ---
-
-### Jornada JN-002 — [nome da jornada]
-
-**Perfil principal:**  
-[perfil]
-
-**Objetivo da jornada:**  
-[preencher]
-
-**Histórias relacionadas:**  
-- US-003
-
-**Páginas relacionadas:**  
-- PG-004
-- PG-005
-
-**Ponto de entrada:**  
-[preencher]
-
-**Resultado esperado:**  
-[preencher]
-
-**Observações gerais:**  
-[preencher]
-
----
-
 ## 5. Fluxos Detalhados
-
 ### FL-001 — [nome do fluxo]
-
-**Tipo:**  
-[fluxo principal / alternativo / erro / autenticação / administrativo / etc.]
-
-**Perfil principal:**  
-[perfil]
-
-**Objetivo do fluxo:**  
-[descreva]
-
-**Histórias relacionadas:**  
-- US-001
-
-**Páginas envolvidas:**  
-- PG-001
-- PG-002
-- PG-003
-
-**Pré-condições:**  
-- [pré-condição 1]
-- [pré-condição 2]
-
-**Ponto de entrada:**  
-[onde o usuário entra nesse fluxo]
-
-**Sequência principal:**  
-1. Usuário acessa [PG-001].
-2. Sistema exibe [estado inicial esperado].
-3. Usuário executa [ação].
-4. Sistema valida [condição].
-5. Usuário é direcionado para [PG-002].
-6. Sistema processa [evento].
-7. Usuário conclui [ação final] em [PG-003].
-
-**Decisões e condicionais:**  
-- Se [condição], seguir para [página / estado].
-- Se [condição], bloquear ação e exibir [mensagem / estado].
-- Se [condição], redirecionar para [página].
-
-**Desvios possíveis:**  
-- [desvio 1]
-- [desvio 2]
-
-**Estados excepcionais:**  
-- erro de validação
-- indisponibilidade externa
-- sessão expirada
-- sem permissão
-- dados inexistentes
-- [outro]
-
-**Saídas possíveis do fluxo:**  
-- [saída 1]
-- [saída 2]
-
-**Resultado esperado:**  
-[descreva o fim ideal do fluxo]
-
-**Observações:**  
-[preencher]
-
----
-
+- **Tipo:** [principal | alternativo | erro | auth | admin | etc.]
+- **Perfil:** [perfil]
+- **Objetivo:** [descreva]
+- **Histórias relacionadas:** US-001
+- **Páginas envolvidas:** PG-001 · PG-002 · PG-003
+- **Ponto de entrada:** [onde o usuário entra neste fluxo]
+- **Pré-condições:** [condição 1] · [condição 2]
+- **Sequência principal:**
+  1. Usuário acessa [PG-001].
+  2. Sistema exibe [estado inicial].
+  3. Usuário executa [ação].
+  4. Sistema valida [condição].
+  5. Usuário é direcionado para [PG-002].
+  6. Sistema processa [evento].
+  7. Usuário conclui [ação final] em [PG-003].
+- **Condicionais:**
+  se [condição] → [página/estado] · se [condição] → bloquear e mostrar
+  [mensagem] · se [condição] → redirecionar para [página]
+- **Desvios:** [desvio 1] · [desvio 2]
+- **Estados excepcionais:**
+  erro de validação · indisponibilidade externa · sessão expirada ·
+  sem permissão · dados inexistentes · outro
+- **Saídas possíveis:** [saída 1] · [saída 2]
+- **Resultado esperado:** [fim ideal do fluxo]
+- **Observações:** [observações / nenhum]
 ### FL-002 — [nome do fluxo]
-
-**Tipo:**  
-[preencher]
-
-**Perfil principal:**  
-[preencher]
-
-**Objetivo do fluxo:**  
-[preencher]
-
-**Histórias relacionadas:**  
-- US-002
-
-**Páginas envolvidas:**  
-- PG-004
-- PG-005
-
-**Pré-condições:**  
-- [pré-condição 1]
-
-**Ponto de entrada:**  
-[preencher]
-
-**Sequência principal:**  
-1. [passo 1]
-2. [passo 2]
-3. [passo 3]
-
-**Decisões e condicionais:**  
-- [condição 1]
-- [condição 2]
-
-**Desvios possíveis:**  
-- [desvio 1]
-
-**Estados excepcionais:**  
-- [estado 1]
-- [estado 2]
-
-**Saídas possíveis do fluxo:**  
-- [saída 1]
-
-**Resultado esperado:**  
-[preencher]
-
-**Observações:**  
-[preencher]
-
----
-
+- **Tipo:** [descreva]
+- **Perfil:** [descreva]
+- **Objetivo:** [descreva]
+- **Histórias relacionadas:** US-002
+- **Páginas envolvidas:** PG-004 · PG-005
+- **Ponto de entrada:** [descreva]
+- **Pré-condições:** [condição 1]
+- **Sequência principal:** 1. [passo 1] 2. [passo 2] 3. [passo 3]
+- **Condicionais:** [condição 1] · [condição 2]
+- **Desvios:** [desvio 1]
+- **Estados excepcionais:** [estado 1] · [estado 2]
+- **Saídas possíveis:** [saída 1]
+- **Resultado esperado:** [descreva]
+- **Observações:** [observações / nenhum]
 ### FL-003 — [nome do fluxo]
-
-**Tipo:**  
-[preencher]
-
-**Perfil principal:**  
-[preencher]
-
-**Objetivo do fluxo:**  
-[preencher]
-
-**Histórias relacionadas:**  
-- US-003
-
-**Páginas envolvidas:**  
-- PG-006
-
-**Pré-condições:**  
-- [pré-condição 1]
-
-**Ponto de entrada:**  
-[preencher]
-
-**Sequência principal:**  
-1. [passo 1]
-2. [passo 2]
-
-**Decisões e condicionais:**  
-- [condição 1]
-
-**Desvios possíveis:**  
-- [desvio 1]
-
-**Estados excepcionais:**  
-- [estado 1]
-
-**Saídas possíveis do fluxo:**  
-- [saída 1]
-
-**Resultado esperado:**  
-[preencher]
-
-**Observações:**  
-[preencher]
-
+- **Tipo:** [descreva]
+- **Perfil:** [descreva]
+- **Objetivo:** [descreva]
+- **Histórias relacionadas:** US-003
+- **Páginas envolvidas:** PG-006
+- **Ponto de entrada:** [descreva]
+- **Pré-condições:** [condição 1]
+- **Sequência principal:** 1. [passo 1] 2. [passo 2]
+- **Condicionais:** [condição 1]
+- **Desvios:** [desvio 1]
+- **Estados excepcionais:** [estado 1]
+- **Saídas possíveis:** [saída 1]
+- **Resultado esperado:** [descreva]
+- **Observações:** [observações / nenhum]
+<!-- duplicar bloco FL conforme necessário -->
 ---
-
 ## 6. Fluxos por Perfil
-
 ### Perfil: [nome do perfil]
-**Fluxos principais:**  
-- FL-001
-- FL-002
-
-**Fluxos alternativos:**  
-- FL-003
-
-**Restrições relevantes:**  
-- [restrição 1]
-- [restrição 2]
-
-**Observações:**  
-[preencher]
-
----
-
+- **Fluxos principais:** FL-001 · FL-002
+- **Fluxos alternativos:** FL-003
+- **Restrições:** [restrição 1] · [restrição 2]
+- **Observações:** [observações / nenhum]
 ### Perfil: [nome do perfil]
-**Fluxos principais:**  
-- FL-004
-
-**Fluxos alternativos:**  
-- FL-005
-
-**Restrições relevantes:**  
-- [restrição 1]
-
-**Observações:**  
-[preencher]
-
+- **Fluxos principais:** FL-004
+- **Fluxos alternativos:** FL-005
+- **Restrições:** [restrição 1]
+- **Observações:** [observações / nenhum]
 ---
-
-## 7. Pontos de Decisão e Condições Críticas
-
-**Decisões críticas do sistema:**  
-- [decisão 1]
-- [decisão 2]
-- [decisão 3]
-
-**Condições de bloqueio:**  
-- [bloqueio 1]
-- [bloqueio 2]
-
-**Condições de redirecionamento:**  
-- [redirecionamento 1]
-- [redirecionamento 2]
-
-**Condições de fallback:**  
-- [fallback 1]
-- [fallback 2]
-
+## 7. Pontos Críticos de Decisão
+- **Decisões críticas do sistema:** [decisão 1] · [decisão 2] · [decisão 3]
+- **Condições de bloqueio:** [bloqueio 1] · [bloqueio 2]
+- **Condições de redirecionamento:** [redirecionamento 1] · [redirecionamento 2]
+- **Condições de fallback:** [fallback 1] · [fallback 2]
 ---
-
 ## 8. Estados Transversais de Navegação
-
-**Estados que podem aparecer em múltiplos fluxos:**  
-- loading
-- erro
-- sucesso
-- vazio
-- sem permissão
-- sessão expirada
-- indisponibilidade externa
-- timeout
-- falha de autenticação
-
-**Diretriz de tratamento:**  
-[explique como esses estados devem se comportar ao longo dos fluxos]
-
+- **Estados em múltiplos fluxos:**
+  loading · erro · sucesso · vazio · sem permissão · sessão expirada ·
+  indisponibilidade externa · timeout · falha de autenticação
+- **Diretriz de tratamento:** [como esses estados se comportam nos fluxos]
 ---
-
 ## 9. Dependências e Restrições Funcionais
-
-**Dependências entre fluxos:**  
-- FL-002 depende de FL-001
-- FL-004 exige autenticação prévia
-
-**Restrições por perfil ou permissão:**  
-- [restrição 1]
-- [restrição 2]
-
-**Fluxos críticos para o MVP:**  
-- FL-001
-- FL-002
-
-**Fluxos opcionais ou futuros:**  
-- FL-005
-- FL-006
-
+- **Dependências entre fluxos:**
+  FL-002 depende de FL-001 · FL-004 exige autenticação prévia
+- **Restrições por perfil/permissão:** [restrição 1] · [restrição 2]
+- **Fluxos críticos para MVP:** FL-001 · FL-002
+- **Fluxos opcionais/futuros:** FL-005 · FL-006
 ---
-
-## 10. Diretrizes para os Próximos Documentos
-
-### 10.1 Para o Docs/Prototype/
-[quais fluxos e telas precisam ser prototipados primeiro]
-
-### 10.2 Para o Docs/design-system.md
-[quais padrões de interação, feedback e estado parecem recorrentes]
-
-### 10.3 Para o Docs/tokens.json
-[quais semânticas visuais e estados precisam de suporte por tokens]
-
-### 10.4 Para o Docs/contract.yaml
-[quais fluxos indicam necessidade de endpoints, operações ou respostas específicas]
-
-### 10.5 Para o Docs/entities.md
-[quais conceitos de domínio aparecem nos fluxos]
-
-### 10.6 Para o Docs/plan.md e Docs/tasks.md
-[quais fluxos são prioritários, bloqueantes ou fundacionais]
-
+## 10. Diretrizes para Próximos Documentos
+| Documento | Como os fluxos impactam |
+|----------|--------------------------|
+| prototype/ | [fluxos e telas a prototipar primeiro] |
+| design-system.md | [padrões recorrentes de interação e estados] |
+| tokens.json | [semânticas visuais e estados que exigem token] |
+| contract.yaml | [fluxos que indicam endpoints/respostas] |
+| entities.md | [conceitos de domínio presentes] |
+| plan.md / tasks.md | [fluxos prioritários, bloqueantes, fundacionais] |
 ---
-
 ## 11. Síntese Operacional para Dev e AI
-
-### 11.1 Jornadas principais
-- JN-001
-- JN-002
-
-### 11.2 Fluxos mais críticos
-- FL-001
-- FL-002
-- FL-003
-
-### 11.3 Decisões que não podem ser esquecidas
-- [decisão 1]
-- [decisão 2]
-
-### 11.4 Estados críticos que devem existir
-- [estado 1]
-- [estado 2]
-- [estado 3]
-
-### 11.5 O que ainda está indefinido
-- [ponto 1]
-- [ponto 2]
-
+- **Jornadas principais:** JN-001 · JN-002
+- **Fluxos mais críticos:** FL-001 · FL-002 · FL-003
+- **Regras inegociáveis:** [regra 1] · [regra 2]
+- **Estados críticos:** [estado 1] · [estado 2] · [estado 3]
+- **Indefinições:** [ponto 1] · [ponto 2]
 ---
-
 ## 12. Aprovação
-
-**Status de aprovação:**  
-[pendente / aprovado / revisando]
-
-**Aprovado por:**  
-[preencher]
-
-**Data de aprovação:**  
-[dd/mm/aaaa]
-
-**Observações finais:**  
-[preencher]
+- **Status:** [pendente | aprovado | revisando]
+- **Aprovado por:** [nome]
+- **Data:** [dd/mm/aaaa]
+- **Observações:** [observações]

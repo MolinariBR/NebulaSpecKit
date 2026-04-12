@@ -1,434 +1,193 @@
+```markdown
 # Stack
 
-## 1. Identificação
+## 1. Identification
 
-**Nome do projeto:**  
-[preencher]
-
-**Versão do documento:**  
-[v1, v2, etc.]
-
-**Status:**  
-[rascunho / revisando / aprovado]
-
-**Responsável pela definição técnica:**  
-[preencher]
-
-**Data de criação:**  
-[dd/mm/aaaa]
-
-**Última atualização:**  
-[dd/mm/aaaa]
-
-**Documento base:**  
-[referência ao Docs/project.md]
+- **Project:** [name]
+- **Version:** [v1]
+- **Status:** [draft | reviewing | approved]
+- **Tech owner:** [name]
+- **Base docs:** project.md
+- **Created:** [dd/mm/yyyy] · **Updated:** [dd/mm/yyyy]
 
 ---
 
-## 2. Objetivo do Documento
+## 2. Document Scope
 
-**Finalidade deste documento:**  
-[explique que este documento define a stack oficial do projeto, suas justificativas, restrições e diretrizes de uso]
+**In scope:** languages · frameworks · databases · main libraries · infrastructure · technical standards · choice criteria
 
-**O que este documento cobre:**  
-- linguagens
-- frameworks
-- banco de dados
-- bibliotecas principais
-- infraestrutura e serviços
-- padrões técnicos
-- critérios de escolha
-
-**O que este documento não cobre:**  
-- modelagem detalhada de entidades
-- arquitetura completa de módulos
-- endpoints da API
-- tasks de implementação
-- plano de execução
+**Out of scope:** entity modeling · module architecture · API endpoints · implementation tasks · execution plan
 
 ---
 
-## 3. Contexto Técnico do Projeto
+## 3. Technical Context
 
-**Resumo técnico do projeto:**  
-[explique o tipo de sistema que será construído]
+**Technical summary:** [type of system being built]
 
-**Natureza do projeto:**  
-[web app / backend api / painel admin / app híbrido / microserviço / automação / sistema interno / SaaS / marketplace / outro]
+**Project nature:** [web app | backend api | admin panel | hybrid app | microservice | automation | internal system | SaaS | marketplace]
 
-**Tipo de operação esperada:**  
-[baixa escala / média escala / alta escala / uso interno / uso público / tempo real / processamento assíncrono / transacional / analítico]
+**Expected operation:** [low scale | medium scale | high scale | internal | public | real-time | async | transactional | analytical]
 
-**Plataformas-alvo:**  
-- [web]
-- [mobile]
-- [api]
-- [admin]
-- [worker]
-- [cli]
-- [outro]
+**Target platforms:** [web] · [mobile] · [api] · [admin] · [worker] · [cli]
 
-**Contexto que influencia a stack:**  
-- [restrição de prazo]
-- [restrição de equipe]
-- [restrição de custo]
-- [experiência do time]
-- [necessidade de velocidade]
-- [necessidade de escala]
-- [legado existente]
+**Context influencing the stack:** [deadline constraint] · [team constraint] · [cost constraint] · [team experience] · [speed need] · [scale need] · [existing legacy]
 
 ---
 
-## 4. Princípios de Escolha da Stack
+## 4. Choice Principles
 
-**Princípios que guiam as decisões técnicas:**  
-- [ex.: simplicidade operacional]
-- [ex.: rapidez de desenvolvimento]
-- [ex.: baixo custo inicial]
-- [ex.: facilidade de manutenção]
-- [ex.: escalabilidade progressiva]
-- [ex.: boa experiência do desenvolvedor]
-- [ex.: forte ecossistema]
-- [ex.: aderência ao conhecimento do time]
+**Guiding principles:** [e.g. operational simplicity] · [fast development] · [low initial cost] · [ease of maintenance] · [progressive scalability] · [strong ecosystem] · [team alignment]
 
-**O que tem prioridade maior nas escolhas:**  
-[descreva]
+**Higher priority in choices:** [describe]
 
-**O que será evitado tecnicamente:**  
-- [complexidade desnecessária]
-- [dependência excessiva de serviços difíceis de operar]
-- [stack desalinhada com a equipe]
-- [ferramentas imaturas]
-- [overengineering]
+**What will be technically avoided:** unnecessary complexity · hard-to-operate service dependencies · stack misaligned with the team · immature tools · overengineering
 
 ---
 
-## 5. Stack Oficial
+## 5. Official Stack
 
-### 5.1 Linguagens
-- **Principal:** [ex.: TypeScript]
-- **Secundárias:** [ex.: SQL, Bash]
-
-**Justificativa:**  
-[por que essas linguagens foram escolhidas]
-
----
+### 5.1 Languages
+- **Primary:** [e.g. TypeScript]
+- **Secondary:** [e.g. SQL, Bash]
+- **Rationale:** [why these languages]
 
 ### 5.2 Frontend
-**Framework principal:**  
-[ex.: Next.js]
-
-**Bibliotecas principais:**  
-- [ex.: React]
-- [ex.: TanStack Query]
-- [ex.: Zod]
-- [ex.: React Hook Form]
-
-**Estratégia de UI:**  
-[SSR / CSR / híbrido / componentes reutilizáveis / design system próprio / etc.]
-
-**Justificativa:**  
-[explique]
-
----
+- **Framework:** [e.g. Next.js]
+- **Main libraries:** [e.g. React] · [TanStack Query] · [Zod] · [React Hook Form]
+- **UI strategy:** [SSR | CSR | hybrid | reusable components | own design system]
+- **Rationale:** [explain]
 
 ### 5.3 Backend
-**Framework principal:**  
-[ex.: Node.js + NestJS / Fastify / Express]
+- **Framework:** [e.g. NestJS | Fastify | Express]
+- **Responsibilities:** [auth] · [business rules] · [integrations] · [persistence] · [queue] · [files] · [notifications]
+- **Rationale:** [explain]
 
-**Responsabilidades do backend:**  
-- [autenticação]
-- [regras de negócio]
-- [integrações]
-- [persistência]
-- [fila]
-- [arquivos]
-- [notificações]
+### 5.4 Database
+- **Primary:** [e.g. PostgreSQL]
+- **Auxiliary:** [Redis] · [Elastic] · [other]
+- **ORM / Query builder:** [e.g. Prisma | Drizzle | Knex | raw SQL]
+- **Rationale:** [explain]
 
-**Justificativa:**  
-[explique]
+### 5.5 Infrastructure & Hosting
+- **Primary environment:** [e.g. VPS | Docker | Vercel | Railway | AWS | GCP]
+- **Planned services:** [app] · [database] · [cache] · [queue] · [storage] · [cdn] · [proxy] · [monitoring]
+- **Rationale:** [explain]
 
----
+### 5.6 Auth & Authorization
+- **Strategy:** [JWT | session | OAuth | auth provider | RBAC | ACL]
+- **Rationale:** [explain]
 
-### 5.4 Banco de Dados
-**Banco principal:**  
-[ex.: PostgreSQL]
+### 5.7 Communication & API
+- **Primary pattern:** [REST | GraphQL | RPC | WebSocket | events]
+- **Contract format:** [OpenAPI | contract-first | code-first | hybrid]
+- **Rationale:** [explain]
 
-**Bancos auxiliares, se houver:**  
-- [Redis]
-- [Elastic]
-- [outro]
+### 5.8 Testing
+- **Tools:** [e.g. Vitest | Jest] · [Playwright | Cypress] · [Supertest]
+- **Strategy:** [unit | integration | contract | e2e]
+- **Rationale:** [explain]
 
-**ORM / Query Builder:**  
-[ex.: Prisma / Drizzle / Knex / SQL puro]
+### 5.9 Observability & Logs
+- **Strategy:** structured logs · monitoring · alerts · health checks · tracing
+- **Planned tools:** [tool 1] · [tool 2]
+- **Rationale:** [explain]
 
-**Justificativa:**  
-[explique]
-
----
-
-### 5.5 Infraestrutura e Hospedagem
-**Ambiente principal:**  
-[ex.: VPS / Docker / Vercel / Railway / AWS / GCP / Azure]
-
-**Serviços previstos:**  
-- [app]
-- [banco]
-- [cache]
-- [fila]
-- [storage]
-- [cdn]
-- [proxy]
-- [monitoramento]
-
-**Justificativa:**  
-[explique]
+### 5.10 Dev Experience & Quality
+- **Tools:** [ESLint] · [Prettier] · [TypeScript strict] · [Husky] · [lint-staged] · [commitlint] · [turbo | nx | pnpm workspace]
+- **Rationale:** [explain]
 
 ---
 
-### 5.6 Autenticação e Autorização
-**Estratégia escolhida:**  
-[JWT / sessão / OAuth / auth provider / RBAC / ACL / etc.]
+## 6. Structural Technical Decisions
 
-**Justificativa:**  
-[explique]
+**Adopted technical standards:** strong typing · input validation · domain/infrastructure separation · reusable components · centralized contracts · standardized error handling · structured logs · environment-based config
 
----
+**Mandatory conventions:** [convention 1] · [convention 2] · [convention 3]
 
-### 5.7 Comunicação e API
-**Padrão principal:**  
-[REST / GraphQL / RPC / WebSocket / eventos]
-
-**Formato de contrato:**  
-[OpenAPI / Contract-first / code-first / híbrido]
-
-**Justificativa:**  
-[explique]
+**Relevant code directives:** [directive 1] · [directive 2] · [directive 3]
 
 ---
 
-### 5.8 Testes
-**Ferramentas principais:**  
-- [ex.: Vitest / Jest]
-- [ex.: Playwright / Cypress]
-- [ex.: Supertest]
+## 7. Considered Alternatives
 
-**Estratégia de testes:**  
-[unitário / integração / contrato / e2e]
+### Alternative 1
+- **Option:** [describe]
+- **Advantages:** [advantage 1] · [advantage 2]
+- **Disadvantages:** [disadvantage 1] · [disadvantage 2]
+- **Reason not adopted:** [explain]
 
-**Justificativa:**  
-[explique]
-
----
-
-### 5.9 Observabilidade e Logs
-**Estratégia inicial:**  
-- [logs estruturados]
-- [monitoramento]
-- [alertas]
-- [health checks]
-- [rastreamento]
-
-**Ferramentas previstas:**  
-- [ferramenta 1]
-- [ferramenta 2]
-
-**Justificativa:**  
-[explique]
+### Alternative 2
+- **Option:** [describe]
+- **Advantages:** [advantage 1] · [advantage 2]
+- **Disadvantages:** [disadvantage 1] · [disadvantage 2]
+- **Reason not adopted:** [explain]
 
 ---
 
-### 5.10 Dev Experience e Qualidade
-**Ferramentas de qualidade e produtividade:**  
-- [ESLint]
-- [Prettier]
-- [TypeScript strict]
-- [Husky]
-- [lint-staged]
-- [commitlint]
-- [turbo / nx / pnpm workspace / etc.]
+## 8. Technical Constraints
 
-**Justificativa:**  
-[explique]
+**Constraints that impacted the stack:** [constraint 1] · [constraint 2] · [constraint 3]
+
+**Consciously assumed limitations:** [limitation 1] · [limitation 2]
+
+**Technical risks of the chosen stack:** [risk 1] · [risk 2]
+
+**Initial mitigations:** [mitigation 1] · [mitigation 2]
 
 ---
 
-## 6. Decisões Técnicas Estruturais
+## 9. Main Dependencies
 
-**Padrões técnicos adotados:**  
-- [ex.: tipagem forte]
-- [ex.: validação de entrada]
-- [ex.: separação entre domínio e infraestrutura]
-- [ex.: componentes reutilizáveis]
-- [ex.: contratos centralizados]
-- [ex.: tratamento padronizado de erro]
-- [ex.: logs estruturados]
-- [ex.: configuração por ambiente]
+**Critical dependencies:** [dependency 1] · [dependency 2] · [dependency 3]
 
-**Convenções obrigatórias:**  
-- [convenção 1]
-- [convenção 2]
-- [convenção 3]
+**Planned external services:** [service 1] · [service 2]
 
-**Diretrizes de código relevantes:**  
-- [diretriz 1]
-- [diretriz 2]
-- [diretriz 3]
+**Dependencies with highest operational risk:** [dependency 1] · [dependency 2]
 
 ---
 
-## 7. Alternativas Consideradas
+## 10. Environment Strategy
 
-### Alternativa 1
-**Opção avaliada:**  
-[preencher]
+**Planned environments:** local · dev · staging · prod
 
-**Vantagens percebidas:**  
-- [vantagem 1]
-- [vantagem 2]
+**Relevant differences between environments:** [describe]
 
-**Desvantagens percebidas:**  
-- [desvantagem 1]
-- [desvantagem 2]
-
-**Motivo de não adoção:**  
-[explique]
-
-### Alternativa 2
-**Opção avaliada:**  
-[preencher]
-
-**Vantagens percebidas:**  
-- [vantagem 1]
-- [vantagem 2]
-
-**Desvantagens percebidas:**  
-- [desvantagem 1]
-- [desvantagem 2]
-
-**Motivo de não adoção:**  
-[explique]
+**Environment config directive:** [describe]
 
 ---
 
-## 8. Restrições Técnicas
+## 11. Directives for Next Documents
 
-**Restrições que impactaram a stack:**  
-- [restrição 1]
-- [restrição 2]
-- [restrição 3]
-
-**Limitações assumidas conscientemente:**  
-- [limitação 1]
-- [limitação 2]
-
-**Riscos técnicos da stack escolhida:**  
-- [risco 1]
-- [risco 2]
-
-**Mitigações iniciais:**  
-- [mitigação 1]
-- [mitigação 2]
+| Document | How the stack impacts it |
+|----------|--------------------------|
+| architecture.md | [stack decisions that impact architecture] |
+| entities.md | [persistence and modeling constraints] |
+| contract.yaml | [technical standards to reflect in the contract] |
+| structure.md | [folder and layer organization influenced by the stack] |
+| deploy.md | [operational constraints and needs from the stack] |
+| plan.md | [stack impacts on execution order] |
+| tasks.md | [technical areas that must become early tasks] |
 
 ---
 
-## 9. Dependências Principais
+## 12. Operational Summary for Dev & AI
 
-**Dependências críticas do projeto:**  
-- [dependência 1]
-- [dependência 2]
-- [dependência 3]
-
-**Serviços externos previstos:**  
-- [serviço 1]
-- [serviço 2]
-
-**Dependências com maior risco operacional:**  
-- [dependência 1]
-- [dependência 2]
+- **Frontend:** [fill]
+- **Backend:** [fill]
+- **Database:** [fill]
+- **Infrastructure:** [fill]
+- **Testing:** [fill]
+- **What motivated this stack:** [reason 1] · [reason 2] · [reason 3]
+- **What must be respected:** [rule 1] · [rule 2] · [rule 3]
+- **What must be avoided:** [mistake 1] · [mistake 2]
+- **What may still change:** [point 1] · [point 2]
 
 ---
 
-## 10. Estratégia Inicial de Ambientes
+## 13. Approval
 
-**Ambientes previstos:**  
-- [local]
-- [dev]
-- [staging]
-- [prod]
-
-**Diferenças relevantes entre ambientes:**  
-[descreva]
-
-**Diretriz para configuração por ambiente:**  
-[descreva]
-
----
-
-## 11. Diretrizes para os Próximos Documentos
-
-### 11.1 Para o Docs/architecture.md
-[quais decisões de stack impactam a arquitetura]
-
-### 11.2 Para o Docs/entities.md
-[restrições e expectativas sobre persistência e modelagem]
-
-### 11.3 Para o Docs/contract.yaml
-[padrões técnicos que devem ser refletidos no contrato]
-
-### 11.4 Para o Docs/structure.md
-[organização de pastas e camadas influenciada pela stack]
-
-### 11.5 Para o Docs/deploy.md
-[restrições e necessidades operacionais da stack]
-
-### 11.6 Para o Docs/plan.md
-[impactos da stack na ordem de execução]
-
-### 11.7 Para o Docs/tasks.md
-[áreas técnicas que devem virar tarefas logo no início]
-
----
-
-## 12. Síntese Operacional para Dev e AI
-
-### 12.1 Stack oficial resumida
-- **Frontend:** [preencher]
-- **Backend:** [preencher]
-- **Banco:** [preencher]
-- **Infraestrutura:** [preencher]
-- **Testes:** [preencher]
-
-### 12.2 O que motivou essa stack
-- [motivo 1]
-- [motivo 2]
-- [motivo 3]
-
-### 12.3 O que deve ser respeitado na implementação
-- [regra 1]
-- [regra 2]
-- [regra 3]
-
-### 12.4 O que deve ser evitado
-- [erro 1]
-- [erro 2]
-
-### 12.5 O que ainda pode mudar
-- [ponto 1]
-- [ponto 2]
-
----
-
-## 13. Aprovação
-
-**Status de aprovação:**  
-[pendente / aprovado / revisando]
-
-**Aprovado por:**  
-[preencher]
-
-**Data de aprovação:**  
-[dd/mm/aaaa]
-
-**Observações finais:**  
-[preencher]
+- **Status:** [pending | approved | reviewing]
+- **Approved by:** [name]
+- **Date:** [dd/mm/yyyy]
+- **Notes:** [notes]
+```
