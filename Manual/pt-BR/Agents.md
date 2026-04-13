@@ -1,13 +1,13 @@
 # Execução com Agentes
 
 Este manual cobre apenas o delta de execução com agentes.
-O fluxo comum de execução está em [17EXECUTION-BASELINE.md](17EXECUTION-BASELINE.md).
+O fluxo comum de execução está em [Execution.md](Execution.md).
 
 ## Leitura obrigatória
 
-1. [17EXECUTION-BASELINE.md](17EXECUTION-BASELINE.md)
-2. [../agents/README.md](../agents/README.md)
-3. [15CREATE-AGENT-BASELINE.md](15CREATE-AGENT-BASELINE.md)
+1. [Execution.md](Execution.md)
+2. [../agents/README.md](../../agents/README.md)
+3. [Baseline.md](CreateAgents/Baseline.md)
 
 ## Delta do Modo com Agentes
 

@@ -33,7 +33,7 @@ Este documento define o uso comum de Skills, Workflows, Quality e Templates no F
 
 ## Leitura recomendada
 
-1. Delta de Skills: [19COMPONENTS-SKILLS.md](19COMPONENTS-SKILLS.md)
-2. Delta de Workflows: [20COMPONENTS-WORKFLOWS.md](20COMPONENTS-WORKFLOWS.md)
-3. Delta de Quality: [21COMPONENTS-QUALITY.md](21COMPONENTS-QUALITY.md)
-4. Delta de Templates: [22COMPONENTS-TEMPLATES.md](22COMPONENTS-TEMPLATES.md)
+1. Delta de Skills: [Skills.md](Skills.md)
+2. Delta de Workflows: [Workflows.md](Workflows.md)
+3. Delta de Quality: [Quality.md](Quality.md)
+4. Delta de Templates: [Templates.md](Templates.md)

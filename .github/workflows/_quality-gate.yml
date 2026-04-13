@@ -38,7 +38,7 @@ jobs:
 
           required_files = [
               "README.md",
-              "GUIDE.md",
+              "Guide-Started.md",
               "Docs/README.md",
               "Docs/brief.md",
               "Docs/project.md",

@@ -34,7 +34,7 @@ Detalhes nativos por ferramenta devem ficar fora do contexto operacional carrega
 
 1. Contrato canônico: `agents/README.md`
 2. Arquivos de papel: `agents/*.md`
-3. Método base: `GUIDE.md`
+3. Método base: `Guide-Started.md`
 4. Skills: `Skills/README.md`
 5. Workflows: `Workflows/README.md`
 6. Quality (gate mínimo): `Quality/validation-rules.md`
@@ -65,7 +65,7 @@ Todo `agents/<role>.md` deve conter frontmatter YAML válido com:
 1. Escolher o agente pela seção `Escolha rápida de agente`.
 2. Confirmar responsabilidade e handoff esperado.
 3. Carregar contexto base obrigatório:
-   - `GUIDE.md`
+   - `Guide-Started.md`
    - `Skills/README.md`
    - `Workflows/README.md`
    - `Quality/validation-rules.md`

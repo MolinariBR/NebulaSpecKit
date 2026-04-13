@@ -17,7 +17,7 @@ Neste repositório: `PROJECT_ROOT = NebulaSpecKit/`.
 
 ### 3.1 Base obrigatória (sempre)
 1. `instructions.md`
-2. `GUIDE.md`
+2. `Guide-Started.md`
 3. `Workflows/README.md`
 4. `Skills/README.md`
 5. `Quality/validation-rules.md`
@@ -49,7 +49,7 @@ Em conflito, use esta ordem:
 6. `Quality/validation-rules.md` + regras de qualidade aplicáveis
 7. Implementação atual
 
-`GUIDE.md` detalha o método e deve permanecer aderente a esta ordem de precedência.
+`Guide-Started.md` detalha o método e deve permanecer aderente a esta ordem de precedência.
 
 ## 5. Fluxo oficial
 
@@ -116,7 +116,7 @@ Objetivo: <objetivo da task>
 Workflow: Workflows/<workflow>.md
 
 Carregue contexto base:
-- GUIDE.md
+- Guide-Started.md
 - Skills/README.md
 - Workflows/README.md
 - Quality/validation-rules.md

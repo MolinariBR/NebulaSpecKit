@@ -10,10 +10,10 @@ Padronizar a execução para evitar divergências entre ferramentas e manter o f
 
 ## Fonte Canônica
 
-1. Agentes canônicos: [../agents](../agents)
-2. Contrato dos agentes: [../agents/README.md](../agents/README.md)
-3. Catálogo de papéis: [02AGENTS.md](02AGENTS.md)
-4. Guia de uso: [../agents/README.md](../agents/README.md)
+1. Agentes canônicos: [../agents](../../../agents)
+2. Contrato dos agentes: [../agents/README.md](../../../agents/README.md)
+3. Catálogo de papéis: [Agents.md](../Agents.md)
+4. Guia de uso: [../agents/README.md](../../../agents/README.md)
 
 ## Regra de Ouro
 
@@ -24,7 +24,7 @@ Padronizar a execução para evitar divergências entre ferramentas e manter o f
 ## Contexto obrigatório em toda chamada
 
 1. Base:
-   - GUIDE.md
+   - Guide-Started.md
    - Skills/README.md
    - Workflows/README.md
    - Quality/README.md
@@ -51,7 +51,7 @@ Objetivo: <objetivo da task>
 Workflow: Workflows/<workflow>.md
 
 Carregue contexto base:
-- GUIDE.md
+- Guide-Started.md
 - Skills/README.md
 - Workflows/README.md
 - Quality/README.md

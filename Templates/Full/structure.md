@@ -71,7 +71,7 @@ Definir a organização oficial de diretórios e arquivos do projeto para garant
 ```text
 .
 ├── README.md
-├── GUIDE.md
+├── Guide-Started.md
 ├── Docs/
 │   ├── README.md
 │   ├── brief.md
@@ -111,7 +111,7 @@ Definir a organização oficial de diretórios e arquivos do projeto para garant
 │   └── *.md
 ├── Workflows/
 │   ├── 00README.md
-│   ├── 01GUIDE.md
+│   ├── 01Guide-Started.md
 │   └── *.md
 ├── Templates/
 │   ├── Full/
@@ -147,8 +147,8 @@ Definir a organização oficial de diretórios e arquivos do projeto para garant
 
 ### 7.1 Arquivos
 
-- Raiz: README.md e GUIDE.md.
-- Pastas de governança: README.md (preferencial) ou 00README.md + 01GUIDE.md (legado).
+- Raiz: README.md e Guide-Started.md.
+- Pastas de governança: README.md (preferencial) ou 00README.md + 01Guide-Started.md (legado).
 - Artefatos oficiais do projeto em Docs/: nomes curtos em minúsculo (ex.: project.md, plan.md, tasks.md).
 - Skills: README.md e nome.md.
 - Workflows: nome.md.

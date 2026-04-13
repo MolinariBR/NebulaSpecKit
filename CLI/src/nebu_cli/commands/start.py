@@ -51,7 +51,7 @@ def _create_files(
     force: bool,
     result: StartResult,
 ) -> None:
-    guide_path = resolve_path(root, "GUIDE.md")
+    guide_path = resolve_path(root, "Guide-Started.md")
     action = ensure_file_if_missing(guide_path, dry_run=dry_run, content="")
     _track(action, guide_path, result)
 

@@ -3,8 +3,8 @@
 Este manual define o fluxo comum de execução do Framework Nébula para qualquer modo de trabalho.
 
 Use este documento como base obrigatória antes de:
-- [02AGENTS.md](02AGENTS.md)
-- [03NO-AGENTS.md](03NO-AGENTS.md)
+- [Agents.md](Agents.md)
+- [NoAgents.md](NoAgents.md)
 
 ## Regra de Ouro
 
@@ -24,9 +24,9 @@ Use este documento como base obrigatória antes de:
 
 ## Artefatos mínimos por task
 
-1. [../Docs/plan.md](../Docs/plan.md)
-2. [../Docs/tasks.md](../Docs/tasks.md)
-3. [../Docs/control.md](../Docs/control.md)
+1. [../Docs/plan.md](../../Docs/plan.md)
+2. [../Docs/tasks.md](../../Docs/tasks.md)
+3. [../Docs/control.md](../../Docs/control.md)
 
 ## Governança obrigatória
 
@@ -52,7 +52,7 @@ Use este documento como base obrigatória antes de:
 
 ## Referências
 
-1. [../GUIDE.md](../GUIDE.md)
-2. [../Docs/README.md](../Docs/README.md)
-3. [../Workflows/README.md](../Workflows/README.md)
-4. [../Quality/validation-rules.md](../Quality/validation-rules.md)
+1. [../Guide-Started.md](../../Guide-Started.md)
+2. [../Docs/README.md](../../Docs/README.md)
+3. [../Workflows/README.md](../../Workflows/README.md)
+4. [../Quality/validation-rules.md](../../Quality/validation-rules.md)

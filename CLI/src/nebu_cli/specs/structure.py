@@ -29,7 +29,7 @@ DOC_FILES = (
     "Docs/control.md",
 )
 
-REQUIRED_FILES = ("GUIDE.md", *DOC_FILES)
+REQUIRED_FILES = ("Guide-Started.md", *DOC_FILES)
 
 
 def resolve_path(root: Path, rel_path: str) -> Path:

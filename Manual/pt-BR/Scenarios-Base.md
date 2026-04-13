@@ -2,7 +2,7 @@
 
 Este manual define o fluxo comum para executar cenários no Framework Nébula, com ou sem agentes.
 
-Use este documento como base obrigatória antes de [05SCENARIOS-AGENTS.md](05SCENARIOS-AGENTS.md) ou [06SCENARIOS-NO-AGENTS.md](06SCENARIOS-NO-AGENTS.md).
+Use este documento como base obrigatória antes de [Scenarios-Agents.md](Scenarios-Agents.md) ou [Scenarios-NoAgents.md](Scenarios-NoAgents.md).
 
 ## Objetivo
 
@@ -96,7 +96,7 @@ Workflows/<workflow>.md
 
 ## Referências
 
-1. [../GUIDE.md](../GUIDE.md)
-2. [../Docs/README.md](../Docs/README.md)
-3. [../Workflows/README.md](../Workflows/README.md)
-4. [../Quality/validation-rules.md](../Quality/validation-rules.md)
+1. [../Guide-Started.md](../../Guide-Started.md)
+2. [../Docs/README.md](../../Docs/README.md)
+3. [../Workflows/README.md](../../Workflows/README.md)
+4. [../Quality/validation-rules.md](../../Quality/validation-rules.md)

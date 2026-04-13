@@ -29,7 +29,7 @@ Executar documentação com baixa burocracia mantendo governança mínima.
 
 1. `README.md` deste diretório
 2. `Templates/Full/README.md`
-3. `GUIDE.md`
+3. `Guide-Started.md`
 4. `Docs/README.md`
 
 ## Relação com o modo Full

@@ -2,7 +2,7 @@
 nome: Bootstrap Estrutural do Projeto
 objetivo: Criar toda a estrutura inicial de diretórios e arquivos em uma task dedicada.
 fontes:
-  - GUIDE.md
+  - Guide-Started.md
   - Docs/plan.md
   - Docs/tasks.md
   - Docs/control.md

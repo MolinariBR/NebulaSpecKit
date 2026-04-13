@@ -3,20 +3,20 @@
 ## Escopo Deste Documento
 
 Este manual cobre apenas o delta nativo do Zed.
-O padrão comum de governança, contexto e validação esta em [15CREATE-AGENT-BASELINE.md](15CREATE-AGENT-BASELINE.md).
+O padrão comum de governança, contexto e validação esta em [Baseline.md](Baseline.md).
 
 ## Leitura Obrigatória
 
-1. [15CREATE-AGENT-BASELINE.md](15CREATE-AGENT-BASELINE.md)
-2. [../agents/README.md](../agents/README.md)
-3. [02AGENTS.md](02AGENTS.md)
+1. [Baseline.md](Baseline.md)
+2. [../agents/README.md](../../agents/README.md)
+3. [Agents.md](../Agents.md)
 
 ## Implementação Nativa No Zed
 
 1. O Zed usa Agent Panel nativo para execução agentica.
 2. Regras principais do projeto ficam em `.rules`.
 3. Rules Library pode manter regras por perfil e tornar default.
-4. Zed reconhece AGENTS.md como arquivo compativel de regras.
+4. Zed reconhece Agents.md como arquivo compativel de regras.
 5. Tambem suporta agentes externos via ACP.
 
 ## Setup Rápido
@@ -33,7 +33,7 @@ Arquivo: `.rules`
 ```md
 # Nébula Guardrails
 
-- Sempre carregar GUIDE.md, Skills/README.md, Workflows/README.md, Quality/README.md e Templates/Full/README.md
+- Sempre carregar Guide-Started.md, Skills/README.md, Workflows/README.md, Quality/README.md e Templates/Full/README.md
 - Bootstrap estrutural apenas na primeira task
 - Depois do bootstrap, apenas editar arquivos existentes
 - 1 commit por task

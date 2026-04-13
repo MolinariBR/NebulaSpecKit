@@ -22,13 +22,13 @@ quality:
   - Quality/validation-rules.md
   - Quality/clean-rules.md
 methodology:
-  - GUIDE.md
+  - Guide-Started.md
 guides:
   - Skills/README.md
   - Workflows/README.md
   - Quality/validation-rules.md
 context_base:
-  - GUIDE.md
+  - Guide-Started.md
   - Skills/README.md
   - Workflows/README.md
   - Quality/validation-rules.md

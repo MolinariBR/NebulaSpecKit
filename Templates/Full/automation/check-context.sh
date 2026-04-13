@@ -47,7 +47,7 @@ while [[ $# -gt 0 ]]; do
   esac
 done
 
-if [[ ! -f "instructions.md" || ! -f "GUIDE.md" ]]; then
+if [[ ! -f "instructions.md" || ! -f "Guide-Started.md" ]]; then
   echo "ERROR: run this script from project root." >&2
   exit 1
 fi
@@ -75,7 +75,7 @@ check_placeholder_warning() {
 
 common_required=(
   "instructions.md"
-  "GUIDE.md"
+  "Guide-Started.md"
   "Workflows/README.md"
   "Skills/README.md"
   "Quality/validation-rules.md"

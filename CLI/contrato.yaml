@@ -117,7 +117,7 @@ filesystem:
     - Docs
     - Docs/Prototype
   create_files_if_missing:
-    - GUIDE.md
+    - Guide-Started.md
     - Docs/brief.md
     - Docs/project.md
     - Docs/stack.md

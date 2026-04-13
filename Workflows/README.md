@@ -9,12 +9,12 @@ Orquestrar a sequência de execução por tipo de mudança, com rastreabilidade 
 ## Escopo deste guia
 
 1. Este guia define regras específicas de sequenciamento por workflow.
-2. Regras globais do framework ficam em [../GUIDE.md](../GUIDE.md).
+2. Regras globais do framework ficam em [../Guide-Started.md](../Guide-Started.md).
 3. A execução operacional deve usar artefatos oficiais em `Docs/`.
 
 ## Leitura recomendada
 
-1. [../GUIDE.md](../GUIDE.md)
+1. [../Guide-Started.md](../Guide-Started.md)
 2. [../Docs/plan.md](../Docs/plan.md)
 3. [../Docs/tasks.md](../Docs/tasks.md)
 4. Workflow específico da demanda

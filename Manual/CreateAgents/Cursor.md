@@ -3,19 +3,19 @@
 ## Escopo Deste Documento
 
 Este manual cobre apenas o delta nativo do Cursor.
-O padrão comum de governança, contexto e validação está em [15CREATE-AGENT-BASELINE.md](15CREATE-AGENT-BASELINE.md).
+O padrão comum de governança, contexto e validação está em [Baseline.md](Baseline.md).
 
 ## Leitura Obrigatória
 
-1. [15CREATE-AGENT-BASELINE.md](15CREATE-AGENT-BASELINE.md)
-2. [../agents/README.md](../agents/README.md)
-3. [02AGENTS.md](02AGENTS.md)
+1. [Baseline.md](Baseline.md)
+2. [../agents/README.md](../../agents/README.md)
+3. [Agents.md](../Agents.md)
 
 ## Implementação Nativa No Cursor
 
 1. O mecanismo nativo principal é Rules em `.cursor/rules`.
 2. Formatos suportados: `.md` e `.mdc`.
-3. `AGENTS.md` na raiz também pode ser usado como camada de instruções.
+3. `Agents.md` na raiz também pode ser usado como camada de instruções.
 4. Regras podem ser criadas via `/create-rule`.
 
 ## Setup Rápido
@@ -38,7 +38,7 @@ alwaysApply: false
 # Nébula Quality Rule
 
 Load:
-- GUIDE.md
+- Guide-Started.md
 - Quality/README.md
 - Quality/validation-rules.md
 - Docs/tasks.md
@@ -48,7 +48,7 @@ Load:
 
 1. A regra é carregada em contexto quando aplicável.
 2. O comportamento final respeita o baseline do Nébula.
-3. Não há conflito entre Rules e AGENTS.md.
+3. Não há conflito entre Rules e Agents.md.
 
 ## Referências Externas
 

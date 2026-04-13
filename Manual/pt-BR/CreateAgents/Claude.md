@@ -3,27 +3,27 @@
 ## Escopo Deste Documento
 
 Este manual cobre apenas o delta nativo do Claude Code.
-O padrão comum de governança, contexto e validação está em [15CREATE-AGENT-BASELINE.md](15CREATE-AGENT-BASELINE.md).
+O padrão comum de governança, contexto e validação está em [Baseline.md](Baseline.md).
 
 ## Leitura Obrigatória
 
-1. [15CREATE-AGENT-BASELINE.md](15CREATE-AGENT-BASELINE.md)
-2. [../agents/README.md](../agents/README.md)
-3. [02AGENTS.md](02AGENTS.md)
+1. [Baseline.md](Baseline.md)
+2. [../agents/README.md](../../../agents/README.md)
+3. [Agents.md](../Agents.md)
 
 ## Implementação Nativa No Claude Code
 
 1. Subagents ficam em `.claude/agents` (projeto) ou `~/.claude/agents` (global).
 2. Criação recomendada via comando `/agents`.
 3. Formato: markdown com frontmatter YAML.
-4. Claude Code le `CLAUDE.md`; para usar AGENTS.md, importar com `@AGENTS.md`.
+4. Claude Code le `CLAUDE.md`; para usar Agents.md, importar com `@Agents.md`.
 
 ## Setup Rápido
 
 1. Executar `/agents` e criar o subagent.
 2. Definir `name` e `description` no frontmatter.
 3. Inserir no corpo links para contexto canônico.
-4. Criar `CLAUDE.md` com `@AGENTS.md` se necessário.
+4. Criar `CLAUDE.md` com `@Agents.md` se necessário.
 
 ## Exemplo Mínimo
 
@@ -36,7 +36,7 @@ description: Validate Quality Gate before task closure.
 ---
 
 Load:
-- /GUIDE.md
+- /Guide-Started.md
 - /Quality/README.md
 - /Quality/validation-rules.md
 - /Docs/tasks.md
@@ -46,7 +46,7 @@ Load:
 
 1. Agente visível em `/agents` e em `claude agents`.
 2. Contexto aplicado ao invocar `@"quality (agent)"`.
-3. CLAUDE.md ativo quando AGENTS.md for usado por import.
+3. CLAUDE.md ativo quando Agents.md for usado por import.
 
 ## Referências Externas
 

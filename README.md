@@ -9,9 +9,9 @@
 
 - Autor: Maurício Molinari
 - Licença: MIT
-- Repositório: https://github.com/MolinariBR/NebulaSpecKit
 - Site: https://nebulaweb.vercel.app/
 - Versão: 1.0.3
+- Versão CLI: 0.1.0
 - Última atualização: 2026-04-13
 
 # Nébula Spec Kit
@@ -59,6 +59,19 @@ cd /caminho/do/projeto-root
 nebu start
 ```
 
+## Guias completos para usuário final
+
+Depois da instalação, siga por um destes guias:
+
+1. [Manual/Cli.md](Manual/Cli.md)
+2. [Manual/GitClone.md](Manual/GitClone.md)
+
+Após concluir o guia de instalação escolhido, avance nesta ordem:
+
+1. [Manual/Uso.md](Manual/Uso.md)
+2. [Manual/Fluxo.md](Manual/Fluxo.md)
+3. [Manual/Prototipagem.md](Manual/Prototipagem.md)
+
 ---
 
 ## Fluxo de uso (resumo)
@@ -81,7 +94,7 @@ O comando cria estrutura física mínima no projeto alvo.
 ```text
 projeto-root/
 ├── .nebula/
-├── GUIDE.md
+├── Guide-Started.md
 └── Docs/
     ├── Prototype/
     ├── brief.md
@@ -110,7 +123,8 @@ Observações:
 
 ## Onde cada parte vive
 
-- Método central: [GUIDE.md](GUIDE.md)
+- Porta de entrada (usuario final): [Guide-Started.md](Guide-Started.md)
+- Método central: [Guide-Started.md](Guide-Started.md)
 - Instruções e precedência: [instructions.md](instructions.md)
 - Manual operacional completo: [Manual/README.md](Manual/README.md)
 - Workflows de execução: [Workflows/README.md](Workflows/README.md)

@@ -13,44 +13,74 @@ Este diretório centraliza manuais práticos de uso do framework Nébula.
 
 Sempre carregar o baseline primeiro e, depois, apenas o delta do modo ou da ferramenta.
 
+## Entrada rapida (usuario final)
+
+Se voce veio do [../Guide-Started.md](../Guide-Started.md), siga esta ordem:
+
+1. [README.md](README.md)
+2. [GitClone.md](GitClone.md)
+3. [Cli.md](Cli.md)
+4. [Uso.md](Uso.md)
+5. [Fluxo.md](Fluxo.md)
+6. [Prototipagem.md](Prototipagem.md)
+
 ## Ordem recomendada de leitura
 
-1. Execução: [17EXECUTION-BASELINE.md](17EXECUTION-BASELINE.md) + delta [02AGENTS.md](02AGENTS.md) ou [03NO-AGENTS.md](03NO-AGENTS.md)
-2. Componentes: [18COMPONENTS-BASELINE.md](18COMPONENTS-BASELINE.md) + índice [04COMPONENTS.md](04COMPONENTS.md) + delta (19 a 22)
-3. Cenários: [16SCENARIOS-BASELINE.md](16SCENARIOS-BASELINE.md) + delta [05SCENARIOS-AGENTS.md](05SCENARIOS-AGENTS.md) ou [06SCENARIOS-NO-AGENTS.md](06SCENARIOS-NO-AGENTS.md)
-4. Criação de agentes: [15CREATE-AGENT-BASELINE.md](15CREATE-AGENT-BASELINE.md) + delta por ferramenta (07 a 14)
+1. Execução: [Execution.md](Execution.md) + delta [Agents.md](Agents.md) ou [NoAgents.md](NoAgents.md)
+2. Componentes: [Components-Base.md](Components-Base.md) + índice [Components.md](Components.md) + delta [Skills.md](Skills.md), [Workflows.md](Workflows.md), [Quality.md](Quality.md) ou [Templates.md](Templates.md)
+3. Cenários: [Scenarios-Base.md](Scenarios-Base.md) + delta [Scenarios-Agents.md](Scenarios-Agents.md) ou [Scenarios-NoAgents.md](Scenarios-NoAgents.md)
+4. Criação de agentes: [CreateAgents/README.md](CreateAgents/README.md)
 
 ## Mapa de decisões
 
 1. Quero usar agentes na execução:
-- Ler [17EXECUTION-BASELINE.md](17EXECUTION-BASELINE.md)
-- Ler [02AGENTS.md](02AGENTS.md)
-- Ler [16SCENARIOS-BASELINE.md](16SCENARIOS-BASELINE.md)
-- Ler [05SCENARIOS-AGENTS.md](05SCENARIOS-AGENTS.md)
+- Ler [Execution.md](Execution.md)
+- Ler [Agents.md](Agents.md)
+- Ler [Scenarios-Base.md](Scenarios-Base.md)
+- Ler [Scenarios-Agents.md](Scenarios-Agents.md)
 
 2. Quero executar sem agentes:
-- Ler [17EXECUTION-BASELINE.md](17EXECUTION-BASELINE.md)
-- Ler [03NO-AGENTS.md](03NO-AGENTS.md)
-- Ler [16SCENARIOS-BASELINE.md](16SCENARIOS-BASELINE.md)
-- Ler [06SCENARIOS-NO-AGENTS.md](06SCENARIOS-NO-AGENTS.md)
+- Ler [Execution.md](Execution.md)
+- Ler [NoAgents.md](NoAgents.md)
+- Ler [Scenarios-Base.md](Scenarios-Base.md)
+- Ler [Scenarios-NoAgents.md](Scenarios-NoAgents.md)
 
 3. Quero entender o papel de Skills, Workflows, Quality e Templates:
-- Ler [18COMPONENTS-BASELINE.md](18COMPONENTS-BASELINE.md)
-- Ler [04COMPONENTS.md](04COMPONENTS.md)
-- Ler o delta do pilar desejado (19 a 22)
+- Ler [Components-Base.md](Components-Base.md)
+- Ler [Components.md](Components.md)
+- Ler o delta do pilar desejado:
+- [Skills.md](Skills.md)
+- [Workflows.md](Workflows.md)
+- [Quality.md](Quality.md)
+- [Templates.md](Templates.md)
 
 4. Quero criar ou adaptar agentes em uma ferramenta específica:
-- Ler primeiro [15CREATE-AGENT-BASELINE.md](15CREATE-AGENT-BASELINE.md)
-- Depois ler o documento da ferramenta alvo (07 a 14)
+- Ler primeiro [CreateAgents/README.md](CreateAgents/README.md)
+- Ler primeiro [Baseline.md](CreateAgents/Baseline.md)
+- Depois ler o documento da ferramenta alvo:
+- [Copilot.md](CreateAgents/Copilot.md)
+- [Cursor.md](CreateAgents/Cursor.md)
+- [Antigravity.md](CreateAgents/Antigravity.md)
+- [Windsurf.md](CreateAgents/Windsurf.md)
+- [Trae.md](CreateAgents/Trae.md)
+- [Claude.md](CreateAgents/Claude.md)
+- [OpenCode.md](CreateAgents/OpenCode.md)
+- [Zed.md](CreateAgents/Zed.md)
 
 5. Quero aplicar cenários com menos repetição:
-- Ler primeiro [16SCENARIOS-BASELINE.md](16SCENARIOS-BASELINE.md)
-- Depois ler apenas o delta do modo escolhido (05 ou 06)
+- Ler primeiro [Scenarios-Base.md](Scenarios-Base.md)
+- Depois ler apenas o delta do modo escolhido:
+- [Scenarios-Agents.md](Scenarios-Agents.md)
+- [Scenarios-NoAgents.md](Scenarios-NoAgents.md)
 
 6. Quero aplicar componentes com menos repetição:
-- Ler primeiro [18COMPONENTS-BASELINE.md](18COMPONENTS-BASELINE.md)
-- Ler [04COMPONENTS.md](04COMPONENTS.md) para índice rápido
-- Ler somente o delta necessário: 19, 20, 21 ou 22
+- Ler primeiro [Components-Base.md](Components-Base.md)
+- Ler [Components.md](Components.md) para índice rápido
+- Ler somente o delta necessário:
+- [Skills.md](Skills.md)
+- [Workflows.md](Workflows.md)
+- [Quality.md](Quality.md)
+- [Templates.md](Templates.md)
 
 ## Fluxo recomendado de trabalho
 
@@ -63,9 +93,9 @@ Sempre carregar o baseline primeiro e, depois, apenas o delta do modo ou da ferr
 
 ## Relação com o framework
 
-- Método base: [../GUIDE.md](../GUIDE.md)
+- Método base: [../Guide-Started.md](../Guide-Started.md)
 - Agentes: [../agents/README.md](../agents/README.md)
-- Catálogo de agentes: [02AGENTS.md](02AGENTS.md)
+- Catálogo de agentes: [Agents.md](Agents.md)
 - Skills: [../Skills/README.md](../Skills/README.md)
 - Workflows: [../Workflows/README.md](../Workflows/README.md)
 - Quality: [../Quality/README.md](../Quality/README.md)
@@ -81,31 +111,35 @@ Sempre carregar o baseline primeiro e, depois, apenas o delta do modo ou da ferr
 
 ## Padrões baseline + delta
 
-### Cenários (05-06)
+### Cenários (baseline + delta)
 
-1. O manual [16SCENARIOS-BASELINE.md](16SCENARIOS-BASELINE.md) define o fluxo comum de cenários.
-2. O manual [05SCENARIOS-AGENTS.md](05SCENARIOS-AGENTS.md) descreve apenas o delta com agentes.
-3. O manual [06SCENARIOS-NO-AGENTS.md](06SCENARIOS-NO-AGENTS.md) descreve apenas o delta sem agentes.
+1. O manual [Scenarios-Base.md](Scenarios-Base.md) define o fluxo comum de cenários.
+2. O manual [Scenarios-Agents.md](Scenarios-Agents.md) descreve apenas o delta com agentes.
+3. O manual [Scenarios-NoAgents.md](Scenarios-NoAgents.md) descreve apenas o delta sem agentes.
 
-### Execução (02-03)
+### Execução (baseline + delta)
 
-1. O manual [17EXECUTION-BASELINE.md](17EXECUTION-BASELINE.md) define o fluxo comum de execução.
-2. O manual [02AGENTS.md](02AGENTS.md) descreve apenas o delta com agentes.
-3. O manual [03NO-AGENTS.md](03NO-AGENTS.md) descreve apenas o delta sem agentes.
+1. O manual [Execution.md](Execution.md) define o fluxo comum de execução.
+2. O manual [Agents.md](Agents.md) descreve apenas o delta com agentes.
+3. O manual [NoAgents.md](NoAgents.md) descreve apenas o delta sem agentes.
 
-### Componentes (04, 18-22)
+### Componentes (baseline + delta)
 
-1. O manual [18COMPONENTS-BASELINE.md](18COMPONENTS-BASELINE.md) define o fluxo comum de componentes.
-2. O manual [04COMPONENTS.md](04COMPONENTS.md) atua como índice rápido.
-3. Os manuais 19-22 descrevem apenas o delta por pilar.
+1. O manual [Components-Base.md](Components-Base.md) define o fluxo comum de componentes.
+2. O manual [Components.md](Components.md) atua como índice rápido.
+3. Os manuais de delta descrevem apenas o ajuste por pilar:
+- [Skills.md](Skills.md)
+- [Workflows.md](Workflows.md)
+- [Quality.md](Quality.md)
+- [Templates.md](Templates.md)
 
-### Criação de agentes (07-14)
+### Criação de agentes (baseline + delta)
 
-1. O manual [15CREATE-AGENT-BASELINE.md](15CREATE-AGENT-BASELINE.md) define o padrão comum.
-2. Os manuais 07-14 descrevem apenas o delta nativo de cada ferramenta.
+1. O manual [Baseline.md](CreateAgents/Baseline.md) define o padrão comum.
+2. Os manuais `CreateAgents/*.md` descrevem apenas o delta nativo de cada ferramenta.
 
 ## Convenções de referência
 
 - Caminhos de arquivo sempre relativos ao root do repositório.
 - Evitar fontes duplicadas de verdade.
-- Em conflito de instruções, seguir a precedência definida em [../GUIDE.md](../GUIDE.md).
+- Em conflito de instruções, seguir a precedência definida em [../Guide-Started.md](../Guide-Started.md).

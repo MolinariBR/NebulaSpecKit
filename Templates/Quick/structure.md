@@ -11,7 +11,7 @@ Definir a estrutura mínima de diretórios e arquivos para bootstrap estrutural 
 ```txt
 .
 ├── README.md
-├── GUIDE.md
+├── Guide-Started.md
 ├── Docs/
 │   ├── README.md
 │   ├── brief.md
@@ -51,7 +51,7 @@ Definir a estrutura mínima de diretórios e arquivos para bootstrap estrutural 
 │   └── *.md
 ├── Workflows/
 │   ├── 00README.md
-│   ├── 01GUIDE.md
+│   ├── 01Guide-Started.md
 │   └── *.md
 ├── Templates/
 │   ├── Full/

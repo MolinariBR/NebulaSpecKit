@@ -3,19 +3,19 @@
 ## Escopo Deste Documento
 
 Este manual cobre apenas o delta nativo do OpenCode.
-O padrão comum de governança, contexto e validação está em [15CREATE-AGENT-BASELINE.md](15CREATE-AGENT-BASELINE.md).
+O padrão comum de governança, contexto e validação está em [Baseline.md](Baseline.md).
 
 ## Leitura Obrigatória
 
-1. [15CREATE-AGENT-BASELINE.md](15CREATE-AGENT-BASELINE.md)
-2. [../agents/README.md](../agents/README.md)
-3. [02AGENTS.md](02AGENTS.md)
+1. [Baseline.md](Baseline.md)
+2. [../agents/README.md](../../agents/README.md)
+3. [Agents.md](../Agents.md)
 
 ## Implementação Nativa No OpenCode
 
 1. Agentes custom podem ser definidos em `opencode.json` (chave `agent`).
 2. Tambem podem ser definidos em `.opencode/agents/*.md`.
-3. O projeto usa regras em `AGENTS.md` (ou `CLAUDE.md` por compatibilidade).
+3. O projeto usa regras em `Agents.md` (ou `CLAUDE.md` por compatibilidade).
 4. Skills ficam em `.opencode/skills/<name>/SKILL.md`.
 5. Commands ficam em `.opencode/commands/*.md` e podem fixar agente.
 
@@ -23,7 +23,7 @@ O padrão comum de governança, contexto e validação está em [15CREATE-AGENT-
 
 1. Criar agente via `opencode agent create` ou arquivo markdown.
 2. Validar com `opencode agent list`.
-3. Criar AGENTS.md (ou usar `/init`) para guardrails.
+3. Criar Agents.md (ou usar `/init`) para guardrails.
 4. Opcional: fixar agente por comando em `.opencode/commands`.
 
 ## Exemplo Mínimo
@@ -37,7 +37,7 @@ mode: subagent
 ---
 
 Load:
-- @/GUIDE.md
+- @/Guide-Started.md
 - @/Quality/README.md
 - @/Quality/validation-rules.md
 - @/Docs/tasks.md
@@ -47,7 +47,7 @@ Load:
 
 1. Agente aparece em `opencode agent list`.
 2. Invocacao por `@quality` funciona.
-3. Regras de AGENTS.md entram em contexto do projeto.
+3. Regras de Agents.md entram em contexto do projeto.
 
 ## Referências Externas
 

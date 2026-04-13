@@ -3,13 +3,13 @@
 ## Escopo Deste Documento
 
 Este manual cobre apenas o delta nativo do Antigravity.
-O padrão comum de governança, contexto e validação esta em [15CREATE-AGENT-BASELINE.md](15CREATE-AGENT-BASELINE.md).
+O padrão comum de governança, contexto e validação esta em [Baseline.md](Baseline.md).
 
 ## Leitura Obrigatória
 
-1. [15CREATE-AGENT-BASELINE.md](15CREATE-AGENT-BASELINE.md)
-2. [../agents/README.md](../agents/README.md)
-3. [02AGENTS.md](02AGENTS.md)
+1. [Baseline.md](Baseline.md)
+2. [../agents/README.md](../../agents/README.md)
+3. [Agents.md](../Agents.md)
 
 ## Implementação Nativa No Antigravity
 
@@ -40,7 +40,7 @@ Aplicar:
 - Quality Gate obrigatório
 
 Carregar:
-- @/GUIDE.md
+- @/Guide-Started.md
 - @/Quality/README.md
 - @/Quality/validation-rules.md
 - @/Docs/tasks.md

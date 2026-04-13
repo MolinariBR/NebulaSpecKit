@@ -3,27 +3,27 @@
 ## Escopo Deste Documento
 
 Este manual cobre apenas o delta nativo do TRAE.
-O padrão comum de governança, contexto e validação esta em [15CREATE-AGENT-BASELINE.md](15CREATE-AGENT-BASELINE.md).
+O padrão comum de governança, contexto e validação esta em [Baseline.md](Baseline.md).
 
 ## Leitura Obrigatória
 
-1. [15CREATE-AGENT-BASELINE.md](15CREATE-AGENT-BASELINE.md)
-2. [../agents/README.md](../agents/README.md)
-3. [02AGENTS.md](02AGENTS.md)
+1. [Baseline.md](Baseline.md)
+2. [../agents/README.md](../../../agents/README.md)
+3. [Agents.md](../Agents.md)
 
 ## Implementação Nativa No TRAE
 
 1. O TRAE possui Custom Agents nativos criados pela interface.
 2. Regras de projeto ficam em `.trae/rules`.
 3. Skills ficam em `.trae/skills/<name>/SKILL.md`.
-4. AGENTS.md na raiz pode ser importado nas configurações.
+4. Agents.md na raiz pode ser importado nas configurações.
 
 ## Setup Rápido
 
 1. Criar o agente em `@ > Create Agent`.
 2. Definir prompt, tools e escopo.
 3. Criar rules em `.trae/rules` para governança persistente.
-4. Ativar importacao de AGENTS.md quando necessário.
+4. Ativar importacao de Agents.md quando necessário.
 
 ## Exemplo Mínimo
 
@@ -31,7 +31,7 @@ Prompt do agente no TRAE:
 
 ```text
 You are Quality for Nébula Framework.
-Always load GUIDE.md, Quality/README.md, Quality/validation-rules.md and Docs/tasks.md.
+Always load Guide-Started.md, Quality/README.md, Quality/validation-rules.md and Docs/tasks.md.
 Enforce bootstrap/edit-only/1-commit-per-task/quality-gate.
 Return plan, execution, evidence and pending risks.
 ```
@@ -40,7 +40,7 @@ Return plan, execution, evidence and pending risks.
 
 1. Agente aparece em `@`.
 2. Rules aplicam conforme modo de ativacao.
-3. AGENTS.md entra em contexto quando importado.
+3. Agents.md entra em contexto quando importado.
 
 ## Referências Externas
 

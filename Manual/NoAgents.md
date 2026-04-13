@@ -1,11 +1,11 @@
 # Execução sem Agentes
 
 Este manual cobre apenas o delta de execução sem agentes.
-O fluxo comum de execução está em [17EXECUTION-BASELINE.md](17EXECUTION-BASELINE.md).
+O fluxo comum de execução está em [Execution.md](Execution.md).
 
 ## Leitura obrigatória
 
-1. [17EXECUTION-BASELINE.md](17EXECUTION-BASELINE.md)
+1. [Execution.md](Execution.md)
 2. [../Templates/Full/README.md](../Templates/Full/README.md)
 3. [../Workflows/README.md](../Workflows/README.md)
 

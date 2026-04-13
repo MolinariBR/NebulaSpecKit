@@ -1,13 +1,13 @@
 # Cenários com Agentes
 
 Este manual cobre apenas o delta de execução com agentes.
-O fluxo comum de cenários está em [16SCENARIOS-BASELINE.md](16SCENARIOS-BASELINE.md).
+O fluxo comum de cenários está em [Scenarios-Base.md](Scenarios-Base.md).
 
 ## Leitura Obrigatória
 
-1. [16SCENARIOS-BASELINE.md](16SCENARIOS-BASELINE.md)
-2. [02AGENTS.md](02AGENTS.md)
-3. [15CREATE-AGENT-BASELINE.md](15CREATE-AGENT-BASELINE.md)
+1. [Scenarios-Base.md](Scenarios-Base.md)
+2. [Agents.md](Agents.md)
+3. [Baseline.md](CreateAgents/Baseline.md)
 
 ## Delta Com Agentes
 
@@ -42,7 +42,7 @@ Objetivo: <objetivo da task>
 Workflow: Workflows/<workflow>.md
 
 Carregue contexto base:
-- GUIDE.md
+- Guide-Started.md
 - Skills/README.md
 - Workflows/README.md
 - Quality/README.md

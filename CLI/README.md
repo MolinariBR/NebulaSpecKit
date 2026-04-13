@@ -38,4 +38,10 @@ Autenticacao de publish:
 - Configurar publisher no PyPI:
   - owner/repo: `MolinariBR/NebulaSpecKit`
   - workflow: `.github/workflows/cli-release-pypi.yml`
-  - ambiente PyPI: `pypi`
+  - environment name: `Any` (deixe vazio no PyPI se o workflow nao usa `environment`)
+
+## Release e rollback
+
+Guia operacional completo:
+
+- [RELEASE.md](RELEASE.md)

@@ -15,7 +15,7 @@ Garantir consistência entre projetos, separação clara de responsabilidades e 
 ## Leitura recomendada
 
 1. `README.md` deste diretório
-2. `GUIDE.md`
+2. `Guide-Started.md`
 3. `Docs/README.md`
 4. `Quality/validation-rules.md`
 
