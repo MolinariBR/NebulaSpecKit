@@ -24,13 +24,12 @@ python -m twine check dist/*
 Workflows criados em `.github/workflows`:
 
 - `ci.yml`: roda testes, build e `twine check`.
-- `release-pypi.yml`: publica no TestPyPI (manual) e PyPI (tag `vX.Y.Z`).
+- `release-pypi.yml`: publica no PyPI por `workflow_dispatch` e por tag `vX.Y.Z`.
 
 Autenticacao de publish:
 
 - Trusted Publishers (OIDC), sem token no workflow.
-- Configurar publisher no TestPyPI e no PyPI:
+- Configurar publisher no PyPI:
   - owner/repo: `MolinariBR/NebulaSpecKit`
   - workflow: `.github/workflows/cli-release-pypi.yml`
-  - ambiente TestPyPI: `testpypi`
   - ambiente PyPI: `pypi`

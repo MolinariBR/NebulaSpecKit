@@ -123,7 +123,7 @@
   - [x] Criar `release-pypi.yml` separado
   - [x] Configurar Trusted Publisher (OIDC) no fluxo
   - [x] Garantir permissao `id-token: write` no workflow
-  - [x] Definir environments: `testpypi` e `pypi`
+  - [x] Definir environment: `pypi`
   - [x] Validar `workflow_dispatch` no GitHub Actions
   - [x] Validar trigger por tag (`vX.Y.Z`)
   - [ ] Resolver bloqueio de publish real no PyPI para o nome `nebu`
@@ -148,7 +148,7 @@
 - **Status:** nao iniciada
 - **Checklist:**
   - [ ] Comandos basicos documentados
-  - [ ] Fluxo TestPyPI -> PyPI documentado
+  - [ ] Fluxo de publish PyPI via OIDC documentado
   - [ ] Procedimento de rollback documentado
   - [ ] Troubleshooting basico documentado
 

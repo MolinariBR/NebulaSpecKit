@@ -19,7 +19,6 @@ distribution:
     require_id_token_permission: true
     use_api_tokens_in_workflow: false
     github_environments:
-      testpypi: testpypi
       pypi: pypi
   release_workflow:
     mode: additive
