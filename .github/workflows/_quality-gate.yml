@@ -20,7 +20,7 @@ jobs:
         uses: DavidAnson/markdownlint-cli2-action@v23
 
       - name: Validate required files, YAML and JSON
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: "3.12"
 
