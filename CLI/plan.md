@@ -52,9 +52,9 @@ no projeto alvo, sem quebrar o CI/release ja existente do NebulaSpecKit.
   - `workflow_dispatch` para testes iniciais
   - tag semver (`vX.Y.Z`) apos validacao
 - Metodo de autenticacao:
-  - Trusted Publishers (OIDC) para TestPyPI e PyPI
+  - Trusted Publishers (OIDC) para PyPI
   - sem `PYPI_API_TOKEN` no workflow de publish
-- Publicar primeiro em TestPyPI, depois PyPI
+- Publicar direto em PyPI
 
 ## 9. Arquitetura Proposta da CLI
 - `src/nebu_cli/__main__.py`
@@ -97,7 +97,6 @@ no projeto alvo, sem quebrar o CI/release ja existente do NebulaSpecKit.
 - Validar fluxo por `workflow_dispatch`
 
 ### Fase 05 - Release
-- Publicar em TestPyPI
 - Publicar em PyPI
 - Documentar rollback e hotfix de pacote
 
@@ -108,7 +107,7 @@ no projeto alvo, sem quebrar o CI/release ja existente do NebulaSpecKit.
 - Validacao local:
   - `python -m twine check dist/*`
 - Publicacao via GitHub Actions:
-  - `workflow_dispatch` com `target=testpypi`
+  - `workflow_dispatch` para publish manual no PyPI
   - tag `vX.Y.Z` para publish em PyPI
 - Uso usuario:
   - `python -m pip install nebu`
