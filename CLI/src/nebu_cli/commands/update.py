@@ -12,7 +12,8 @@ from urllib.request import urlopen
 from nebu_cli.commands.version import get_local_version
 
 
-PYPI_ENDPOINT = "https://pypi.org/pypi/nebu/json"
+PACKAGE_NAME = "nebula-spec-kit-cli"
+PYPI_ENDPOINT = f"https://pypi.org/pypi/{PACKAGE_NAME}/json"
 
 
 def _parse_version(value: str) -> tuple[int, int, int, str] | None:
@@ -67,7 +68,14 @@ def _confirm_apply() -> bool:
 
 
 def _apply_update() -> int:
-    command = [sys.executable, "-m", "pip", "install", "--upgrade", "nebu"]
+    command = [
+        sys.executable,
+        "-m",
+        "pip",
+        "install",
+        "--upgrade",
+        PACKAGE_NAME,
+    ]
     print("update:")
     print(f"- command: {' '.join(command)}")
     completed = subprocess.run(command, check=False)
@@ -97,7 +105,7 @@ def run(args) -> int:
         return 0
 
     print("- status: atualizacao disponivel")
-    print("- apply_command: python -m pip install --upgrade nebu")
+    print(f"- apply_command: python -m pip install --upgrade {PACKAGE_NAME}")
 
     if not args.apply:
         return 0

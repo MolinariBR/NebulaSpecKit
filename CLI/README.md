@@ -8,6 +8,12 @@ CLI Python para inicializar a estrutura documental do Nebula.
 - `nebu version`
 - `nebu update`
 
+## Instalação
+
+```bash
+python -m pip install nebula-spec-kit-cli
+```
+
 ## Desenvolvimento local
 
 ```bash
