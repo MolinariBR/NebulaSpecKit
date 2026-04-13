@@ -51,7 +51,7 @@ jobs:
 
       - name: Upload link check report
         if: always()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: external-links-report-${{ github.run_id }}
           path: lychee/external-links.md
