@@ -1,0 +1,159 @@
+version: 3
+name: nebu-cli-contract
+status: reviewing
+
+metadata:
+  project: Nebula CLI Bootstrap
+  owner: "[preencher]"
+  created_at: "[dd/mm/aaaa]"
+  updated_at: "[dd/mm/aaaa]"
+
+distribution:
+  channel: pypi
+  package_name: nebu
+  versioning: semver
+  release_trigger: git_tag
+  release_tag_pattern: "vX.Y.Z"
+  publish_auth:
+    method: trusted_publisher_oidc
+    require_id_token_permission: true
+    use_api_tokens_in_workflow: false
+    github_environments:
+      testpypi: testpypi
+      pypi: pypi
+  release_workflow:
+    mode: additive
+    preserve_existing_release_yml: true
+    create_dedicated_pypi_workflow: true
+
+repository_compatibility:
+  existing_workflows:
+    - .github/workflows/ci.yml
+    - .github/workflows/_quality-gate.yml
+    - .github/workflows/release.yml
+    - .github/workflows/links-scheduled.yml
+  required_rules:
+    - Nao remover workflow de release atual
+    - Nao reduzir validacoes documentais existentes
+    - Adicionar validacoes Python de forma incremental
+    - Publish PyPI em workflow separado
+    - Publish deve usar Trusted Publishers (OIDC)
+    - Nao usar secret token no workflow oficial de publish
+
+commands:
+  - name: start
+    summary: Inicializa estrutura Nebula no projeto alvo
+    inputs:
+      profile:
+        type: string
+        required: false
+        default: full
+        enum: [full, quick]
+      root:
+        type: string
+        required: false
+        default: "."
+      dry_run:
+        type: boolean
+        required: false
+        default: false
+      force:
+        type: boolean
+        required: false
+        default: false
+    behavior:
+      overwrite_default: false
+      idempotent: true
+      fill_docs_content: false
+      create_manifest: true
+      create_guide_when_missing: true
+      docs_files_must_be_empty: true
+
+  - name: version
+    summary: Exibe versão instalada da CLI
+    inputs: {}
+    behavior:
+      read_only: true
+
+  - name: update
+    summary: Verifica release no PyPI e orienta atualização
+    inputs:
+      apply:
+        type: boolean
+        required: false
+        default: false
+      yes:
+        type: boolean
+        required: false
+        default: false
+    behavior:
+      mode_default: check_only
+      compare_with_pypi: true
+      apply_command: "python -m pip install --upgrade nebu"
+      apply_requires_confirmation_when_yes_false: true
+
+outputs:
+  stdout:
+    format: text
+    sections:
+      - summary
+      - created
+      - skipped
+      - overwritten
+      - version
+      - update
+      - compatibility
+  manifest:
+    path: .nebula/manifest.json
+    fields:
+      - nebula_version
+      - profile
+      - created_at
+      - last_run_at
+      - root
+
+filesystem:
+  create_dirs:
+    - .nebula
+    - Docs
+    - Docs/Prototype
+  create_files_if_missing:
+    - GUIDE.md
+    - Docs/brief.md
+    - Docs/project.md
+    - Docs/stack.md
+    - Docs/user-stories.md
+    - Docs/pages.md
+    - Docs/flow.md
+    - Docs/design-system.md
+    - Docs/tokens.json
+    - Docs/entities.md
+    - Docs/architecture.md
+    - Docs/contract.yaml
+    - Docs/structure.md
+    - Docs/deploy.md
+    - Docs/plan.md
+    - Docs/tasks.md
+    - Docs/control.md
+
+rules:
+  - Nunca preencher conteúdo dos arquivos em Docs durante bootstrap
+  - Sem --force, arquivos existentes devem ser preservados
+  - Com --dry-run, nenhuma escrita em disco deve acontecer
+  - update sem --apply deve ser apenas leitura/verificação
+  - Publicacao no PyPI ocorre por tag de release
+  - Workflow .github/workflows/release.yml deve permanecer ativo
+  - Workflow de publish PyPI deve ser dedicado e independente
+  - Workflow de publish usa OIDC Trusted Publisher (sem token)
+
+exit_codes:
+  "0": sucesso
+  "1": erro de uso ou execução
+
+acceptance:
+  - Estrutura mínima criada com sucesso
+  - Todos os arquivos Docs criados vazios quando ausentes
+  - Execução repetida sem --force não altera arquivos existentes
+  - version retorna a versão instalada
+  - update compara versão local com PyPI
+  - update --apply executa upgrade do pacote

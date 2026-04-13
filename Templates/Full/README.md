@@ -56,11 +56,34 @@ Se houver ambiguidade durante o uso de Quick, migrar para Full na mesma task.
 16. Usar `Templates/Full/tasks.md` e salvar em `Docs/tasks.md`
 17. Usar `Templates/Full/control.md` e salvar em `Docs/control.md`
 
+## Fluxo de criação (Mermaid)
+
+```mermaid
+flowchart TD
+  A[Docs/brief.md] --> B[Docs/project.md]
+  B --> C[Docs/stack.md]
+  C --> D[Docs/user-stories.md]
+  D --> E[Docs/pages.md]
+  E --> F[Docs/flow.md]
+  F --> G[Docs/Prototype/]
+  G --> H[Docs/design-system.md]
+  H --> I[Docs/tokens.json]
+  I --> J[Docs/entities.md]
+  J --> K[Docs/architecture.md]
+  K --> L[Docs/contract.yaml]
+  L --> M[Docs/structure.md]
+  M --> N[Docs/deploy.md]
+  N --> O[Docs/plan.md]
+  O --> P[Docs/tasks.md]
+  P --> Q[Docs/control.md]
+```
+
 ## Referência de componentes
 
 1. Skills: `Skills/README.md`.
 2. Workflows: `Workflows/README.md`.
 3. Quality: `Quality/README.md`.
+4. Automação opcional para projetos usuários: `Templates/Full/automation/`.
 
 ## Regras de preenchimento
 

@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nebu"
+dynamic = ["version"]
+description = "CLI para bootstrap da estrutura Nebula"
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+authors = [{ name = "Mauricio Molinari" }]
+keywords = ["nebula", "cli", "bootstrap", "documentation"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Developers",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Environment :: Console",
+]
+dependencies = []
+
+[project.scripts]
+nebu = "nebu_cli.__main__:main"
+
+[project.urls]
+Homepage = "https://github.com/MolinariBR/NebulaSpecKit"
+Repository = "https://github.com/MolinariBR/NebulaSpecKit"
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["nebu_cli*"]
+
+[tool.setuptools.dynamic]
+version = { attr = "nebu_cli.__version__" }

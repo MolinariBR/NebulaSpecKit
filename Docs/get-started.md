@@ -8,10 +8,11 @@ No Nébula, a implementação só começa depois que a base documental está edi
 
 ## Princípios do fluxo
 
-1. `Docs/` é a fonte de verdade do projeto.
-2. `Templates/` é modelo de preenchimento, não destino final.
-3. `Docs/Prototype/` guarda apenas protótipos HTML de interface.
-4. Cada task fecha com evidência e Quality Gate.
+1. `instructions.md` define governança e precedência operacional.
+2. `Docs/` é a fonte de verdade dos artefatos oficiais do projeto.
+3. `Templates/` é modelo de preenchimento, não destino final.
+4. `Docs/Prototype/` guarda apenas protótipos HTML de interface.
+5. Cada task fecha com evidência e Quality Gate.
 
 ## Ordem recomendada de preenchimento
 
@@ -33,10 +34,11 @@ No Nébula, a implementação só começa depois que a base documental está edi
 
 ## Como operar na prática
 
-1. Escolha o template correspondente em `Templates/Full` ou `Templates/Quick`.
-2. Use o template para estruturar o conteúdo.
-3. Salve e mantenha a versão oficial no arquivo equivalente em `Docs/`.
-4. Registre avanço em `control.md` e execute o Quality Gate antes de concluir a task.
+1. Opcional: use `commands.md` para rotear o workflow da etapa.
+2. Escolha o template correspondente em `Templates/Full` ou `Templates/Quick`.
+3. Use o template para estruturar o conteúdo.
+4. Salve e mantenha a versão oficial no arquivo equivalente em `Docs/`.
+5. Registre avanço em `control.md` e execute o Quality Gate antes de concluir a task.
 
 ## Critério de pronto da fase documental
 

@@ -37,26 +37,29 @@ Neste repositório: `PROJECT_ROOT = NebulaSpecKit/`.
 2. Implementação/revisão/correção: `QUALITY_STACK`
 3. Modo com agentes: `agents/README.md`, `agents/<role>.md`
 4. UI/protótipo: `Docs/Prototype/README.md`
+5. Interface operacional curta: `Docs/commands.md`
 
 ## 4. Precedência
 Em conflito, use esta ordem:
-1. `Docs/contract.yaml`
-2. Documento-fonte do domínio em `Docs/`
-3. `Docs/plan.md` e `Docs/tasks.md`
-4. Workflow principal em `Workflows/*.md`
-5. `Quality/validation-rules.md` + regras de qualidade
-6. `instructions.md`
-7. Políticas complementares de qualidade (sob demanda)
-8. Implementação atual
+1. `instructions.md` (raiz operacional)
+2. `Docs/contract.yaml` (contrato vigente)
+3. Documento-fonte do domínio em `Docs/`
+4. `Docs/plan.md` e `Docs/tasks.md`
+5. Workflow principal em `Workflows/*.md`
+6. `Quality/validation-rules.md` + regras de qualidade aplicáveis
+7. Implementação atual
+
+`GUIDE.md` detalha o método e deve permanecer aderente a esta ordem de precedência.
 
 ## 5. Fluxo oficial
 
 ### 5.1 Início de projeto
 1. Ler `Docs/get-started.md`
-2. Criar base documental oficial em `Docs/` (template = referência, nunca saída final)
-3. Selecionar `Workflows/initial-setup.md`
-4. Aprovar `Docs/plan.md`
-5. Abrir Task 1 com `bootstrap_estrutural` via `Workflows/bootstrap-structure.md`
+2. Ler `Docs/commands.md` (camada curta de roteamento, opcional)
+3. Criar base documental oficial em `Docs/` (template = referência, nunca saída final)
+4. Selecionar `Workflows/initial-setup.md`
+5. Aprovar `Docs/plan.md`
+6. Abrir Task 1 com `bootstrap_estrutural` via `Workflows/bootstrap-structure.md`
 
 ### 5.2 Ciclo por task
 1. Definir objetivo, escopo e limites

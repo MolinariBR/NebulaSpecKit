@@ -40,9 +40,12 @@ Mudanças estruturais recentes já refletidas neste repositório:
 - Contexto mínimo de execução com IA centralizado em:
   - `instructions.md`
   - `GUIDE.md`
+  - `Docs/commands.md`
   - `Workflows/README.md`
   - `Skills/README.md`
   - `Quality/validation-rules.md`
+- Autoridade em conflito (ordem canônica):
+  - `instructions.md` -> `Docs/contract.yaml` -> documento-fonte em `Docs/` -> `Docs/plan.md` e `Docs/tasks.md` -> `Workflows/*.md` -> `Quality/validation-rules.md` + regras aplicáveis -> implementação atual.
 
 ---
 
@@ -52,6 +55,7 @@ Mudanças estruturais recentes já refletidas neste repositório:
 | --- | --- | --- |
 | Instruções | [instructions.md](instructions.md) | Raiz operacional e precedência de execução |
 | Metodologia | [GUIDE.md](GUIDE.md) | Referência central do método |
+| Comandos | [Docs/commands.md](Docs/commands.md) | Interface operacional curta (roteamento para workflows) |
 | Documentação | [Docs/README.md](Docs/README.md) | Artefatos oficiais do projeto |
 | Skills | [Skills/README.md](Skills/README.md) | Capacidades técnicas mapeadas |
 | Workflows | [Workflows/README.md](Workflows/README.md) | Fluxos de execução padronizados |

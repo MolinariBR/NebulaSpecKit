@@ -23,7 +23,7 @@ Analisar → Revisar → Mapear → Planejar → Comparar → Implementar → Te
 ```mermaid
 flowchart TD
   A[Início do projeto] --> B[Carregar contexto base]
-  B --> C[GUIDE + instructions + Workflows + Skills + Quality gate]
+  B --> C[GUIDE + instructions + commands + Workflows + Skills + Quality gate]
   C --> D{Modo de operação}
   D -->|Com agentes| E[Carregar agents/README.md e agents/papel.md]
   D -->|Sem agentes| F[Executar fluxo humano padrão]
@@ -50,6 +50,7 @@ flowchart TD
 Notas:
 - `Manual/` é guia para dev humano e não integra o contexto mínimo de IA.
 - `Templates/` é referência de estrutura; saída oficial sempre em `Docs/`.
+- `Docs/commands.md` é camada curta de roteamento e não substitui workflows.
 
 ---
 
@@ -60,6 +61,7 @@ Notas:
 - Arquivos em `Templates/` são modelos de preenchimento — nunca saída oficial
 - Artefatos oficiais do projeto devem ser salvos em `Docs/`
 - Protótipos HTML devem ser salvos em `Docs/Prototype/`
+- Comandos canônicos de roteamento ficam em `Docs/commands.md`
 
 ### Início da Documentação
 
@@ -177,12 +179,14 @@ Ordem de consistência entre artefatos:
 Em caso de conflito entre fontes, a ordem de autoridade é:
 
 1. `instructions.md` (raiz operacional)
-2. Contrato vigente
+2. `Docs/contract.yaml` (contrato vigente)
 3. Documento-fonte do domínio em `Docs/`
 4. `Docs/plan.md` e `Docs/tasks.md`
 5. Workflow principal em `Workflows/*.md`
-6. `Quality/validation-rules.md` e regras de qualidade
+6. `Quality/validation-rules.md` + regras de qualidade aplicáveis
 7. Implementação atual
+
+Esta seção espelha a precedência canônica definida em `instructions.md`.
 
 ---
 
