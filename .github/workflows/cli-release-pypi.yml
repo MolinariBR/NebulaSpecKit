@@ -56,8 +56,6 @@ jobs:
     if: github.event_name == 'push' || github.event_name == 'workflow_dispatch'
     runs-on: ubuntu-latest
     timeout-minutes: 20
-    environment:
-      name: pypi
 
     steps:
       - name: Download dist artifacts
