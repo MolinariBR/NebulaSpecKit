@@ -118,14 +118,15 @@
 - **Objetivo:** publicar pacote sem alterar `release.yml`
 - **Aceite:** publish por tag semver em workflow separado
 - **Dependencia:** TASK-009
-- **Status:** em validacao
+- **Status:** validada com bloqueio externo
 - **Checklist:**
   - [x] Criar `release-pypi.yml` separado
   - [x] Configurar Trusted Publisher (OIDC) no fluxo
   - [x] Garantir permissao `id-token: write` no workflow
   - [x] Definir environments: `testpypi` e `pypi`
-  - [ ] Validar `workflow_dispatch` no GitHub Actions
-  - [ ] Validar trigger por tag (`vX.Y.Z`)
+  - [x] Validar `workflow_dispatch` no GitHub Actions
+  - [x] Validar trigger por tag (`vX.Y.Z`)
+  - [ ] Resolver bloqueio de publish real no PyPI para o nome `nebu`
 
 ## 7. Fase 05 - Testes e Documentacao
 ### TASK-011 - Testes unitarios e integracao
