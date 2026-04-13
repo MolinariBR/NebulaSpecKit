@@ -132,6 +132,7 @@
 - **Fluxos opcionais/futuros:** FL-005 · FL-006
 ---
 ## 10. Diretrizes para Próximos Documentos
+
 | Documento | Como os fluxos impactam |
 |----------|--------------------------|
 | prototype/ | [fluxos e telas a prototipar primeiro] |
@@ -140,6 +141,7 @@
 | contract.yaml | [fluxos que indicam endpoints/respostas] |
 | entities.md | [conceitos de domínio presentes] |
 | plan.md / tasks.md | [fluxos prioritários, bloqueantes, fundacionais] |
+
 ---
 ## 11. Síntese Operacional para Dev e AI
 - **Jornadas principais:** JN-001 · JN-002
