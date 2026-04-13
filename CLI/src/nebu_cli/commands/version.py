@@ -7,7 +7,11 @@ from importlib.metadata import PackageNotFoundError, version
 from nebu_cli import __version__
 
 
-PACKAGE_NAMES = ("nebu", "nebu-cli")
+PACKAGE_NAMES = (
+    "nebula-spec-kit-cli",
+    "nebu",
+    "nebu-cli",
+)
 
 
 def get_local_version() -> str:

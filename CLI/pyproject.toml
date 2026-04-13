@@ -3,7 +3,7 @@ requires = ["setuptools>=69", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "nebu"
+name = "nebula-spec-kit-cli"
 dynamic = ["version"]
 description = "CLI para bootstrap da estrutura Nebula"
 readme = "README.md"

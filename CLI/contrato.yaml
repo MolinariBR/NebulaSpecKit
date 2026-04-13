@@ -10,7 +10,7 @@ metadata:
 
 distribution:
   channel: pypi
-  package_name: nebu
+  package_name: nebula-spec-kit-cli
   versioning: semver
   release_trigger: git_tag
   release_tag_pattern: "vX.Y.Z"
@@ -88,7 +88,7 @@ commands:
     behavior:
       mode_default: check_only
       compare_with_pypi: true
-      apply_command: "python -m pip install --upgrade nebu"
+      apply_command: "python -m pip install --upgrade nebula-spec-kit-cli"
       apply_requires_confirmation_when_yes_false: true
 
 outputs:
