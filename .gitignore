@@ -1,2 +1,12 @@
 Documentação/
 tools/
+
+# CLI package artifacts
+CLI/.venv/
+CLI/.pytest_cache/
+CLI/build/
+CLI/dist/
+CLI/src/*.egg-info/
+CLI/src/**/*.pyc
+CLI/src/**/__pycache__/
+CLI/tests/**/__pycache__/
