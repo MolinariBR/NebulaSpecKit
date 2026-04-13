@@ -123,7 +123,7 @@ jobs:
           git archive --format=zip --output="nebula-spec-kit-${VERSION}.zip" HEAD
 
       - name: Upload release artifacts (workflow)
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: release-artifacts-${{ needs.resolve-version.outputs.version }}
           path: |
