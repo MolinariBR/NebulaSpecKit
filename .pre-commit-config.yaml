@@ -1,0 +1,27 @@
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.4.0
+    hooks:
+      - id: trailing-whitespace
+      - id: end-of-file-fixer
+      - id: check-yaml
+        args: [--allow-multiple-documents]
+      - id: check-added-large-files
+
+  - repo: https://github.com/DavidAnson/markdownlint-cli2
+    rev: v0.10.0
+    hooks:
+      - id: markdownlint-cli2
+        name: Nébula Markdown Rules
+        description: Enforces consistency across Docs via markdownlint.
+        files: \.md$
+        args: ["--config", ".markdownlint-cli2.jsonc"]
+
+  - repo: local
+    hooks:
+      - id: check-nebula-context
+        name: Analyze Nebula Context & Validation
+        description: Runs Nébula's consistency and context checks prior to commiting
+        entry: bash -c 'if [ -f "tools/analyze-consistency.sh" ]; then tools/analyze-consistency.sh; fi'
+        language: system
+        pass_filenames: false

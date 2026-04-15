@@ -4,13 +4,27 @@ from __future__ import annotations
 
 import argparse
 
-from nebu_cli.commands import start, update, version
-
+from nebu_cli.commands import start, submit, update, version
 
 def build_parser() -> argparse.ArgumentParser:
     """Build root parser and subcommands."""
     parser = argparse.ArgumentParser(prog="nebu")
     subparsers = parser.add_subparsers(dest="command")
+
+    submit_parser = subparsers.add_parser(
+        "submit",
+        help="Automatiza qualidade, commit e tracking no Docs/tasks.md",
+    )
+    submit_parser.add_argument(
+        "message",
+        help="Mensagem do commit da task",
+    )
+    submit_parser.add_argument(
+        "--task-id",
+        required=False,
+        help="ID opcional da task no formato (Ex: TASK-001)",
+    )
+    submit_parser.set_defaults(handler=submit.run)
 
     start_parser = subparsers.add_parser(
         "start",
