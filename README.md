@@ -139,6 +139,7 @@ Observações:
 
 ```bash
 nebu start
+nebu submit "commit message"
 nebu version
 nebu update
 ```
@@ -151,3 +152,7 @@ nebu update
 - Rastreabilidade de decisões e mudanças.
 - Consistência entre dev humano e IA.
 - Governança com qualidade desde o início.
+
+---
+
+> **Nota:** Este framework recentemente recebeu atualizações relativas à automação (CLI e Pre-Commits). Veja o escopo no [Relatório de Eficiência (Docs/efficiency-improvements.md)](Docs/efficiency-improvements.md).

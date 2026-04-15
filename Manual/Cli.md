@@ -17,6 +17,7 @@ python -m pip install nebula-spec-kit-cli
 
 ```bash
 nebu start [--profile full|quick] [--root <diretorio>] [--dry-run] [--force]
+nebu submit "mensagem" [--task-id <id>]
 nebu version
 nebu update [--apply] [--yes]
 ```

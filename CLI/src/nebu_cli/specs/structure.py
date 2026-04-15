@@ -6,6 +6,9 @@ from pathlib import Path
 
 REQUIRED_DIRS = (
     ".nebula",
+    ".agents",
+    ".agents/rules",
+    ".agents/skills",
     "Docs",
     "Docs/Prototype",
 )
